@@ -32,9 +32,6 @@ export default function MenuPage() {
                 <FadeIn>
                     <h1 className="text-5xl font-bold text-primary">{t("title")}</h1>
                     <p className="text-xl text-muted-foreground">{t("subtitle")}</p>
-                    <Button variant="outline" className="mt-6 border-primary text-primary hover:bg-primary hover:text-white">
-                        {t("download")}
-                    </Button>
                 </FadeIn>
             </Section>
 

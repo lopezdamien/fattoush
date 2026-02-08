@@ -1,15 +1,19 @@
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export function Footer() {
     const t = useTranslations("Navigation");
 
     return (
-        <footer className="bg-primary text-secondary py-12">
-            <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <footer className="bg-secondary/30 text-foreground pt-16 pb-8">
+            <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                 <div className="space-y-4">
-                    <h3 className="text-xl font-bold">FATTOUSH</h3>
-                    <p className="text-sm opacity-80">
+                    <div className="relative h-24 w-24 mb-4">
+                        <Image src="/images/logo.png" alt="Fattoush Logo" fill className="object-contain" />
+                    </div>
+                    <h3 className="font-bold text-2xl text-primary">FATTOUSH</h3>
+                    <p className="text-muted-foreground text-sm">
                         Cuisine libanaise authentique au cœur de Genève.
                     </p>
                 </div>
@@ -30,11 +34,6 @@ export function Footer() {
                         <li>Lun - Sam: 11h - 23h</li>
                         <li>Dimanche: Fermé</li>
                     </ul>
-                </div>
-
-                <div className="space-y-4">
-                    <h4 className="font-semibold">{t("menu")}</h4>
-                    {/* Social icons placeholder */}
                 </div>
             </div>
             <div className="container mx-auto px-4 mt-8 pt-8 border-t border-secondary/20 text-center text-sm opacity-60">
