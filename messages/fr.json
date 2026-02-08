@@ -1,0 +1,131 @@
+{
+  "HomePage": {
+    "title": "FATTOUSH",
+    "subtitle": "Cuisine libanaise authentique au cœur de Genève",
+    "cta": "Voir la carte",
+    "book": "Réserver une table",
+    "spirit": {
+      "title": "L'Esprit Fattoush",
+      "description": "FATTOUSH célèbre la richesse de la cuisine libanaise à travers des recettes authentiques, des produits frais et un savoir-faire transmis avec passion.",
+      "fresh": "Produits Frais",
+      "tradition": "Recettes Traditionnelles",
+      "sharing": "Convivialité & Partage"
+    },
+    "specialties": {
+      "title": "Nos Spécialités",
+      "description": "Découvrez les saveurs du Levant",
+      "mezze": "Mezzés Libanais",
+      "grill": "Grillades",
+      "vege": "Options Végétariennes",
+      "menu_btn": "Découvrir toute la carte"
+    },
+    "reservation": {
+      "title": "Réservez votre table en quelques clics",
+      "btn": "Réserver maintenant"
+    }
+  },
+  "Menu": {
+    "title": "La Carte",
+    "subtitle": "Une invitation au voyage culinaire",
+    "download": "Télécharger la carte en PDF",
+    "sections": {
+      "cold_mezze": "Mezzés Froids",
+      "hot_mezze": "Mezzés Chauds",
+      "grill": "Grillades",
+      "dessert": "Desserts"
+    },
+    "items": {
+      "hummus": {
+        "name": "Houmous",
+        "desc": "Purée de pois chiches, crème de sésame, citron, huile d'olive",
+        "price": "12 CHF"
+      },
+      "moutabal": {
+        "name": "Moutabal",
+        "desc": "Caviar d'aubergines fumées, crème de sésame, grenade",
+        "price": "13 CHF"
+      },
+      "tabbouleh": {
+        "name": "Taboulé",
+        "desc": "Persil plat, menthe, tomates, oignons, blé concassé, citron, huile d'olive",
+        "price": "14 CHF"
+      },
+      "fattoush": {
+        "name": "Fattoush",
+        "desc": "Salade de crudités, pain libanais grillé, sumac, mélasse de grenade",
+        "price": "14 CHF"
+      },
+      "falafel": {
+        "name": "Falafel",
+        "desc": "Boulettes de pois chiches et fèves croustillantes, sauce tarator",
+        "price": "12 CHF"
+      },
+      "kibbeh": {
+        "name": "Kibbeh",
+        "desc": "Boulettes de viande et blé concassé farcies aux pignons",
+        "price": "15 CHF"
+      },
+      "shish_taouk": {
+        "name": "Shish Taouk",
+        "desc": "Brochettes de poulet mariné au citron et à l'ail",
+        "price": "26 CHF"
+      },
+      "kafta": {
+        "name": "Kafta",
+        "desc": "Brochettes de viande hachée, persil, oignons",
+        "price": "26 CHF"
+      },
+      "mixed_grill": {
+        "name": "Grillade Mixte",
+        "desc": "Assortiment de brochettes (Taouk, Kafta, Agneau)",
+        "price": "32 CHF"
+      },
+      "baklava": {
+        "name": "Baklavas",
+        "desc": "Feuilletés aux noix et pistaches, sirop de sucre",
+        "price": "10 CHF"
+      },
+      "knefeh": {
+        "name": "Knefeh",
+        "desc": "Cheveux d'ange, fromage fondant, sirop, pistaches (servi chaud)",
+        "price": "12 CHF"
+      }
+    }
+  },
+  "About": {
+    "title": "Notre Histoire",
+    "history": "FATTOUSH est né de l’envie de partager une cuisine libanaise sincère, généreuse et moderne, fidèle aux traditions tout en s’inscrivant dans la vie genevoise. Nous croyons que chaque plat raconte une histoire, celle de nos racines et de notre passion pour l'hospitalité.",
+    "philosophy_title": "Notre Philosophie",
+    "philosophy": {
+      "homemade": "Cuisine Maison",
+      "quality": "Produits de Qualité",
+      "warmth": "Accueil Chaleureux",
+      "sharing": "Cuisine de Partage"
+    }
+  },
+  "Gallery": {
+    "title": "Galerie",
+    "subtitle": "Plongez dans l'ambiance Fattoush"
+  },
+  "Contact": {
+    "title": "Contact & Infos",
+    "subtitle": "Nous trouver et nous contacter",
+    "address_title": "Adresse",
+    "phone_title": "Téléphone",
+    "email_title": "Email",
+    "hours_title": "Horaires",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "send": "Envoyer"
+    }
+  },
+  "Navigation": {
+    "home": "Accueil",
+    "menu": "La Carte",
+    "about": "À Propos",
+    "gallery": "Galerie",
+    "contact": "Contact"
+  }
+}

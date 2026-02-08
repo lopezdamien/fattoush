@@ -1,0 +1,131 @@
+{
+    "HomePage": {
+        "title": "FATTOUSH",
+        "subtitle": "Authentic Lebanese cuisine in the heart of Geneva",
+        "cta": "View Menu",
+        "book": "Book a Table",
+        "spirit": {
+            "title": "The Fattoush Spirit",
+            "description": "FATTOUSH celebrates the richness of Lebanese cuisine through authentic recipes, fresh products, and know-how passed down with passion.",
+            "fresh": "Fresh Products",
+            "tradition": "Traditional Recipes",
+            "sharing": "Conviviality & Sharing"
+        },
+        "specialties": {
+            "title": "Our Specialties",
+            "description": "Discover the flavors of the Levant",
+            "mezze": "Lebanese Mezzes",
+            "grill": "Grills",
+            "vege": "Vegetarian Options",
+            "menu_btn": "Discover Full Menu"
+        },
+        "reservation": {
+            "title": "Book your table in a few clicks",
+            "btn": "Book Now"
+        }
+    },
+    "Menu": {
+        "title": "The Menu",
+        "subtitle": "A culinary journey",
+        "download": "Download Menu (PDF)",
+        "sections": {
+            "cold_mezze": "Cold Mezzes",
+            "hot_mezze": "Hot Mezzes",
+            "grill": "Grills",
+            "dessert": "Desserts"
+        },
+        "items": {
+            "hummus": {
+                "name": "Hummus",
+                "desc": "Chickpea puree, sesame cream, lemon, olive oil",
+                "price": "12 CHF"
+            },
+            "moutabal": {
+                "name": "Moutabal",
+                "desc": "Smoked eggplant caviar, sesame cream, pomegranate",
+                "price": "13 CHF"
+            },
+            "tabbouleh": {
+                "name": "Tabbouleh",
+                "desc": "Parsley, mint, tomatoes, onions, bulgur, lemon, olive oil",
+                "price": "14 CHF"
+            },
+            "fattoush": {
+                "name": "Fattoush",
+                "desc": "Mixed salad, toasted Lebanese bread, sumac, pomegranate molasses",
+                "price": "14 CHF"
+            },
+            "falafel": {
+                "name": "Falafel",
+                "desc": "Crispy chickpea and fava bean patties, tarator sauce",
+                "price": "12 CHF"
+            },
+            "kibbeh": {
+                "name": "Kibbeh",
+                "desc": "Meat and bulgur balls stuffed with pine nuts",
+                "price": "15 CHF"
+            },
+            "shish_taouk": {
+                "name": "Shish Taouk",
+                "desc": "Chicken skewers marinated in lemon and garlic",
+                "price": "26 CHF"
+            },
+            "kafta": {
+                "name": "Kafta",
+                "desc": "Minced meat skewers, parsley, onions",
+                "price": "26 CHF"
+            },
+            "mixed_grill": {
+                "name": "Mixed Grill",
+                "desc": "Assortment of skewers (Taouk, Kafta, Lamb)",
+                "price": "32 CHF"
+            },
+            "baklava": {
+                "name": "Baklavas",
+                "desc": "Pastries with nuts and pistachios, sugar syrup",
+                "price": "10 CHF"
+            },
+            "knefeh": {
+                "name": "Knefeh",
+                "desc": "Angel hair, melted cheese, syrup, pistachios (served warm)",
+                "price": "12 CHF"
+            }
+        }
+    },
+    "About": {
+        "title": "Our Story",
+        "history": "FATTOUSH was born from the desire to share sincere, generous, and modern Lebanese cuisine, faithful to traditions while being part of Genevan life. We believe that every dish tells a story, that of our roots and our passion for hospitality.",
+        "philosophy_title": "Our Philosophy",
+        "philosophy": {
+            "homemade": "Homemade Cuisine",
+            "quality": "Quality Products",
+            "warmth": "Warm Welcome",
+            "sharing": "Sharing Cuisine"
+        }
+    },
+    "Gallery": {
+        "title": "Gallery",
+        "subtitle": "Dive into the Fattoush atmosphere"
+    },
+    "Contact": {
+        "title": "Contact & Info",
+        "subtitle": "Find and contact us",
+        "address_title": "Address",
+        "phone_title": "Phone",
+        "email_title": "Email",
+        "hours_title": "Opening Hours",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "send": "Send"
+        }
+    },
+    "Navigation": {
+        "home": "Home",
+        "menu": "Menu",
+        "about": "About",
+        "gallery": "Gallery",
+        "contact": "Contact"
+    }
+}
