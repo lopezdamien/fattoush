@@ -20,14 +20,10 @@ export function Footer() {
                 </div>
 
                 {/* Column 2: Logo (Centered) */}
-                <div className="space-y-4 flex flex-col items-center justify-center order-first md:order-none">
-                    <div className="relative h-32 w-32 mb-4 bg-white/10 rounded-full p-2">
+                <div className="flex flex-col items-center justify-center order-first md:order-none">
+                    <div className="relative h-56 w-56 bg-white/10 rounded-full p-4 hover:scale-105 transition-transform duration-300">
                         <Image src="/images/logo.png" alt="Fattoush Logo" fill className="object-contain" />
                     </div>
-                    <h3 className="font-bold text-3xl tracking-wide">FATTOUSH</h3>
-                    <p className="text-white/80 text-sm max-w-xs mx-auto">
-                        Cuisine libanaise authentique au cœur de Genève.
-                    </p>
                 </div>
 
                 {/* Column 3: Hours */}
