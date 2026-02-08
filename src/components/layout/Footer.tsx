@@ -21,7 +21,7 @@ export function Footer() {
 
                 {/* Column 2: Logo (Centered) */}
                 <div className="flex flex-col items-center justify-center order-first md:order-none">
-                    <div className="relative h-56 w-56 bg-white/10 rounded-full p-4 hover:scale-105 transition-transform duration-300">
+                    <div className="relative h-40 w-40 bg-white/10 rounded-full p-4 hover:scale-105 transition-transform duration-300">
                         <Image src="/images/logo.png" alt="Fattoush Logo" fill className="object-contain" />
                     </div>
                 </div>

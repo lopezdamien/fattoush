@@ -3,6 +3,7 @@
 import { useLocale } from "next-intl";
 import { useRouter, usePathname, routing } from "@/i18n/routing";
 import { Button } from "@/components/ui/Button";
+import { cn } from "@/lib/utils";
 
 export function LanguageSwitcher() {
     const locale = useLocale();
@@ -18,10 +19,13 @@ export function LanguageSwitcher() {
             {routing.locales.map((l) => (
                 <Button
                     key={l}
-                    variant={locale === l ? "primary" : "ghost"}
+                    variant={locale === l ? "secondary" : "ghost"}
                     size="sm"
                     onClick={() => handleLocaleChange(l)}
-                    className="uppercase"
+                    className={cn(
+                        "uppercase font-medium",
+                        locale !== l && "text-white/70 hover:text-white hover:bg-white/10"
+                    )}
                 >
                     {l}
                 </Button>

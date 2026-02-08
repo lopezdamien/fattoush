@@ -18,16 +18,15 @@ export function Header() {
     ];
 
     return (
-        <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b">
+        <header className="fixed top-0 w-full z-50 bg-primary shadow-md">
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 <div className="flex items-center gap-4">
                     {/* Mobile menu trigger would go here */}
 
-                    <Link href="/" className="font-bold text-2xl text-primary flex items-center gap-2">
-                        <div className="relative h-12 w-12 rounded-full overflow-hidden">
+                    <Link href="/" className="flex items-center gap-2">
+                        <div className="relative h-12 w-12 rounded-full bg-white/10 p-1 overflow-hidden">
                             <Image src="/images/logo.png" alt="Fattoush Logo" fill className="object-cover" />
                         </div>
-                        <span className="hidden sm:inline">FATTOUSH</span>
                     </Link>
                 </div>
 
@@ -36,7 +35,7 @@ export function Header() {
                         <Link
                             key={link.href}
                             href={link.href}
-                            className="text-foreground/80 hover:text-primary transition-colors text-sm font-medium uppercase tracking-wide"
+                            className="text-white/90 hover:text-white transition-colors text-sm font-medium uppercase tracking-wide hover:underline underline-offset-4 decoration-2"
                         >
                             {t(link.label)}
                         </Link>
