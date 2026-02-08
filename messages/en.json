@@ -1,131 +1,210 @@
 {
-    "HomePage": {
-        "title": "FATTOUSH",
-        "subtitle": "Authentic Lebanese cuisine in the heart of Geneva",
-        "cta": "View Menu",
-        "book": "Book a Table",
-        "spirit": {
-            "title": "The Fattoush Spirit",
-            "description": "FATTOUSH celebrates the richness of Lebanese cuisine through authentic recipes, fresh products, and know-how passed down with passion.",
-            "fresh": "Fresh Products",
-            "tradition": "Traditional Recipes",
-            "sharing": "Conviviality & Sharing"
-        },
-        "specialties": {
-            "title": "Our Specialties",
-            "description": "Discover the flavors of the Levant",
-            "mezze": "Lebanese Mezzes",
-            "grill": "Grills",
-            "vege": "Vegetarian Options",
-            "menu_btn": "Discover Full Menu"
-        },
-        "reservation": {
-            "title": "Book your table in a few clicks",
-            "btn": "Book Now"
-        }
-    },
-    "Menu": {
-        "title": "The Menu",
-        "subtitle": "A culinary journey",
-        "download": "Download Menu (PDF)",
-        "sections": {
-            "cold_mezze": "Cold Mezzes",
-            "hot_mezze": "Hot Mezzes",
-            "grill": "Grills",
-            "dessert": "Desserts"
-        },
-        "items": {
-            "hummus": {
-                "name": "Hummus",
-                "desc": "Chickpea puree, sesame cream, lemon, olive oil",
-                "price": "12 CHF"
-            },
-            "moutabal": {
-                "name": "Moutabal",
-                "desc": "Smoked eggplant caviar, sesame cream, pomegranate",
-                "price": "13 CHF"
-            },
-            "tabbouleh": {
-                "name": "Tabbouleh",
-                "desc": "Parsley, mint, tomatoes, onions, bulgur, lemon, olive oil",
-                "price": "14 CHF"
-            },
-            "fattoush": {
-                "name": "Fattoush",
-                "desc": "Mixed salad, toasted Lebanese bread, sumac, pomegranate molasses",
-                "price": "14 CHF"
-            },
-            "falafel": {
-                "name": "Falafel",
-                "desc": "Crispy chickpea and fava bean patties, tarator sauce",
-                "price": "12 CHF"
-            },
-            "kibbeh": {
-                "name": "Kibbeh",
-                "desc": "Meat and bulgur balls stuffed with pine nuts",
-                "price": "15 CHF"
-            },
-            "shish_taouk": {
-                "name": "Shish Taouk",
-                "desc": "Chicken skewers marinated in lemon and garlic",
-                "price": "26 CHF"
-            },
-            "kafta": {
-                "name": "Kafta",
-                "desc": "Minced meat skewers, parsley, onions",
-                "price": "26 CHF"
-            },
-            "mixed_grill": {
-                "name": "Mixed Grill",
-                "desc": "Assortment of skewers (Taouk, Kafta, Lamb)",
-                "price": "32 CHF"
-            },
-            "baklava": {
-                "name": "Baklavas",
-                "desc": "Pastries with nuts and pistachios, sugar syrup",
-                "price": "10 CHF"
-            },
-            "knefeh": {
-                "name": "Knefeh",
-                "desc": "Angel hair, melted cheese, syrup, pistachios (served warm)",
-                "price": "12 CHF"
-            }
-        }
-    },
-    "About": {
-        "title": "Our Story",
-        "history": "FATTOUSH was born from the desire to share sincere, generous, and modern Lebanese cuisine, faithful to traditions while being part of Genevan life. We believe that every dish tells a story, that of our roots and our passion for hospitality.",
-        "philosophy_title": "Our Philosophy",
-        "philosophy": {
-            "homemade": "Homemade Cuisine",
-            "quality": "Quality Products",
-            "warmth": "Warm Welcome",
-            "sharing": "Sharing Cuisine"
-        }
-    },
-    "Gallery": {
-        "title": "Gallery",
-        "subtitle": "Dive into the Fattoush atmosphere"
-    },
-    "Contact": {
-        "title": "Contact & Info",
-        "subtitle": "Find and contact us",
-        "address_title": "Address",
-        "phone_title": "Phone",
-        "email_title": "Email",
-        "hours_title": "Opening Hours",
-        "form": {
-            "name": "Name",
-            "email": "Email",
-            "message": "Message",
-            "send": "Send"
-        }
-    },
     "Navigation": {
         "home": "Home",
         "menu": "Menu",
         "about": "About",
         "gallery": "Gallery",
-        "contact": "Contact"
+        "contact": "Contact",
+        "book": "Book a Table"
+    },
+    "HomePage": {
+        "title": "FATTOUSH",
+        "subtitle": "Authentic Lebanese Cuisine in the Heart of Geneva",
+        "cta": "View Menu",
+        "book": "Book a Table",
+        "spirit": {
+            "title": "The Fattoush Spirit",
+            "description": "A journey through the flavors of the Levant. Our cuisine celebrates sharing, freshness, and legendary Lebanese hospitality.",
+            "fresh": "Fresh Ingredients",
+            "tradition": "Traditional Savoir-Faire",
+            "sharing": "Conviviality"
+        },
+        "specialties": {
+            "title": "Our Specialties",
+            "description": "Discover the essentials of Lebanese gastronomy",
+            "mezze": "Cold & Hot Mezze",
+            "grill": "Wood-Fired Grills",
+            "vege": "Vegetarian Options",
+            "menu_btn": "Discover Full Menu"
+        },
+        "reservation": {
+            "title": "Ready to Travel?",
+            "btn": "Book Your Table"
+        }
+    },
+    "Menu": {
+        "title": "The Menu",
+        "subtitle": "Authentic and Generous Lebanese Cuisine",
+        "categories": {
+            "breakfast": "Lebanese Breakfast",
+            "cold_mezze": "Cold Mezze",
+            "hot_mezze": "Hot Mezze",
+            "mezze_menus": "Mezze Menus",
+            "main_dishes": "Main Dishes",
+            "grill": "Grills",
+            "sandwiches": "Sandwich Menus",
+            "dessert": "Desserts",
+            "drinks": "Drinks"
+        },
+        "items": {
+            "labneh": {
+                "name": "Labneh",
+                "desc": "Lebanese cream cheese, olive oil, zaatar",
+                "price": "12.-"
+            },
+            "foul": {
+                "name": "Foul Moudammas",
+                "desc": "Stewed fava beans, garlic, lemon, olive oil",
+                "price": "14.-"
+            },
+            "hummus": {
+                "name": "Hummus",
+                "desc": "Chickpea purée, sesame cream, lemon",
+                "price": "14.-"
+            },
+            "moutabal": {
+                "name": "Moutabal",
+                "desc": "Grilled eggplant caviar, sesame cream",
+                "price": "15.-"
+            },
+            "tabbouleh": {
+                "name": "Tabbouleh",
+                "desc": "Parsley, tomatoes, mint, onion, bulgur, lemon",
+                "price": "16.-"
+            },
+            "fattoush": {
+                "name": "Fattoush",
+                "desc": "Raw vegetable salad, toasted bread, sumac, pomegranate molasses",
+                "price": "16.-"
+            },
+            "warak_enab": {
+                "name": "Warak Enab",
+                "desc": "Vine leaves stuffed with rice and vegetables",
+                "price": "14.-"
+            },
+            "falafel": {
+                "name": "Falafel",
+                "desc": "Crispy chickpea and fava bean balls (4 pcs)",
+                "price": "12.-"
+            },
+            "kibbeh": {
+                "name": "Kibbeh",
+                "desc": "Meat and bulgur balls stuffed with meat (3 pcs)",
+                "price": "15.-"
+            },
+            "rakakat": {
+                "name": "Cheese Rakakat",
+                "desc": "Crispy cheese rolls (4 pcs)",
+                "price": "14.-"
+            },
+            "fatayer": {
+                "name": "Spinach Fatayer",
+                "desc": "Spinach and lemon turnovers (4 pcs)",
+                "price": "12.-"
+            },
+            "menu_decouverte": {
+                "name": "Discovery Menu (min 2 pers)",
+                "desc": "Assortment of 8 cold and hot mezzes",
+                "price": "38.- /pers"
+            },
+            "menu_royal": {
+                "name": "Royal Menu (min 2 pers)",
+                "desc": "Assortment of 10 mezzes + mixed grills + dessert",
+                "price": "55.- /pers"
+            },
+            "shish_taouk": {
+                "name": "Shish Taouk",
+                "desc": "Chicken skewers marinated in lemon and garlic",
+                "price": "28.-"
+            },
+            "kafta": {
+                "name": "Kafta",
+                "desc": "Minced meat skewers, parsley, onion",
+                "price": "29.-"
+            },
+            "mixed_grill": {
+                "name": "Mixed Grill",
+                "desc": "Assortment of 3 skewers (Chicken, Lamb, Kafta)",
+                "price": "34.-"
+            },
+            "shawarma_plate": {
+                "name": "Shawarma Plate",
+                "desc": "Marinated and roasted chicken or meat shavings",
+                "price": "29.-"
+            },
+            "taouk_sandwich": {
+                "name": "Shish Taouk Sandwich",
+                "desc": "Chicken, garlic, coleslaw, pickles",
+                "price": "18.-"
+            },
+            "falafel_sandwich": {
+                "name": "Falafel Sandwich",
+                "desc": "Falafel, parsley, tomatoes, turnips, tarator sauce",
+                "price": "16.-"
+            },
+            "baklava": {
+                "name": "Baklava",
+                "desc": "Puff pastry with walnuts and pistachios",
+                "price": "10.-"
+            },
+            "knefeh": {
+                "name": "Knefeh",
+                "desc": "Semolina and cheese cake, rose syrup",
+                "price": "12.-"
+            },
+            "mouhalabieh": {
+                "name": "Mouhalabieh",
+                "desc": "Milk flan, orange blossom, pistachios",
+                "price": "9.-"
+            },
+            "ayran": {
+                "name": "Homemade Ayran",
+                "desc": "Salty yogurt drink",
+                "price": "6.-"
+            },
+            "lemonade": {
+                "name": "Lebanese Lemonade",
+                "desc": "Lemon, mint, orange blossom",
+                "price": "7.-"
+            },
+            "arak": {
+                "name": "Arak (Glass)",
+                "desc": "Traditional Lebanese anise spirit",
+                "price": "9.-"
+            }
+        },
+        "footer": {
+            "taxes": "Prices in CHF – VAT included",
+            "allergens": "Allergen information available purely on request"
+        }
+    },
+    "About": {
+        "title": "Our Story",
+        "history": "The story of Fattoush begins in the vibrant narrative of Beirut's alleyways, where flavors mingle with laughter and lively conversations. Arriving in Geneva in 1990, we wanted to recreate this unique atmosphere: a generous table where every dish tells a story. For over 30 years, we have perpetuated the ancestral recipes of our grandmothers, adding our modern touch while respecting the authenticity of the products.",
+        "philosophy_title": "Our Philosophy",
+        "philosophy": {
+            "homemade": "Homemade",
+            "quality": "Premium Quality",
+            "warmth": "Warm Welcome",
+            "sharing": "Joy of Sharing"
+        }
+    },
+    "Gallery": {
+        "title": "Gallery",
+        "subtitle": "A glimpse into our culinary universe"
+    },
+    "Contact": {
+        "title": "Contact & Access",
+        "subtitle": "We look forward to welcoming you",
+        "address": "Address",
+        "hours": "Opening Hours",
+        "phone": "Phone",
+        "email": "Email",
+        "form": {
+            "name": "Full Name",
+            "email": "Email",
+            "message": "Your Message",
+            "send": "Send Message"
+        }
     }
 }

@@ -1,131 +1,210 @@
 {
+  "Navigation": {
+    "home": "Accueil",
+    "menu": "Menu",
+    "about": "À propos",
+    "gallery": "Galerie",
+    "contact": "Contact",
+    "book": "Réserver"
+  },
   "HomePage": {
     "title": "FATTOUSH",
     "subtitle": "Cuisine libanaise authentique au cœur de Genève",
-    "cta": "Voir la carte",
+    "cta": "Voir le menu",
     "book": "Réserver une table",
     "spirit": {
       "title": "L'Esprit Fattoush",
-      "description": "FATTOUSH célèbre la richesse de la cuisine libanaise à travers des recettes authentiques, des produits frais et un savoir-faire transmis avec passion.",
+      "description": "Une invitation au voyage à travers les saveurs du Levant. Notre cuisine célèbre le partage, la fraîcheur et l'hospitalité légendaire du Liban.",
       "fresh": "Produits Frais",
-      "tradition": "Recettes Traditionnelles",
-      "sharing": "Convivialité & Partage"
+      "tradition": "Savoir-faire Traditionnel",
+      "sharing": "Convivialité"
     },
     "specialties": {
       "title": "Nos Spécialités",
-      "description": "Découvrez les saveurs du Levant",
-      "mezze": "Mezzés Libanais",
-      "grill": "Grillades",
+      "description": "Découvrez les incontournables de la gastronomie libanaise",
+      "mezze": "Mezzés Frois & Chauds",
+      "grill": "Grillades au Feu de Bois",
       "vege": "Options Végétariennes",
       "menu_btn": "Découvrir toute la carte"
     },
     "reservation": {
-      "title": "Réservez votre table en quelques clics",
-      "btn": "Réserver maintenant"
+      "title": "Envie de voyager ?",
+      "btn": "Réserver votre table"
     }
   },
   "Menu": {
     "title": "La Carte",
-    "subtitle": "Une invitation au voyage culinaire",
-    "download": "Télécharger la carte en PDF",
-    "sections": {
+    "subtitle": "Cuisine libanaise authentique et généreuse",
+    "categories": {
+      "breakfast": "Petit-déjeuner",
       "cold_mezze": "Mezzés Froids",
       "hot_mezze": "Mezzés Chauds",
+      "mezze_menus": "Menus Mezzés",
+      "main_dishes": "Plats",
       "grill": "Grillades",
-      "dessert": "Desserts"
+      "sandwiches": "Menus Sandwich",
+      "dessert": "Desserts",
+      "drinks": "Boissons"
     },
     "items": {
+      "labneh": {
+        "name": "Labneh",
+        "desc": "Fromage blanc libanais, huile d'olive, zaatar",
+        "price": "12.-"
+      },
+      "foul": {
+        "name": "Foul Moudammas",
+        "desc": "Fèves mijotées, ail, citron, huile d'olive",
+        "price": "14.-"
+      },
       "hummus": {
-        "name": "Houmous",
-        "desc": "Purée de pois chiches, crème de sésame, citron, huile d'olive",
-        "price": "12 CHF"
+        "name": "Hummus",
+        "desc": "Purée de pois chiches, crème de sésame, citron",
+        "price": "14.-"
       },
       "moutabal": {
         "name": "Moutabal",
-        "desc": "Caviar d'aubergines fumées, crème de sésame, grenade",
-        "price": "13 CHF"
+        "desc": "Caviar d'aubergines grillées, crème de sésame",
+        "price": "15.-"
       },
       "tabbouleh": {
-        "name": "Taboulé",
-        "desc": "Persil plat, menthe, tomates, oignons, blé concassé, citron, huile d'olive",
-        "price": "14 CHF"
+        "name": "Tabbouleh",
+        "desc": "Persil, tomates, menthe, oignon, boulghour, citron",
+        "price": "16.-"
       },
       "fattoush": {
         "name": "Fattoush",
-        "desc": "Salade de crudités, pain libanais grillé, sumac, mélasse de grenade",
-        "price": "14 CHF"
+        "desc": "Salade de crudités, pain grillé, sumac, mélasse de grenade",
+        "price": "16.-"
+      },
+      "warak_enab": {
+        "name": "Warak Enab",
+        "desc": "Feuilles de vigne farcies au riz et légumes",
+        "price": "14.-"
       },
       "falafel": {
         "name": "Falafel",
-        "desc": "Boulettes de pois chiches et fèves croustillantes, sauce tarator",
-        "price": "12 CHF"
+        "desc": "Boulettes de pois chiches et fèves croustillantes (4 pièces)",
+        "price": "12.-"
       },
       "kibbeh": {
         "name": "Kibbeh",
-        "desc": "Boulettes de viande et blé concassé farcies aux pignons",
-        "price": "15 CHF"
+        "desc": "Boulettes de viande et boulghour farcies (3 pièces)",
+        "price": "15.-"
+      },
+      "rakakat": {
+        "name": "Rakakat Fromage",
+        "desc": "Rouleaux croustillants au fromage (4 pièces)",
+        "price": "14.-"
+      },
+      "fatayer": {
+        "name": "Fatayer Épinards",
+        "desc": "Chaussons aux épinards et citron (4 pièces)",
+        "price": "12.-"
+      },
+      "menu_decouverte": {
+        "name": "Menu Découverte (2 pers. min)",
+        "desc": "Assortiment de 8 mezzés froids et chauds",
+        "price": "38.- /pers"
+      },
+      "menu_royal": {
+        "name": "Menu Royal (2 pers. min)",
+        "desc": "Assortiment de 10 mezzés + grillades mixtes + désert",
+        "price": "55.- /pers"
       },
       "shish_taouk": {
         "name": "Shish Taouk",
-        "desc": "Brochettes de poulet mariné au citron et à l'ail",
-        "price": "26 CHF"
+        "desc": "Brochettes de poulet mariné au citron et ail",
+        "price": "28.-"
       },
       "kafta": {
         "name": "Kafta",
-        "desc": "Brochettes de viande hachée, persil, oignons",
-        "price": "26 CHF"
+        "desc": "Brochettes de viande hachée, persil, oignon",
+        "price": "29.-"
       },
       "mixed_grill": {
         "name": "Grillade Mixte",
-        "desc": "Assortiment de brochettes (Taouk, Kafta, Agneau)",
-        "price": "32 CHF"
+        "desc": "Assortiment de 3 brochettes (Poulet, Agneau, Kafta)",
+        "price": "34.-"
+      },
+      "shawarma_plate": {
+        "name": "Assiette Shawarma",
+        "desc": "Émincé de poulet ou viande mariné et rôti",
+        "price": "29.-"
+      },
+      "taouk_sandwich": {
+        "name": "Sandwich Shish Taouk",
+        "desc": "Poulet, ail, coleslaw, cornichons",
+        "price": "18.-"
+      },
+      "falafel_sandwich": {
+        "name": "Sandwich Falafel",
+        "desc": "Falafel, persil, tomates, navets, sauce tarator",
+        "price": "16.-"
       },
       "baklava": {
-        "name": "Baklavas",
-        "desc": "Feuilletés aux noix et pistaches, sirop de sucre",
-        "price": "10 CHF"
+        "name": "Baklava",
+        "desc": "Feuilletés aux noix et pistaches",
+        "price": "10.-"
       },
       "knefeh": {
         "name": "Knefeh",
-        "desc": "Cheveux d'ange, fromage fondant, sirop, pistaches (servi chaud)",
-        "price": "12 CHF"
+        "desc": "Gâteau au fromage et semoule, sirop de rose",
+        "price": "12.-"
+      },
+      "mouhalabieh": {
+        "name": "Mouhalabieh",
+        "desc": "Flan au lait, fleur d'oranger, pistaches",
+        "price": "9.-"
+      },
+      "ayran": {
+        "name": "Ayran Maison",
+        "desc": "Yaourt à boire salé",
+        "price": "6.-"
+      },
+      "lemonade": {
+        "name": "Limonade Libanaise",
+        "desc": "Citron, menthe, fleur d'oranger",
+        "price": "7.-"
+      },
+      "arak": {
+        "name": "Arak (Verre)",
+        "desc": "Anisé libanais traditionnel",
+        "price": "9.-"
       }
+    },
+    "footer": {
+      "taxes": "Prix en CHF – TVA incluse",
+      "allergens": "Informations sur les allergènes disponibles sur demande"
     }
   },
   "About": {
     "title": "Notre Histoire",
-    "history": "FATTOUSH est né de l’envie de partager une cuisine libanaise sincère, généreuse et moderne, fidèle aux traditions tout en s’inscrivant dans la vie genevoise. Nous croyons que chaque plat raconte une histoire, celle de nos racines et de notre passion pour l'hospitalité.",
+    "history": "L'histoire de Fattoush commence dans les ruelles vibrantes de Beyrouth, où les saveurs se mêlent aux rires et aux conversations animées. Arrivés à Genève en 1990, nous avons voulu recréer cette atmosphère unique : une table généreuse où chaque plat raconte une histoire. Depuis plus de 30 ans, nous perpétuons les recettes ancestrales de nos grands-mères, en y ajoutant notre touche moderne tout en respectant l'authenticité des produits.",
     "philosophy_title": "Notre Philosophie",
     "philosophy": {
-      "homemade": "Cuisine Maison",
-      "quality": "Produits de Qualité",
+      "homemade": "Fait Maison",
+      "quality": "Qualité Premium",
       "warmth": "Accueil Chaleureux",
-      "sharing": "Cuisine de Partage"
+      "sharing": "Plaisir du Partage"
     }
   },
   "Gallery": {
     "title": "Galerie",
-    "subtitle": "Plongez dans l'ambiance Fattoush"
+    "subtitle": "Un aperçu de notre univers culinaire"
   },
   "Contact": {
-    "title": "Contact & Infos",
-    "subtitle": "Nous trouver et nous contacter",
-    "address_title": "Adresse",
-    "phone_title": "Téléphone",
-    "email_title": "Email",
-    "hours_title": "Horaires",
+    "title": "Contact & Accès",
+    "subtitle": "Nous sommes impatients de vous accueillir",
+    "address": "Adresse",
+    "hours": "Horaires d'ouverture",
+    "phone": "Téléphone",
+    "email": "Email",
     "form": {
-      "name": "Nom",
+      "name": "Nom complet",
       "email": "Email",
-      "message": "Message",
-      "send": "Envoyer"
+      "message": "Votre message",
+      "send": "Envoyer le message"
     }
-  },
-  "Navigation": {
-    "home": "Accueil",
-    "menu": "La Carte",
-    "about": "À Propos",
-    "gallery": "Galerie",
-    "contact": "Contact"
   }
 }

@@ -23,10 +23,8 @@ export function Header() {
                 <div className="flex items-center gap-4">
                     {/* Mobile menu trigger would go here */}
 
-                    <Link href="/" className="flex items-center gap-2">
-                        <div className="relative h-12 w-12 rounded-full bg-white/10 p-1 overflow-hidden">
-                            <Image src="/images/logo.png" alt="Fattoush Logo" fill className="object-cover" />
-                        </div>
+                    <Link href="/" className="font-bold text-2xl text-white tracking-wider hover:opacity-90 transition-opacity">
+                        FATTOUSH
                     </Link>
                 </div>
 
