@@ -51,8 +51,8 @@ export default function ContactPage() {
     ];
 
     return (
-        <main className="pt-24 min-h-screen bg-secondary/30">
-            <Section className="text-center space-y-4 mb-8">
+        <main className="pt-20 min-h-screen bg-secondary/30">
+            <Section className="text-center space-y-4 mb-8 pt-8 md:pt-12">
                 <FadeIn>
                     <h1 className="text-4xl md:text-5xl font-bold text-primary">{t("title")}</h1>
                     <p className="text-xl text-muted-foreground">{t("subtitle")}</p>
