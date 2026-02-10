@@ -30,13 +30,13 @@ export function Footer() {
                 <div className="space-y-4 flex flex-col items-center justify-center">
                     <h4 className="font-semibold text-xl">Horaires</h4>
                     <ul className="space-y-2 text-sm opacity-90">
-                        <li>Lun - Sam: 11h - 23h</li>
+                        <li>Lun - Sam: 12h00 - 14h30 / 19h00 - 21h30</li>
                         <li>Dimanche: Fermé</li>
                     </ul>
                 </div>
             </div>
             <div className="container mx-auto px-4 mt-8 pt-8 border-t border-white/20 text-center text-sm opacity-60">
-                © {new Date().getFullYear()} FATTOUSH. All rights reserved.
+                &copy; {new Date().getFullYear()} FATTOUSH. All rights reserved.
             </div>
         </footer>
     );

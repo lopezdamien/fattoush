@@ -62,7 +62,7 @@ export default function ContactPage() {
             title: t("hours"),
             content: (
                 <>
-                    Lun - Sam: 11h - 23h<br />
+                    Lun - Sam: 12h00 - 14h30 / 19h00 - 21h30<br />
                     Dim: Fermé
                 </>
             )
