@@ -4,7 +4,7 @@ import { FadeIn } from "@/components/ui/FadeIn";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 
-type MenuCategory = "breakfast" | "cold_mezze" | "hot_mezze" | "mezze_menus" | "main_dishes" | "grill" | "sandwiches" | "dessert" | "drinks";
+type MenuCategory = "breakfast" | "cold_mezze" | "hot_mezze" | "mezze_menus" | "main_dishes" | "grill" | "sandwich_menus" | "kids_menus" | "desserts" | "drinks";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -21,20 +21,51 @@ export default function MenuPage() {
 
     // Definition of the menu structure with items for each category
     const menuStructure: Record<MenuCategory, string[]> = {
-        breakfast: ["labneh", "foul", "fatayer", "rakakat"],
-        cold_mezze: ["hummus", "moutabal", "tabbouleh", "fattoush", "warak_enab", "labneh"],
-        hot_mezze: ["falafel", "kibbeh", "rakakat", "fatayer", "foul"],
-        mezze_menus: ["menu_decouverte", "menu_royal"],
-        main_dishes: ["shawarma_plate"],
-        grill: ["shish_taouk", "kafta", "mixed_grill"],
-        sandwiches: ["taouk_sandwich", "falafel_sandwich"],
-        dessert: ["baklava", "knefeh", "mouhalabieh"],
-        drinks: ["ayran", "lemonade", "arak"]
+        breakfast: ["manouche_cheese", "manouche_zaatar", "lahm_bi_ajeen"],
+        cold_mezze: [
+            "foul", "shanklish", "labneh", "vine_leaves_veg",
+            "hummus", "moutabal", "vine_leaves_meat_piece",
+            "tabbouleh", "muhammara", "moussaka", "baba_ganouj",
+            "fattoush", "beetroot_hummus", "mixed_salad"
+        ],
+        hot_mezze: [
+            "batata_harra", "kebbeh_piece", "lentil_soup",
+            "falafel_piece", "fatayer_piece", "rikakat_piece",
+            "halloumi", "fries", "sfiha", "chicken_wings",
+            "makanek", "spicy_sausages", "meat_hummus"
+        ],
+        mezze_menus: ["cold_mezze_small_2", "cold_mezze_large_4", "hot_mezze_large_4"],
+        main_dishes: [
+            "kabsa_chicken", "kebbeh_bil_laban", "kabsa_meat",
+            "vine_leaves_main", "arayes"
+        ],
+        grill: [
+            "lamb_plate", "chicken_plate", "kafta_plate",
+            "lamb_chicken_plate", "arayes_family",
+            "family_grilled_chicken", "half_grilled_chicken",
+            "mixed_grill_skewers", "mixed_mezze_plate",
+            "mixed_grill_family"
+        ],
+        sandwich_menus: [
+            "falafel_sandwich_menu", "meat_sandwich_menu",
+            "chicken_sandwich_menu", "vege_plate"
+        ],
+        kids_menus: ["kids_menu"],
+        desserts: [
+            "knafeh", "baklava", "basboussa",
+            "katayef_walnut", "mouhalabieh",
+            "katayef_kashta", "gourmet_coffee"
+        ],
+        drinks: [
+            "coffee_tea", "black_tea", "ayran",
+            "mint_tea", "soft_drinks", "wine_glass"
+        ]
     };
 
     const categories: MenuCategory[] = [
         "breakfast", "cold_mezze", "hot_mezze", "mezze_menus",
-        "main_dishes", "grill", "sandwiches", "dessert", "drinks"
+        "main_dishes", "grill", "sandwich_menus", "kids_menus",
+        "desserts", "drinks"
     ];
 
     return (

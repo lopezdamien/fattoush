@@ -42,140 +42,346 @@
             "mezze_menus": "Mezze Menus",
             "main_dishes": "Main Dishes",
             "grill": "Grills",
-            "sandwiches": "Sandwich Menus",
-            "dessert": "Desserts",
+            "sandwich_menus": "Sandwich Menus",
+            "kids_menus": "Kids Menus",
+            "desserts": "Desserts",
             "drinks": "Drinks"
         },
         "items": {
-            "labneh": {
-                "name": "Labneh",
-                "desc": "Lebanese cream cheese, olive oil, zaatar",
+            "manouche_cheese": {
+                "name": "Cheese Manouche",
+                "desc": "Warm Lebanese flatbread topped with melted cheese",
                 "price": "12.-"
+            },
+            "manouche_zaatar": {
+                "name": "Zaatar Manouche",
+                "desc": "Traditional flatbread with Lebanese thyme, sesame and olive oil",
+                "price": "9.-"
+            },
+            "lahm_bi_ajeen": {
+                "name": "Lahm bi Ajeen",
+                "desc": "Thin flatbread with minced meat, Levantine spices and tomato",
+                "price": "15.-"
             },
             "foul": {
                 "name": "Foul Moudammas",
-                "desc": "Stewed fava beans, garlic, lemon, olive oil",
+                "desc": "Stewed fava beans, garlic, lemon and olive oil",
                 "price": "14.-"
+            },
+            "shanklish": {
+                "name": "Shanklish",
+                "desc": "Aged Lebanese cheese, tomatoes, onions and fresh herbs",
+                "price": "14.-"
+            },
+            "labneh": {
+                "name": "Labneh",
+                "desc": "Fresh Lebanese cheese, olive oil",
+                "price": "12.-"
+            },
+            "vine_leaves_veg": {
+                "name": "Vine Leaf (vegetarian, 1 piece)",
+                "desc": "Vine leaf",
+                "price": "1.50.-"
             },
             "hummus": {
                 "name": "Hummus",
-                "desc": "Chickpea purée, sesame cream, lemon",
-                "price": "14.-"
+                "desc": "Chickpea purée, tahini, lemon and olive oil",
+                "price": "12.-"
             },
             "moutabal": {
                 "name": "Moutabal",
-                "desc": "Grilled eggplant caviar, sesame cream",
-                "price": "15.-"
+                "desc": "Grilled eggplant, tahini and lemon",
+                "price": "13.-"
+            },
+            "vine_leaves_meat_piece": {
+                "name": "Vine Leaf (meat, 1 piece)",
+                "desc": "Vine leaf",
+                "price": "1.50.-"
             },
             "tabbouleh": {
                 "name": "Tabbouleh",
-                "desc": "Parsley, tomatoes, mint, onion, bulgur, lemon",
-                "price": "16.-"
+                "desc": "Parsley, bulgur, tomato, mint and lemon",
+                "price": "13.-"
+            },
+            "muhammara": {
+                "name": "Muhammara",
+                "desc": "Red pepper dip, walnuts and pomegranate molasses",
+                "price": "14.-"
+            },
+            "moussaka": {
+                "name": "Moussaka",
+                "desc": "Stewed eggplants, chickpeas and tomato",
+                "price": "14.-"
+            },
+            "baba_ganouj": {
+                "name": "Baba Ganouj",
+                "desc": "Smoked eggplants, tahini, garlic, lemon and olive oil",
+                "price": "13.-"
             },
             "fattoush": {
                 "name": "Fattoush",
-                "desc": "Raw vegetable salad, toasted bread, sumac, pomegranate molasses",
-                "price": "16.-"
-            },
-            "warak_enab": {
-                "name": "Warak Enab",
-                "desc": "Vine leaves stuffed with rice and vegetables",
-                "price": "14.-"
-            },
-            "falafel": {
-                "name": "Falafel",
-                "desc": "Crispy chickpea and fava bean balls (4 pcs)",
-                "price": "12.-"
-            },
-            "kibbeh": {
-                "name": "Kibbeh",
-                "desc": "Meat and bulgur balls stuffed with meat (3 pcs)",
+                "desc": "Crispy salad, fresh vegetables, toasted bread and sumac",
                 "price": "15.-"
             },
-            "rakakat": {
-                "name": "Cheese Rakakat",
-                "desc": "Crispy cheese rolls (4 pcs)",
+            "beetroot_hummus": {
+                "name": "Beetroot Hummus",
+                "desc": "Smooth beetroot hummus",
+                "price": "13.-"
+            },
+            "mixed_salad": {
+                "name": "Mixed Salad",
+                "desc": "Green salad and fresh vegetables",
+                "price": "10.-"
+            },
+            "batata_harra": {
+                "name": "Batata Harra",
+                "desc": "Sautéed potatoes, coriander, garlic and chili",
                 "price": "14.-"
             },
-            "fatayer": {
-                "name": "Spinach Fatayer",
-                "desc": "Spinach and lemon turnovers (4 pcs)",
-                "price": "12.-"
+            "kebbeh_piece": {
+                "name": "Kebbeh (1 piece)",
+                "desc": "Bulgur stuffed with spiced meat",
+                "price": "3.50.-"
             },
-            "menu_decouverte": {
-                "name": "Discovery Menu (min 2 pers)",
-                "desc": "Assortment of 8 cold and hot mezzes",
-                "price": "38.- /pers"
+            "lentil_soup": {
+                "name": "Lentil Soup",
+                "desc": "Coral lentils, cumin and lemon",
+                "price": "10.-"
             },
-            "menu_royal": {
-                "name": "Royal Menu (min 2 pers)",
-                "desc": "Assortment of 10 mezzes + mixed grills + dessert",
-                "price": "55.- /pers"
+            "falafel_piece": {
+                "name": "Falafel (1 piece)",
+                "desc": "Chickpea balls with herbs",
+                "price": "2.-"
             },
-            "shish_taouk": {
-                "name": "Shish Taouk",
-                "desc": "Chicken skewers marinated in lemon and garlic",
-                "price": "28.-"
+            "fatayer_piece": {
+                "name": "Fatayer (1 piece)",
+                "desc": "Turnover stuffed with spinach, meat or cheese",
+                "price": "3.-"
             },
-            "kafta": {
-                "name": "Kafta",
-                "desc": "Minced meat skewers, parsley, onion",
-                "price": "29.-"
+            "rikakat_piece": {
+                "name": "Rikakat (1 piece)",
+                "desc": "Crispy cheese cigar",
+                "price": "3.-"
             },
-            "mixed_grill": {
-                "name": "Mixed Grill",
-                "desc": "Assortment of 3 skewers (Chicken, Lamb, Kafta)",
-                "price": "34.-"
+            "halloumi": {
+                "name": "Halloumi",
+                "desc": "Grilled cheese",
+                "price": "14.-"
             },
-            "shawarma_plate": {
-                "name": "Shawarma Plate",
-                "desc": "Marinated and roasted chicken or meat shavings",
-                "price": "29.-"
+            "fries": {
+                "name": "French Fries",
+                "desc": "Homemade fries",
+                "price": "7.-"
             },
-            "taouk_sandwich": {
-                "name": "Shish Taouk Sandwich",
-                "desc": "Chicken, garlic, coleslaw, pickles",
+            "sfiha": {
+                "name": "Sfiha",
+                "desc": "Mini meat pie",
+                "price": "4.-"
+            },
+            "chicken_wings": {
+                "name": "Chicken Wings",
+                "desc": "Marinated and grilled wings",
+                "price": "15.-"
+            },
+            "makanek": {
+                "name": "Makanek",
+                "desc": "Mini Lebanese sausages sautéed with lemon",
+                "price": "15.-"
+            },
+            "spicy_sausages": {
+                "name": "Spicy Sausages",
+                "desc": "Grilled oriental sausages (4 pieces)",
+                "price": "15.-"
+            },
+            "meat_hummus": {
+                "name": "Hummus with Meat",
+                "desc": "Hot hummus topped with spiced minced meat",
+                "price": "16.-"
+            },
+            "cold_mezze_small_2": {
+                "name": "Cold Mezze (6 small dishes) – 2 persons",
+                "desc": "Hummus, moutabal, tabbouleh, muhammara, labneh, vegetarian vine leaves",
+                "price": "35.-"
+            },
+            "cold_mezze_large_4": {
+                "name": "Cold Mezze (6 large dishes) – 4 persons",
+                "desc": "Hummus, moutabal, tabbouleh, muhammara, labneh, vegetarian vine leaves",
+                "price": "65.-"
+            },
+            "hot_mezze_large_4": {
+                "name": "Hot Mezze (6 large dishes) – 4 persons",
+                "desc": "Makanek, soujouk, batata harra, chicken wings, kebbeh, falafel and rikakat",
+                "price": "70.-"
+            },
+            "kabsa_chicken": {
+                "name": "Chicken Kabsa",
+                "desc": "Spiced rice, chicken and mixed salad",
+                "price": "22.-"
+            },
+            "kebbeh_bil_laban": {
+                "name": "Kebbeh bil Laban",
+                "desc": "Kebbeh in hot yogurt sauce",
+                "price": "22.-"
+            },
+            "kabsa_meat": {
+                "name": "Meat Kabsa",
+                "desc": "Spiced rice, meat and mixed salad",
+                "price": "25.-"
+            },
+            "vine_leaves_main": {
+                "name": "Vine Leaves (meat)",
+                "desc": "With meat, served hot with lemon",
+                "price": "25.-"
+            },
+            "arayes": {
+                "name": "Arayes",
+                "desc": "Lebanese bread stuffed with grilled meat",
                 "price": "18.-"
             },
-            "falafel_sandwich": {
-                "name": "Falafel Sandwich",
-                "desc": "Falafel, parsley, tomatoes, turnips, tarator sauce",
-                "price": "16.-"
+            "lamb_plate": {
+                "name": "Lamb Plate",
+                "desc": "Lamb skewers marinated with spices",
+                "price": "28.-"
+            },
+            "chicken_plate": {
+                "name": "Chicken Plate",
+                "desc": "Chicken skewers marinated in garlic sauce",
+                "price": "22.-"
+            },
+            "kafta_plate": {
+                "name": "Kafta Plate",
+                "desc": "Beef skewers with herbs",
+                "price": "28.-"
+            },
+            "lamb_chicken_plate": {
+                "name": "Lamb/Chicken Plate",
+                "desc": "Lamb and chicken skewers marinated with spices",
+                "price": "25.-"
+            },
+            "arayes_family": {
+                "name": "Family Arayes Plate",
+                "desc": "Lebanese bread stuffed with meat, fries, hummus and harissa",
+                "price": "65.-"
+            },
+            "family_grilled_chicken": {
+                "name": "Family Grilled Chicken",
+                "desc": "Chicken marinated with lemon and garlic",
+                "price": "44.-"
+            },
+            "half_grilled_chicken": {
+                "name": "Half Grilled Chicken",
+                "desc": "Chicken marinated with lemon and garlic",
+                "price": "22.-"
+            },
+            "mixed_grill_skewers": {
+                "name": "Mixed Grill Skewers",
+                "desc": "Selection of Lebanese grills",
+                "price": "35.-"
+            },
+            "mixed_mezze_plate": {
+                "name": "Mixed Mezze Plate",
+                "desc": "Hummus, moutabal, chicken wings, kebbeh, fatayer, falafel, labneh, tabbouleh",
+                "price": "25.-"
+            },
+            "mixed_grill_family": {
+                "name": "Family Mixed Grill Plate",
+                "desc": "Lebanese bread stuffed with meat, fries, hummus and harissa",
+                "price": "70.-"
+            },
+            "falafel_sandwich_menu": {
+                "name": "Falafel Sandwich Menu",
+                "desc": "",
+                "price": "18.-"
+            },
+            "meat_sandwich_menu": {
+                "name": "Meat Sandwich Menu",
+                "desc": "",
+                "price": "20.-"
+            },
+            "chicken_sandwich_menu": {
+                "name": "Chicken Sandwich Menu",
+                "desc": "",
+                "price": "19.-"
+            },
+            "vege_plate": {
+                "name": "Vegetarian Plate",
+                "desc": "",
+                "price": "22.-"
+            },
+            "kids_menu": {
+                "name": "Kids Menu",
+                "desc": "Chicken or lamb skewer, fries",
+                "price": "15.-"
+            },
+            "knafeh": {
+                "name": "Knafeh",
+                "desc": "Crispy angel hair, cheese and orange blossom syrup",
+                "price": "7.-"
             },
             "baklava": {
                 "name": "Baklava",
-                "desc": "Puff pastry with walnuts and pistachios",
-                "price": "10.-"
+                "desc": "Puff pastry with dried fruits and honey",
+                "price": "7.-"
             },
-            "knefeh": {
-                "name": "Knefeh",
-                "desc": "Semolina and cheese cake, rose syrup",
-                "price": "12.-"
+            "basboussa": {
+                "name": "Basboussa",
+                "desc": "Semolina cake with syrup",
+                "price": "7.-"
+            },
+            "katayef_walnut": {
+                "name": "Walnut Katayef",
+                "desc": "Pancakes stuffed with walnuts, cinnamon and syrup",
+                "price": "7.-"
             },
             "mouhalabieh": {
                 "name": "Mouhalabieh",
-                "desc": "Milk flan, orange blossom, pistachios",
-                "price": "9.-"
+                "desc": "Perfumed milk flan",
+                "price": "8.-"
             },
-            "ayran": {
-                "name": "Homemade Ayran",
-                "desc": "Salty yogurt drink",
-                "price": "6.-"
-            },
-            "lemonade": {
-                "name": "Lebanese Lemonade",
-                "desc": "Lemon, mint, orange blossom",
+            "katayef_kashta": {
+                "name": "Kashta Katayef",
+                "desc": "Pancakes stuffed with kashta cream, syrup and pistachios",
                 "price": "7.-"
             },
-            "arak": {
-                "name": "Arak (Glass)",
-                "desc": "Traditional Lebanese anise spirit",
-                "price": "9.-"
+            "gourmet_coffee": {
+                "name": "Gourmet Coffee",
+                "desc": "",
+                "price": "12.-"
+            },
+            "coffee_tea": {
+                "name": "Coffee / Tea / Espresso",
+                "desc": "",
+                "price": "4.-"
+            },
+            "black_tea": {
+                "name": "Black Tea",
+                "desc": "",
+                "price": "4.-"
+            },
+            "ayran": {
+                "name": "Ayran",
+                "desc": "",
+                "price": "4.-"
+            },
+            "mint_tea": {
+                "name": "Mint Tea",
+                "desc": "",
+                "price": "6.-"
+            },
+            "soft_drinks": {
+                "name": "Soft Drinks",
+                "desc": "",
+                "price": "4.-"
+            },
+            "wine_glass": {
+                "name": "Wine by the Glass",
+                "desc": "",
+                "price": "8.-"
             }
         },
         "footer": {
             "taxes": "Prices in CHF – VAT included",
-            "allergens": "Allergen information available purely on request"
+            "allergens": "Allergen information available on request"
         }
     },
     "About": {
