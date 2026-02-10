@@ -70,27 +70,27 @@ export default function ContactPage() {
     ];
 
     return (
-        <main className="pt-16 min-h-screen bg-secondary/30">
-            <Section className="text-center space-y-4 mb-8 pt-4 md:pt-8">
+        <main className="pt-24 pb-8 md:pb-12 bg-secondary/30">
+            <Section className="text-center space-y-1 mb-6 pt-0">
                 <FadeIn>
                     <h1 className="text-4xl md:text-5xl font-bold text-primary">{t("title")}</h1>
-                    <p className="text-xl text-muted-foreground">{t("subtitle")}</p>
+                    <p className="text-lg text-muted-foreground">{t("subtitle")}</p>
                 </FadeIn>
             </Section>
 
-            <div className="container mx-auto px-4 pb-24">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start max-w-6xl mx-auto">
+            <div className="container mx-auto px-4">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-stretch max-w-6xl mx-auto">
                     {/* Contact Info */}
-                    <div className="grid gap-6">
+                    <div className="grid gap-4 content-start">
                         {contactInfo.map((info, idx) => (
                             <FadeIn key={idx} delay={0.1 * (idx + 1)} direction="right">
-                                <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm flex items-start gap-6 border border-border/50 hover:shadow-md transition-shadow">
-                                    <div className="bg-primary/10 p-4 rounded-full text-primary shrink-0">
-                                        <info.icon size={24} />
+                                <div className="bg-white p-5 md:p-6 rounded-xl shadow-sm flex items-center gap-5 border border-border/50 hover:shadow-md transition-shadow h-full">
+                                    <div className="bg-primary/10 p-3 rounded-full text-primary shrink-0">
+                                        <info.icon size={22} />
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-xl mb-2 text-foreground">{info.title}</h3>
-                                        <div className="text-muted-foreground leading-relaxed text-lg">
+                                        <h3 className="font-bold text-lg mb-1 text-foreground">{info.title}</h3>
+                                        <div className="text-muted-foreground leading-snug text-base">
                                             {info.content}
                                         </div>
                                     </div>
@@ -100,7 +100,7 @@ export default function ContactPage() {
                     </div>
 
                     {/* Map */}
-                    <FadeIn delay={0.5} direction="left" className="h-full min-h-[400px] lg:min-h-[600px] sticky top-24">
+                    <FadeIn delay={0.5} direction="left" className="h-full min-h-[450px] lg:min-h-[500px] sticky top-24">
                         <div className="h-full rounded-2xl overflow-hidden shadow-lg bg-white border border-border/50 relative">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.8842426868625!2d6.139158676839352!3d46.21557987109594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c65266e7401d1%3A0x629576442651475c!2sRue%20des%20Gares%207%2C%201201%20Gen%C3%A8ve%2C%20Switzerland!5e0!3m2!1sen!2s!4v1707412345678!5m2!1sen!2s"
