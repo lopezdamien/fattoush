@@ -34,7 +34,6 @@ export function Header() {
     const links = [
         { href: "/", label: "home" },
         { href: "/menu", label: "menu" },
-        { href: "/about", label: "about" },
         { href: "/gallery", label: "gallery" },
         { href: "/contact", label: "contact" },
     ];
