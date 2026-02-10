@@ -73,12 +73,12 @@ export function Header() {
 
     return (
         <header className="fixed top-0 w-full z-50 bg-primary/95 backdrop-blur-sm shadow-md transition-all duration-300">
-            <div className="container mx-auto px-4 h-16 md:h-20 flex items-center justify-between">
-                <div className="flex items-center gap-4 z-50 relative">
+            <div className="container mx-auto px-4 h-16 md:h-20 flex items-center justify-between relative">
+                <div className="flex items-center gap-4 z-50">
                     {/* Mobile menu trigger */}
                     <button
                         onClick={toggleMenu}
-                        className="md:hidden text-white hover:text-white/80 transition-colors p-2"
+                        className="md:hidden text-white hover:text-white/80 transition-colors p-2 relative z-50"
                         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                     >
                         <AnimatePresence mode="wait">
@@ -90,7 +90,7 @@ export function Header() {
                                     exit={{ rotate: 90, opacity: 0 }}
                                     transition={{ duration: 0.2 }}
                                 >
-                                    <X size={32} />
+                                    <X size={28} />
                                 </motion.div>
                             ) : (
                                 <motion.div
@@ -100,13 +100,21 @@ export function Header() {
                                     exit={{ rotate: -90, opacity: 0 }}
                                     transition={{ duration: 0.2 }}
                                 >
-                                    <Menu size={32} />
+                                    <Menu size={28} />
                                 </motion.div>
                             )}
                         </AnimatePresence>
                     </button>
 
-                    <Link href="/" className="font-bold text-2xl md:text-3xl text-white tracking-wider hover:opacity-90 transition-opacity z-50">
+                    {/* Desktop Logo */}
+                    <Link href="/" className="hidden md:block font-bold text-3xl text-white tracking-wider hover:opacity-90 transition-opacity z-50">
+                        FATTOUSH
+                    </Link>
+                </div>
+
+                {/* Mobile Logo (Centered) */}
+                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden z-50">
+                    <Link href="/" className="font-bold text-2xl text-white tracking-wider hover:opacity-90 transition-opacity">
                         FATTOUSH
                     </Link>
                 </div>
@@ -128,9 +136,6 @@ export function Header() {
                     <div className="hidden md:block">
                         <LanguageSwitcher />
                     </div>
-                    {/* Mobile Language Switcher stays visible or moves into menu? User asked for sandwich menu design, usually includes everything. 
-                        Let's keep it visible on mobile header too or just inside menu. 
-                        Common pattern: inside menu for cleaner header. I'll put it inside menu as requested in previous similar prompt. */}
                 </div>
             </div>
 
@@ -142,17 +147,15 @@ export function Header() {
                         animate="open"
                         exit="closed"
                         variants={menuVariants}
-                        className="fixed inset-0 bg-primary z-40 md:hidden flex flex-col items-center justify-center p-6 min-h-screen overflow-y-auto"
+                        className="fixed inset-0 bg-primary z-40 md:hidden flex flex-col items-center justify-center p-6 h-[100dvh]"
                     >
-                        {/* Decorative background elements if needed, keeping it clean for now */}
-
-                        <nav className="flex flex-col items-center gap-8 w-full max-w-md text-center py-10">
+                        <nav className="flex flex-col items-center gap-6 w-full max-w-md text-center py-4">
                             {links.map((link) => (
                                 <motion.div key={link.href} variants={itemVariants} className="w-full">
                                     <Link
                                         href={link.href}
                                         onClick={toggleMenu}
-                                        className="block text-4xl sm:text-5xl font-black text-white hover:text-[var(--color-green)] transition-colors tracking-tight py-2 uppercase"
+                                        className="block text-3xl font-black text-white hover:text-[var(--color-green)] transition-colors tracking-tight py-1 uppercase"
                                     >
                                         {t(link.label)}
                                     </Link>
@@ -160,22 +163,22 @@ export function Header() {
                             ))}
                         </nav>
 
-                        <motion.div variants={itemVariants} className="mt-8 flex flex-col items-center gap-8 w-full">
-                            <div className="w-16 h-1 bg-white/20 rounded-full" />
+                        <motion.div variants={itemVariants} className="mt-8 flex flex-col items-center gap-6 w-full">
+                            <div className="w-12 h-1 bg-white/20 rounded-full" />
 
-                            <div className="flex items-center gap-6 text-white/80">
-                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-green)] transition-colors hover:scale-110 transform duration-200">
-                                    <Instagram size={28} />
+                            <div className="flex items-center gap-8 text-white/80">
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-green)] transition-colors transform hover:scale-110">
+                                    <Instagram size={24} />
                                 </a>
-                                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-green)] transition-colors hover:scale-110 transform duration-200">
-                                    <Facebook size={28} />
+                                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-green)] transition-colors transform hover:scale-110">
+                                    <Facebook size={24} />
                                 </a>
-                                <a href="/contact" onClick={toggleMenu} className="hover:text-[var(--color-green)] transition-colors hover:scale-110 transform duration-200">
-                                    <MapPin size={28} />
+                                <a href="/contact" onClick={toggleMenu} className="hover:text-[var(--color-green)] transition-colors transform hover:scale-110">
+                                    <MapPin size={24} />
                                 </a>
                             </div>
 
-                            <div className="scale-125">
+                            <div className="scale-110 mt-2">
                                 <LanguageSwitcher />
                             </div>
                         </motion.div>

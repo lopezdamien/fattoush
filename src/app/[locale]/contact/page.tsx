@@ -22,21 +22,40 @@ export default function ContactPage() {
             icon: MapPin,
             title: t("address"),
             content: (
-                <>
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Rue+des+Gares+7-9,+1201+Genève"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors"
+                >
                     Rue des Gares 7-9<br />
                     1201 Genève
-                </>
+                </a>
             )
         },
         {
             icon: Phone,
             title: t("phone"),
-            content: "+41 22 910 45 50"
+            content: (
+                <a
+                    href="tel:+41229104550"
+                    className="hover:text-primary transition-colors"
+                >
+                    +41 22 910 45 50
+                </a>
+            )
         },
         {
             icon: Mail,
             title: t("email"),
-            content: "contact@fattoushgeneve.ch"
+            content: (
+                <a
+                    href="mailto:contact@fattoushgeneve.ch"
+                    className="hover:text-primary transition-colors"
+                >
+                    contact@fattoushgeneve.ch
+                </a>
+            )
         },
         {
             icon: Clock,
@@ -51,8 +70,8 @@ export default function ContactPage() {
     ];
 
     return (
-        <main className="pt-20 min-h-screen bg-secondary/30">
-            <Section className="text-center space-y-4 mb-8 pt-8 md:pt-12">
+        <main className="pt-16 min-h-screen bg-secondary/30">
+            <Section className="text-center space-y-4 mb-8 pt-4 md:pt-8">
                 <FadeIn>
                     <h1 className="text-4xl md:text-5xl font-bold text-primary">{t("title")}</h1>
                     <p className="text-xl text-muted-foreground">{t("subtitle")}</p>
@@ -82,16 +101,16 @@ export default function ContactPage() {
 
                     {/* Map */}
                     <FadeIn delay={0.5} direction="left" className="h-full min-h-[400px] lg:min-h-[600px] sticky top-24">
-                        <div className="h-full rounded-2xl overflow-hidden shadow-lg bg-white border border-border/50">
+                        <div className="h-full rounded-2xl overflow-hidden shadow-lg bg-white border border-border/50 relative">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.8842426868625!2d6.139158676839352!3d46.21557987109594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c65266e7401d1%3A0x629576442651475c!2sRue%20des%20Gares%207%2C%201201%20Gen%C3%A8ve%2C%20Switzerland!5e0!3m2!1sen!2s!4v1707412345678!5m2!1sen!2s"
                                 width="100%"
                                 height="100%"
-                                style={{ border: 0 }}
+                                style={{ border: 0, filter: "grayscale(100%) contrast(1.2) opacity(0.9)" }}
                                 allowFullScreen
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                className="w-full h-full"
+                                className="w-full h-full mix-blend-multiply"
                             ></iframe>
                         </div>
                     </FadeIn>
