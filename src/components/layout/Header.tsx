@@ -180,7 +180,7 @@ export function Header() {
                                     onClick={toggleMenu}
                                     className="block w-full"
                                 >
-                                    <Button variant="outline" size="lg" className="w-full text-xl py-6 border-2 border-white text-white hover:bg-white hover:text-primary transition-colors">
+                                    <Button size="lg" className="w-full text-xl py-6 bg-white text-primary hover:bg-white/90 font-bold uppercase transition-colors">
                                         {t("book")}
                                     </Button>
                                 </a>
