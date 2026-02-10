@@ -134,6 +134,17 @@ export function Header() {
 
                 <div className="flex items-center gap-4 z-50">
                     <div className="hidden md:block">
+                        <a
+                            href="https://widget.thefork.com/5461ec0f-3804-499f-8328-955b4654321f"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Button variant="secondary" size="sm" className="hidden lg:flex font-semibold">
+                                {t("book")}
+                            </Button>
+                        </a>
+                    </div>
+                    <div className="hidden md:block">
                         <LanguageSwitcher />
                     </div>
                 </div>
@@ -161,6 +172,20 @@ export function Header() {
                                     </Link>
                                 </motion.div>
                             ))}
+
+                            <motion.div variants={itemVariants} className="w-full pt-4">
+                                <a
+                                    href="https://widget.thefork.com/5461ec0f-3804-499f-8328-955b4654321f"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={toggleMenu}
+                                    className="block w-full"
+                                >
+                                    <Button variant="outline" size="lg" className="w-full text-xl py-6 border-2 border-white text-white hover:bg-white hover:text-primary transition-colors">
+                                        {t("book")}
+                                    </Button>
+                                </a>
+                            </motion.div>
                         </nav>
 
                         <motion.div variants={itemVariants} className="mt-8 flex flex-col items-center gap-6 w-full">

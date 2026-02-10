@@ -55,11 +55,11 @@ export default function Home() {
                   {t("cta")}
                 </Button>
               </Link>
-              <Link href="/reservation">
+              <a href="https://widget.thefork.com/5461ec0f-3804-499f-8328-955b4654321f" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="lg" className="text-lg px-8 py-6 h-auto shadow-lg hover:scale-105 transition-transform bg-transparent text-white border-2 border-white hover:bg-white hover:text-primary">
                   {t("book")}
                 </Button>
-              </Link>
+              </a>
             </div>
           </FadeIn>
         </div>
@@ -166,11 +166,11 @@ export default function Home() {
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <Link href="/reservation">
+            <a href="https://widget.thefork.com/5461ec0f-3804-499f-8328-955b4654321f" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 h-auto font-semibold">
                 {t("reservation.btn")}
               </Button>
-            </Link>
+            </a>
           </FadeIn>
         </div>
       </section>
