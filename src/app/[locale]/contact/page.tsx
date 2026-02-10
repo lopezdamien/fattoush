@@ -70,7 +70,7 @@ export default function ContactPage() {
     ];
 
     return (
-        <main className="pt-16 md:pt-20 pb-2 md:pb-6 bg-secondary/30">
+        <main className="pt-2 md:pt-6 pb-2 md:pb-6 bg-secondary/30">
             <Section className="text-center space-y-0.5 mb-2 py-0">
                 <FadeIn>
                     <h1 className="text-4xl md:text-5xl font-bold text-primary">{t("title")}</h1>
