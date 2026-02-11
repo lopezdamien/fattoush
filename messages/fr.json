@@ -36,7 +36,16 @@
     "title": "La Carte",
     "subtitle": "Cuisine libanaise authentique et généreuse",
     "categories": {
-      "breakfast": "Petit-déjeuner Libanais"
+      "breakfast": "Petit-déjeuner Libanais",
+      "cold_mezze": "Mezzés Froids",
+      "hot_mezze": "Mezzés Chauds",
+      "mezze_menus": "Menus Mezzés",
+      "main_dishes": "Plats",
+      "grill": "Grillades",
+      "sandwich_menus": "Menus Sandwich",
+      "kids_menus": "Menus Enfant",
+      "desserts": "Desserts",
+      "drinks": "Boissons"
     },
     "items": {
       "manouche_cheese": {
@@ -63,6 +72,311 @@
         "name": "Shanklish",
         "desc": "Fromage libanais affiné, tomates, oignons et herbes fraîches",
         "price": "14.-"
+      },
+      "labneh": {
+        "name": "Labneh",
+        "desc": "Fromage frais libanais, huile d’olive",
+        "price": "12.-"
+      },
+      "hummus": {
+        "name": "Houmous",
+        "desc": "Purée de pois chiches, tahini, citron et huile d’olive",
+        "price": "12.-"
+      },
+      "vine_leaves_veg": {
+        "name": "Feuille de vigne",
+        "desc": "Végétarien (1 pièce)",
+        "price": "1,50.-"
+      },
+      "vine_leaves_meat_piece": {
+        "name": "Feuille de vigne",
+        "desc": "Viande (1 pièce)",
+        "price": "1,50.-"
+      },
+      "moutabal": {
+        "name": "Moutabbal",
+        "desc": "Aubergine grillée, tahini et citron",
+        "price": "13.-"
+      },
+      "tabbouleh": {
+        "name": "Taboulé",
+        "desc": "Persil, boulgour, tomate, menthe et citron",
+        "price": "13.-"
+      },
+      "muhammara": {
+        "name": "Muhammara",
+        "desc": "Crème de poivrons rouges, noix et mélasse de grenade",
+        "price": "14.-"
+      },
+      "moussaka": {
+        "name": "Moussaka",
+        "desc": "Aubergines mijotées, pois chiches et tomate",
+        "price": "14.-"
+      },
+      "baba_ganouj": {
+        "name": "Baba Ganouj",
+        "desc": "Aubergines fumées, tahini, ail, citron et huile d’olive",
+        "price": "13.-"
+      },
+      "fattoush": {
+        "name": "Fattoush",
+        "desc": "Salade croquante, légumes frais, pain grillé et sumac",
+        "price": "15.-"
+      },
+      "beetroot_hummus": {
+        "name": "Houmous à la betterave",
+        "desc": "Houmous onctueux à la betterave",
+        "price": "13.-"
+      },
+      "mixed_salad": {
+        "name": "Salade mêlée",
+        "desc": "Salade verte et légumes frais",
+        "price": "10.-"
+      },
+      "batata_harra": {
+        "name": "Batata Harra",
+        "desc": "Pommes de terre sautées, coriandre, ail et piment",
+        "price": "14.-"
+      },
+      "lentil_soup": {
+        "name": "Soupe de lentilles",
+        "desc": "Lentilles corail, cumin et citron",
+        "price": "10.-"
+      },
+      "kebbeh_piece": {
+        "name": "Kebbeh (1 pièce)",
+        "desc": "Boulgour farci à la viande épicée",
+        "price": "3,50.-"
+      },
+      "falafel_piece": {
+        "name": "Falafel (1 pièce)",
+        "desc": "Boulettes de pois chiches aux herbes",
+        "price": "2.-"
+      },
+      "fatayer_piece": {
+        "name": "Fatayer (1 pièce)",
+        "desc": "Chausson farcis épinards, viande ou fromage",
+        "price": "3.-"
+      },
+      "rikakat_piece": {
+        "name": "Rikakat (1 pièce)",
+        "desc": "Cigare croustillant au fromage",
+        "price": "3.-"
+      },
+      "halloumi": {
+        "name": "Halloumi",
+        "desc": "Fromage grillé",
+        "price": "14.-"
+      },
+      "fries": {
+        "name": "Frites",
+        "desc": "Frites maison",
+        "price": "7.-"
+      },
+      "sfiha": {
+        "name": "Sfiha",
+        "desc": "Mini galette à la viande",
+        "price": "4.-"
+      },
+      "chicken_wings": {
+        "name": "Ailes de poulet",
+        "desc": "Ailes marinées et grillées",
+        "price": "15.-"
+      },
+      "makanek": {
+        "name": "Makanek",
+        "desc": "Mini saucisses libanaises sautées au citron",
+        "price": "15.-"
+      },
+      "spicy_sausages": {
+        "name": "Saucisses épicées",
+        "desc": "Saucisses orientales grillées (4 pièces)",
+        "price": "15.-"
+      },
+      "meat_hummus": {
+        "name": "Houmous à la viande",
+        "desc": "Houmous chaud garni de viande hachée épicée",
+        "price": "16.-"
+      },
+      "cold_mezze_small_2": {
+        "name": "Mezzés froids (6 petits plats) – 2 personnes",
+        "desc": "Houmous, moutabbal, taboulé, muhammara, labneh, feuille de vigne végétarienne",
+        "price": "35.-"
+      },
+      "cold_mezze_large_4": {
+        "name": "Mezzés froids (6 grands plats) – 4 personnes",
+        "desc": "Houmous, moutabbal, taboulé, muhammara, labneh, feuille de vigne végétarienne",
+        "price": "65.-"
+      },
+      "hot_mezze_large_4": {
+        "name": "Mezzés chauds (6 grands plats) – 4 personnes",
+        "desc": "Makanek, soujouk, batata harra, ailes de poulet, kebbeh, falafel et rikakat",
+        "price": "70.-"
+      },
+      "kabsa_chicken": {
+        "name": "Kabsa poulet",
+        "desc": "Riz épicé, poulet et salade mêlée",
+        "price": "22.-"
+      },
+      "kabsa_meat": {
+        "name": "Kabsa viande",
+        "desc": "Riz épicé, viande et salade mêlée",
+        "price": "25.-"
+      },
+      "kebbeh_bil_laban": {
+        "name": "Kebbeh bil laban",
+        "desc": "Kebbeh en sauce chaude au yaourt",
+        "price": "22.-"
+      },
+      "vine_leaves_main": {
+        "name": "Feuilles de vigne",
+        "desc": "À la viande, servies chaudes avec citron",
+        "price": "25.-"
+      },
+      "arayes": {
+        "name": "Arayes",
+        "desc": "Pain libanais farci à la viande grillée",
+        "price": "18.-"
+      },
+      "arayes_family": {
+        "name": "Assiette arayes familiale",
+        "desc": "Pain libanais farci à la viande, frites, houmous et harissa",
+        "price": "65.-"
+      },
+      "mixed_mezze_plate": {
+        "name": "Assiette mixte mezzés",
+        "desc": "Houmous, moutabbal, ailes de poulet, kebbeh, fatayer, falafel, labneh, taboulé",
+        "price": "25.-"
+      },
+      "lamb_plate": {
+        "name": "Assiette agneau",
+        "desc": "Brochettes d’agneau, marinées aux épices",
+        "price": "28.-"
+      },
+      "kafta_plate": {
+        "name": "Assiette kafta",
+        "desc": "Brochettes de bœuf aux herbes",
+        "price": "28.-"
+      },
+      "chicken_plate": {
+        "name": "Assiette poulet",
+        "desc": "Brochettes de poulet marinées, sauce à l’ail",
+        "price": "22.-"
+      },
+      "lamb_chicken_plate": {
+        "name": "Assiette agneau/poulet",
+        "desc": "Brochettes d’agneau et poulet marinées aux épices",
+        "price": "25.-"
+      },
+      "family_grilled_chicken": {
+        "name": "Poulet grillé familial",
+        "desc": "Poulet mariné citron et ail",
+        "price": "44.-"
+      },
+      "half_grilled_chicken": {
+        "name": "Demi-poulet grillé",
+        "desc": "Poulet mariné citron et ail",
+        "price": "22.-"
+      },
+      "mixed_grill_skewers": {
+        "name": "Brochettes mixtes grill",
+        "desc": "Sélection de grillades libanaises",
+        "price": "35.-"
+      },
+      "mixed_grill_family": {
+        "name": "Assiette mixte grill familiale",
+        "desc": "Pain libanais farci à la viande, frites, houmous et harissa",
+        "price": "70.-"
+      },
+      "falafel_sandwich_menu": {
+        "name": "Menu sandwich falafel",
+        "desc": "Servi avec houmous, sauce à l’ail, harissa, frites et salade",
+        "price": "18.-"
+      },
+      "chicken_sandwich_menu": {
+        "name": "Menu sandwich poulet",
+        "desc": "Servi avec houmous, sauce à l’ail, harissa, frites et salade",
+        "price": "19.-"
+      },
+      "meat_sandwich_menu": {
+        "name": "Menu sandwich viande",
+        "desc": "Servi avec houmous, sauce à l’ail, harissa, frites et salade",
+        "price": "20.-"
+      },
+      "vege_plate": {
+        "name": "Assiette végétarienne",
+        "desc": "Servi avec houmous, sauce à l’ail, harissa, frites et salade",
+        "price": "22.-"
+      },
+      "kids_menu": {
+        "name": "Menu pour enfant",
+        "desc": "Brochette poulet ou agneau, frites",
+        "price": "15.-"
+      },
+      "knafeh": {
+        "name": "Knafeh",
+        "desc": "Cheveux d’ange croustillants, fromage et sirop à la fleur d’oranger",
+        "price": "7.-"
+      },
+      "basboussa": {
+        "name": "Basboussa",
+        "desc": "Gâteau de semoule au sirop",
+        "price": "7.-"
+      },
+      "baklava": {
+        "name": "Baklava",
+        "desc": "Feuilleté aux fruits secs et miel",
+        "price": "7.-"
+      },
+      "mouhalabieh": {
+        "name": "Mouhalabieh",
+        "desc": "Flan au lait parfumé",
+        "price": "8.-"
+      },
+      "katayef_walnut": {
+        "name": "Katayef aux noix",
+        "desc": "Crêpes farcies aux noix, cannelle et sirop",
+        "price": "7.-"
+      },
+      "katayef_kashta": {
+        "name": "Katayef à la kashta",
+        "desc": "Crêpes farcies de crème kashta, sirop et pistaches",
+        "price": "7.-"
+      },
+      "coffee_tea": {
+        "name": "Café / thé / espresso",
+        "desc": "",
+        "price": "4.-"
+      },
+      "black_tea": {
+        "name": "Thé noir",
+        "desc": "",
+        "price": "4.-"
+      },
+      "gourmet_coffee": {
+        "name": "Café gourmand",
+        "desc": "",
+        "price": "12.-"
+      },
+      "mint_tea": {
+        "name": "Théière à la menthe",
+        "desc": "",
+        "price": "6.-"
+      },
+      "soft_drinks": {
+        "name": "Boissons sans alcool",
+        "desc": "",
+        "price": "4.-"
+      },
+      "wine_glass": {
+        "name": "Vin au verre",
+        "desc": "",
+        "price": "8.-"
+      },
+      "ayran": {
+        "name": "Ayran",
+        "desc": "",
+        "price": "4.-"
       }
     },
     "footer": {
