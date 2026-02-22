@@ -14,6 +14,7 @@ export function Footer() {
                     <ul className="space-y-2 text-sm opacity-90">
                         <li>Rue des Gares 7-9</li>
                         <li>1201 Genève</li>
+                        <li>Suisse</li>
                         <li>+41 22 910 45 50</li>
                         <li>contact@fattoushgeneve.ch</li>
                     </ul>

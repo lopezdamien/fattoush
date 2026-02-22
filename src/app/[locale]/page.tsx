@@ -174,6 +174,20 @@ export default function Home() {
           </FadeIn>
         </div>
       </section>
+
+      {/* SEO Local Section */}
+      <section className="bg-white py-16">
+        <div className="container mx-auto px-4 max-w-3xl text-center">
+          <FadeIn>
+            <h2 className="text-2xl font-bold text-primary mb-4">
+              Restaurant libanais à Genève – Rue des Gares
+            </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Fattoush est un restaurant libanais situé à la Rue des Gares 7-9, à Genève, à proximité immédiate de la Gare Cornavin. Que ce soit pour un déjeuner convivial, un dîner entre amis ou une découverte des saveurs du Levant, notre équipe vous accueille dans un cadre chaleureux au cœur du quartier des Grottes.
+            </p>
+          </FadeIn>
+        </div>
+      </section>
     </main>
   );
 }
