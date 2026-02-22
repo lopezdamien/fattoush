@@ -13,7 +13,7 @@ const ibmPlex = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Fattoush - Cuisine Libanaise Authentique",
+  title: "FATTOUSH - Cuisine libanaise authentique à Genève",
   description: "Restaurant libanais authentique au cœur de Genève. Mezzés, grillades et saveurs du Levant.",
 };
 
