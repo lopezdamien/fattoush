@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const t = await getTranslations({ locale, namespace: 'HomePage' });
 
   return {
-    title: t('metaTitle'),
+    title: "FATTOUSH - Cuisine libanaise authentique à Genève",
     description: t('spirit.description')
   };
 }
