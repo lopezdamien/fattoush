@@ -9,7 +9,7 @@
   },
   "HomePage": {
     "title": "FATTOUSH",
-    "subtitle": "Cuisine libanaise authentique à la Rue des Gares, à deux pas de la Gare Cornavin à Genève",
+    "subtitle": "Cuisine libanaise authentique<br></br>à deux pas de la Gare Cornavin à Genève",
     "cta": "Voir le menu",
     "book": "Réserver une table",
     "spirit": {
@@ -22,9 +22,9 @@
     "specialties": {
       "title": "Nos Spécialités",
       "description": "Découvrez les incontournables de la gastronomie libanaise à Genève, à proximité de la Gare Cornavin",
-      "mezze": "Mezzés Frois & Chauds",
-      "grill": "Grillades au Feu de Bois",
-      "vege": "Options Végétariennes",
+      "mezze": "Mezzés Froids & Chauds",
+      "grill": "Grillades",
+      "vege": "Mets Végétariens",
       "menu_btn": "Découvrir toute la carte"
     },
     "reservation": {

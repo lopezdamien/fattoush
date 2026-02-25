@@ -27,7 +27,7 @@ export default function Home() {
       <section className="relative h-[80vh] w-full flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero.png"
+            src="/images/hero.jpg"
             alt="Fattoush Hero"
             fill
             className="object-cover"
@@ -45,7 +45,7 @@ export default function Home() {
           </FadeIn>
           <FadeIn direction="up" delay={0.2}>
             <p className="text-xl md:text-2xl font-light max-w-2xl mx-auto drop-shadow-sm">
-              {t("subtitle")}
+              {t.rich("subtitle", { br: () => <br /> })}
             </p>
           </FadeIn>
           <FadeIn direction="up" delay={0.4}>
@@ -117,7 +117,7 @@ export default function Home() {
           <FadeIn delay={0.2}>
             <Card className="overflow-hidden border-none shadow-md hover:shadow-xl transition-shadow duration-300">
               <div className="relative h-64 w-full">
-                <Image src="/images/mezze.png" alt="Mezze" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="/images/mezze.jpg" alt="Mezze" fill className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <CardHeader>
                 <CardTitle>{t("specialties.mezze")}</CardTitle>
@@ -128,7 +128,7 @@ export default function Home() {
           <FadeIn delay={0.4}>
             <Card className="overflow-hidden border-none shadow-md hover:shadow-xl transition-shadow duration-300">
               <div className="relative h-64 w-full">
-                <Image src="/images/grill.png" alt="Grill" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="/images/grill.jpg" alt="Grill" fill className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <CardHeader>
                 <CardTitle>{t("specialties.grill")}</CardTitle>
@@ -139,7 +139,7 @@ export default function Home() {
           <FadeIn delay={0.6}>
             <Card className="overflow-hidden border-none shadow-md hover:shadow-xl transition-shadow duration-300">
               <div className="relative h-64 w-full">
-                <Image src="/images/vegetarian.png" alt="Vegetarian" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="/images/vegetarian.jpg" alt="Vegetarian" fill className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <CardHeader>
                 <CardTitle>{t("specialties.vege")}</CardTitle>
