@@ -3,6 +3,7 @@ import { Section } from "@/components/ui/Section";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
+import { Leaf } from "lucide-react";
 
 type MenuCategory = "breakfast" | "cold_mezze" | "hot_mezze" | "mezze_menus" | "main_dishes" | "grill" | "sandwich_menus" | "kids_menus" | "desserts" | "drinks";
 
@@ -130,6 +131,44 @@ export default function MenuPage() {
                     <p className="text-xl text-muted-foreground">{t("subtitle")}</p>
                 </FadeIn>
             </Section>
+
+            {/* Plat du Jour (Compact version) */}
+            <div className="container mx-auto px-4 mb-8">
+                <FadeIn delay={0.1}>
+                    <div className="relative overflow-hidden bg-[#F6F4F0] rounded-xl border border-primary/10 p-6 md:p-10 flex flex-col items-center justify-center gap-5 shadow-sm text-center">
+                        <div className="absolute right-0 top-0 text-primary opacity-5 transform translate-x-1/4 -translate-y-1/4 pointer-events-none">
+                            <Leaf size={240} />
+                        </div>
+
+                        <div className="relative z-10 flex flex-col items-center space-y-3 w-full max-w-2xl">
+                            <div className="inline-flex items-center space-x-3 justify-center w-full">
+                                <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase">
+                                    Plat du jour • Mardi 02 Mars
+                                </span>
+                            </div>
+
+                            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                                Mloukhiyé traditionnel libanais
+                            </h2>
+
+                            <div className="space-y-1">
+                                <p className="text-base text-muted-foreground font-medium">
+                                    Poulet, ail sauté, riz blanc, citron et coriandre
+                                </p>
+                                <p className="text-sm italic text-muted-foreground/80">
+                                    Servi avec une salade en entrée
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="relative z-10 mt-2">
+                            <span className="inline-block bg-primary text-secondary px-8 py-2.5 rounded-full font-semibold text-lg hover:shadow-md transition-shadow">
+                                CHF 19.90
+                            </span>
+                        </div>
+                    </div>
+                </FadeIn>
+            </div>
 
             <div className="container mx-auto px-4 pb-12 space-y-8">
                 {(categories).map((category, sectionIndex) => (

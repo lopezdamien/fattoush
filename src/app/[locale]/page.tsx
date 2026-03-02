@@ -65,6 +65,8 @@ export default function Home() {
         </div>
       </section>
 
+
+
       {/* Spirit Section */}
       <Section className="bg-background text-center space-y-12">
         <FadeIn>
