@@ -125,12 +125,12 @@ export default function MenuPage() {
 
     return (
         <main className="pt-24 min-h-screen bg-secondary/30">
-            <Section className="text-center space-y-4">
+            <div className="container mx-auto px-4 text-center space-y-4 pt-8 pb-6 md:pt-10 lg:pt-12">
                 <FadeIn>
-                    <h1 className="text-5xl font-bold text-primary">{t("title")}</h1>
-                    <p className="text-xl text-muted-foreground">{t("subtitle")}</p>
+                    <h1 className="text-4xl md:text-5xl font-bold text-primary">{t("title")}</h1>
+                    <p className="text-lg md:text-xl text-muted-foreground mt-2">{t("subtitle")}</p>
                 </FadeIn>
-            </Section>
+            </div>
 
             {/* Plat du Jour (Compact version) */}
             <div className="container mx-auto px-4 mb-8">
