@@ -124,8 +124,8 @@ export default function MenuPage() {
     ];
 
     return (
-        <main className="pt-24 min-h-screen bg-secondary/30">
-            <div className="container mx-auto px-4 text-center space-y-4 pt-8 pb-6 md:pt-10 lg:pt-12">
+        <main className="pt-20 md:pt-24 min-h-screen bg-secondary/30">
+            <div className="container mx-auto px-4 text-center space-y-2 pb-6">
                 <FadeIn>
                     <h1 className="text-4xl md:text-5xl font-bold text-primary">{t("title")}</h1>
                     <p className="text-lg md:text-xl text-muted-foreground mt-2">{t("subtitle")}</p>
