@@ -135,36 +135,35 @@ export default function MenuPage() {
             {/* Plat du Jour (Compact version) */}
             <div className="container mx-auto px-4 mb-8">
                 <FadeIn delay={0.1}>
-                    <div className="relative overflow-hidden bg-[#F6F4F0] rounded-xl border border-primary/10 p-6 md:p-10 flex flex-col items-center justify-center gap-5 shadow-sm text-center">
+                    <div className="relative overflow-hidden bg-[#F6F4F0] rounded-xl border border-primary/10 p-6 md:p-8 flex flex-col items-center justify-center gap-6 shadow-sm text-center">
                         <div className="absolute right-0 top-0 text-primary opacity-5 transform translate-x-1/4 -translate-y-1/4 pointer-events-none">
                             <Leaf size={240} />
                         </div>
 
-                        <div className="relative z-10 flex flex-col items-center space-y-3 w-full max-w-2xl">
-                            <div className="inline-flex items-center space-x-3 justify-center w-full">
-                                <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase">
-                                    Plat du jour • Mercredi 04 Mars
-                                </span>
-                            </div>
-
-                            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                                Agneau rôti au four
-                            </h2>
-
-                            <div className="space-y-1">
-                                <p className="text-base text-muted-foreground font-medium">
-                                    Agneau mijoté au four, accompagné d'une purée de pommes de terre
-                                </p>
-                                <p className="text-sm italic text-muted-foreground/80">
-                                    Servi avec une salade en entrée
-                                </p>
-                            </div>
+                        <div className="relative z-10 inline-flex items-center space-x-3 justify-center w-full">
+                            <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase">
+                                Plats du jour • Jeudi 05 Mars
+                            </span>
                         </div>
 
-                        <div className="relative z-10 mt-2">
-                            <span className="inline-block bg-primary text-secondary px-8 py-2.5 rounded-full font-semibold text-lg hover:shadow-md transition-shadow">
-                                CHF 19.90
-                            </span>
+                        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
+                            <div className="flex flex-col items-center space-y-2">
+                                <h2 className="text-xl md:text-2xl font-bold text-foreground">
+                                    Viande hachée, légumes grillés & riz
+                                </h2>
+                                <p className="text-sm text-muted-foreground font-medium">
+                                    Mijoté à la tomate, légumes et riz parfumé.
+                                </p>
+                            </div>
+
+                            <div className="flex flex-col items-center space-y-2">
+                                <h2 className="text-xl md:text-2xl font-bold text-foreground">
+                                    Yogurt libanais aux pois chiches
+                                </h2>
+                                <p className="text-sm text-muted-foreground font-medium">
+                                    Pois chiches fondants & pain grillé
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </FadeIn>
