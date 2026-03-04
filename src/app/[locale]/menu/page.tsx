@@ -143,17 +143,17 @@ export default function MenuPage() {
                         <div className="relative z-10 flex flex-col items-center space-y-3 w-full max-w-2xl">
                             <div className="inline-flex items-center space-x-3 justify-center w-full">
                                 <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase">
-                                    Plat du jour • Mardi 02 Mars
+                                    Plat du jour • Mercredi 04 Mars
                                 </span>
                             </div>
 
                             <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                                Mloukhiyé traditionnel libanais
+                                Agneau rôti au four
                             </h2>
 
                             <div className="space-y-1">
                                 <p className="text-base text-muted-foreground font-medium">
-                                    Poulet, ail sauté, riz blanc, citron et coriandre
+                                    Agneau mijoté au four, accompagné d'une purée de pommes de terre
                                 </p>
                                 <p className="text-sm italic text-muted-foreground/80">
                                     Servi avec une salade en entrée
