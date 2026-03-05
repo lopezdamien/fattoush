@@ -142,27 +142,22 @@ export default function MenuPage() {
 
                         <div className="relative z-10 inline-flex items-center space-x-3 justify-center w-full">
                             <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase">
-                                Plats du jour • Jeudi 05 Mars
+                                Plat du jour • Jeudi 05 Mars
                             </span>
                         </div>
 
-                        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
+                        <div className="relative z-10 flex flex-col items-center justify-center space-y-4 w-full max-w-2xl text-center">
                             <div className="flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground">
-                                    Viande hachée, légumes grillés & riz
+                                    Filet de poisson & légumes sautés
                                 </h2>
-                                <p className="text-sm text-muted-foreground font-medium">
-                                    Mijoté à la tomate, légumes et riz parfumé.
+                                <p className="text-sm md:text-base text-foreground/80 font-medium">
+                                    Cuisson au four, accompagné d’une salade fraîche.<br />
+                                    Assiette apéritive en entrée.
                                 </p>
-                            </div>
-
-                            <div className="flex flex-col items-center space-y-2">
-                                <h2 className="text-xl md:text-2xl font-bold text-foreground">
-                                    Yogurt libanais aux pois chiches
-                                </h2>
-                                <p className="text-sm text-muted-foreground font-medium">
-                                    Pois chiches fondants & pain grillé
-                                </p>
+                                <span className="text-lg font-bold text-primary mt-2">
+                                    CHF 22.-
+                                </span>
                             </div>
                         </div>
                     </div>
