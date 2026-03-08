@@ -142,18 +142,18 @@ export default function MenuPage() {
 
                         <div className="relative z-10 inline-flex items-center space-x-3 justify-center w-full">
                             <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase">
-                                Plat du jour • Jeudi 05 Mars
+                                Plat du jour • Lundi 09 Mars
                             </span>
                         </div>
 
                         <div className="relative z-10 flex flex-col items-center justify-center space-y-4 w-full max-w-2xl text-center">
                             <div className="flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground">
-                                    Filet de poisson & légumes sautés
+                                    Agneau mijoté aux gombos
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Cuisson au four, accompagné d’une salade fraîche.<br />
-                                    Assiette apéritive en entrée.
+                                    Sauce tomate parfumée et riz libanais.<br />
+                                    Salade fraîche en entrée.
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
                                     CHF 22.-
