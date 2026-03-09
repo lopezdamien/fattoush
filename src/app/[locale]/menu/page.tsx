@@ -149,11 +149,10 @@ export default function MenuPage() {
                         <div className="relative z-10 flex flex-col items-center justify-center space-y-4 w-full max-w-2xl text-center">
                             <div className="flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground">
-                                    Agneau mijoté aux gombos
+                                    Ragoût de lentilles et riz aux oignons frits
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Sauce tomate parfumée et riz libanais.<br />
-                                    Salade fraîche en entrée.
+                                    Servi avec une salade de yogourt ou une salade fraîche
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
                                     CHF 22.-
