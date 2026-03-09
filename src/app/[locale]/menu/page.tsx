@@ -142,7 +142,7 @@ export default function MenuPage() {
 
                         <div className="relative z-10 inline-flex items-center space-x-3 justify-center w-full">
                             <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase">
-                                Plat du jour • Lundi 09 Mars
+                                Plat du jour • Mardi 10 Mars
                             </span>
                         </div>
 
