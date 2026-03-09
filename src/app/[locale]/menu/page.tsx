@@ -146,16 +146,32 @@ export default function MenuPage() {
                             </span>
                         </div>
 
-                        <div className="relative z-10 flex flex-col items-center justify-center space-y-4 w-full max-w-2xl text-center">
-                            <div className="flex flex-col items-center space-y-2">
+                        <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 w-full max-w-4xl text-center">
+                            <div className="flex-1 flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground">
-                                    Ragoût de lentilles et riz aux oignons frits
+                                    Mujadara
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Servi avec une salade de yogourt ou une salade fraîche
+                                    Ragoût de lentilles et riz aux oignons frits.<br />
+                                    Servi avec salade de yogourt ou salade fraîche.
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
-                                    CHF 22.-
+                                    CHF 19.50.–
+                                </span>
+                            </div>
+
+                            <div className="w-16 h-px md:w-px md:h-24 bg-primary/20 shrink-0"></div>
+
+                            <div className="flex-1 flex flex-col items-center space-y-2">
+                                <h2 className="text-xl md:text-2xl font-bold text-foreground">
+                                    Kawaj d’agneau
+                                </h2>
+                                <p className="text-sm md:text-base text-foreground/80 font-medium">
+                                    Agneau mijoté aux légumes sautés, servi avec purée.<br />
+                                    Accompagné de salade de yogourt ou salade fraîche.
+                                </p>
+                                <span className="text-lg font-bold text-primary mt-2">
+                                    CHF 22.–
                                 </span>
                             </div>
                         </div>
