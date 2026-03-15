@@ -152,7 +152,7 @@ export default function MenuPage() {
                                     Mansaf d’agneau
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Riz parfumé aux épices orientales et agneau mijoté<br />
+                                    Riz parfumé, cacahuètes, pignons et agneau mijoté<br />
                                     Servi avec salade fraîche ou salade de yogourt
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
