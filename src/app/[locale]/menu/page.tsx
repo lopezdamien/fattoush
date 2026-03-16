@@ -142,18 +142,19 @@ export default function MenuPage() {
 
                         <div className="relative z-10 inline-flex items-center space-x-3 justify-center w-full">
                             <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase">
-                                Plat du jour • Lundi 16 Mars
+                                Plat du jour • Mardi 17 Mars
                             </span>
                         </div>
 
                         <div className="relative z-10 flex flex-col items-center justify-center space-y-4 w-full max-w-2xl text-center">
                             <div className="flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground">
-                                    Mansaf d’agneau
+                                    Ouzi d’agneau
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Riz parfumé, cacahuètes, pignons et agneau mijoté<br />
-                                    Servi avec salade fraîche ou salade de yogourt
+                                    Riz parfumé et agneau mijoté enveloppés dans une pâte,<br />
+                                    petits pois, cacahuètes et pignons de pin<br />
+                                    servi avec yogourt au concombre
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
                                     CHF 22.–
