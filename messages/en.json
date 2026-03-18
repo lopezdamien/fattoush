@@ -2,6 +2,7 @@
     "Navigation": {
         "home": "Home",
         "menu": "Menu",
+        "snack": "Snack",
         "about": "About",
         "gallery": "Gallery",
         "contact": "Contact",
@@ -377,6 +378,52 @@
                 "name": "Ayran",
                 "desc": "",
                 "price": "4.-"
+            }
+        },
+        "footer": {
+            "taxes": "Prices in CHF – VAT included",
+            "allergens": "Allergen information available on request"
+        }
+    },
+    "Snack": {
+        "title": "Snack",
+        "subtitle": "Sandwiches in Lebanese bread or homemade flatbread",
+        "category": "Sandwiches",
+        "items": {
+            "falafel": {
+                "name": "Falafel",
+                "desc": "Chickpea balls, vegetables, tahini sauce",
+                "price": "9.-"
+            },
+            "tawouk": {
+                "name": "Chicken Tawouk",
+                "desc": "Marinated grilled chicken, salad, condiments, garlic sauce",
+                "price": "10.-"
+            },
+            "chawarma_poulet": {
+                "name": "Chicken Chawarma",
+                "desc": "Spit-roasted chicken, fresh vegetables, homemade sauce",
+                "price": "10.-"
+            },
+            "chawarma_agneau": {
+                "name": "Lamb Chawarma",
+                "desc": "Spiced lamb, onions, tomatoes, oriental sauce",
+                "price": "12.-"
+            },
+            "kafta": {
+                "name": "Kafta",
+                "desc": "Meat balls, onions, peppers, tahini sauce",
+                "price": "12.-"
+            },
+            "mix_frit": {
+                "name": "Fried Mix",
+                "desc": "Fried eggplant, potatoes, cauliflower, tahini sauce",
+                "price": "9.-"
+            },
+            "makanek": {
+                "name": "Makanek",
+                "desc": "Lebanese sausages pan-fried with lemon",
+                "price": "12.-"
             }
         },
         "footer": {

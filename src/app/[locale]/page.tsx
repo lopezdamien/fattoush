@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { Section } from "@/components/ui/Section";
 import { Card, CardTitle, CardHeader } from "@/components/ui/Card";
 import Image from "next/image";
-import { Leaf, ScrollText, Users } from "lucide-react";
+import { Leaf, ScrollText, Users, ChevronRight } from "lucide-react";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { getTranslations } from "next-intl/server";
 
@@ -66,6 +66,50 @@ export default function Home() {
       </section>
 
 
+
+      {/* Order Online Section */}
+      <Section className="bg-secondary/30 border-y border-primary/10">
+        <FadeIn>
+          <div className="text-center mb-12 space-y-2">
+            <h2 className="text-3xl font-bold text-primary">Commander à emporter &amp; Livraison</h2>
+            <p className="text-muted-foreground">Profitez de nos spécialités libanaises où que vous soyez</p>
+          </div>
+        </FadeIn>
+
+        <div className="flex justify-center items-center gap-6 sm:gap-12 max-w-3xl mx-auto pt-4">
+          <FadeIn delay={0.2}>
+            <a
+              href="https://www.ubereats.com/ch-fr/store/fattoush-geneve/nVyVEntTWCiSdvc2tu-15A"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block relative w-28 h-28 sm:w-32 sm:h-32 mx-auto rounded-[1.25rem] sm:rounded-[1.5rem] overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:scale-105"
+            >
+              <Image
+                src="/images/ubereats.png"
+                alt="Uber Eats"
+                fill
+                className="object-cover"
+              />
+            </a>
+          </FadeIn>
+
+          <FadeIn delay={0.4}>
+            <a
+              href="https://www.just-eat.ch/en/menu/fattoush-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block relative w-28 h-28 sm:w-32 sm:h-32 mx-auto rounded-[1.25rem] sm:rounded-[1.5rem] overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:scale-105"
+            >
+              <Image
+                src="/images/justeat.png"
+                alt="Just Eat"
+                fill
+                className="object-cover"
+              />
+            </a>
+          </FadeIn>
+        </div>
+      </Section>
 
       {/* Spirit Section */}
       <Section className="bg-background text-center space-y-12">

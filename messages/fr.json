@@ -2,6 +2,7 @@
   "Navigation": {
     "home": "Accueil",
     "menu": "Menu",
+    "snack": "Snack",
     "about": "À propos",
     "gallery": "Galerie",
     "contact": "Contact",
@@ -377,6 +378,52 @@
         "name": "Ayran",
         "desc": "",
         "price": "4.-"
+      }
+    },
+    "footer": {
+      "taxes": "Prix en CHF – TVA incluse",
+      "allergens": "Informations sur les allergènes disponibles sur demande"
+    }
+  },
+  "Snack": {
+    "title": "Snack",
+    "subtitle": "Sandwichs dans pain libanais ou galette maison",
+    "category": "Sandwichs",
+    "items": {
+      "falafel": {
+        "name": "Falafel",
+        "desc": "Boulettes de pois chiches, légumes, sauce tahini",
+        "price": "9.-"
+      },
+      "tawouk": {
+        "name": "Tawouk Poulet",
+        "desc": "Poulet mariné grillé, salade, condiments, sauce à l'ail",
+        "price": "10.-"
+      },
+      "chawarma_poulet": {
+        "name": "Chawarma Poulet",
+        "desc": "Poulet rôti à la broche, crudités, sauce maison",
+        "price": "10.-"
+      },
+      "chawarma_agneau": {
+        "name": "Chawarma Agneau",
+        "desc": "Agneau épicé, oignons, tomates, sauce orientale",
+        "price": "12.-"
+      },
+      "kafta": {
+        "name": "Kafta",
+        "desc": "Boulettes de viande, oignons, poivrons, sauce tahini",
+        "price": "12.-"
+      },
+      "mix_frit": {
+        "name": "Mix Frit",
+        "desc": "Aubergines, pommes de terre, choux-fleurs frits, sauce tahini",
+        "price": "9.-"
+      },
+      "makanek": {
+        "name": "Makanek",
+        "desc": "Saucisses libanaises poêlées au citron",
+        "price": "12.-"
       }
     },
     "footer": {
