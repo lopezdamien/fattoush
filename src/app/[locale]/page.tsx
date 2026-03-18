@@ -71,7 +71,7 @@ export default function Home() {
       <Section className="bg-secondary/30 border-y border-primary/10">
         <FadeIn>
           <div className="text-center mb-12 space-y-2">
-            <h2 className="text-3xl font-bold text-primary">Commander à emporter &amp; Livraison</h2>
+            <h2 className="text-3xl font-bold text-primary">Commander à l'emporter &amp; Livraison</h2>
             <p className="text-muted-foreground">Profitez de nos spécialités libanaises où que vous soyez</p>
           </div>
         </FadeIn>
