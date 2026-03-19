@@ -141,22 +141,35 @@ export default function MenuPage() {
                         </div>
 
                         <div className="relative z-10 inline-flex items-center space-x-3 justify-center w-full">
-                            <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase">
-                                Plat du jour • Jeudi 19 Mars
+                            <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase text-center">
+                                Plats du jour • Vendredi 20 Mars
                             </span>
                         </div>
 
-                        <div className="relative z-10 flex flex-col items-center justify-center space-y-4 w-full max-w-2xl text-center">
+                        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl text-center mt-2">
                             <div className="flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground">
-                                    Mahshi
+                                    Sayadieh de loup de mer
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Courgettes, aubergines, feuilles de vigne et chou-fleur farcis à la viande et au riz<br />
-                                    Servi avec salade fraîche
+                                    Loup de mer grillé, riz et cacahuètes<br />
+                                    Accompagné d'une salade libanaise
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
                                     CHF 23.–
+                                </span>
+                            </div>
+                            
+                            <div className="flex flex-col items-center space-y-2">
+                                <h2 className="text-xl md:text-2xl font-bold text-foreground">
+                                    Dardara
+                                </h2>
+                                <p className="text-sm md:text-base text-foreground/80 font-medium">
+                                    Riz et lentilles aux oignons grillés<br />
+                                    Servi avec yogourt au concombre
+                                </p>
+                                <span className="text-lg font-bold text-primary mt-2">
+                                    CHF 19.90.–
                                 </span>
                             </div>
                         </div>
