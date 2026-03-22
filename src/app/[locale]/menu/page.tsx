@@ -142,31 +142,41 @@ export default function MenuPage() {
 
                         <div className="relative z-10 inline-flex items-center space-x-3 justify-center w-full">
                             <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase text-center">
-                                Plats du jour • Vendredi 20 Mars
+                                Plats du jour • Lundi 23 Mars
                             </span>
                         </div>
 
-                        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl text-center mt-2">
+                        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-8 w-full max-w-5xl text-center mt-2">
                             <div className="flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground">
-                                    Sayadieh de loup de mer
+                                    Feuilles de vignes à la viande
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Loup de mer grillé, riz et cacahuètes<br />
-                                    Accompagné d'une salade libanaise
+                                    Garnies de riz et viande d'agneau
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
-                                    CHF 23.–
+                                    CHF 25.–
                                 </span>
                             </div>
                             
                             <div className="flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground">
-                                    Dardara
+                                    Daoud Basha
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Riz et lentilles aux oignons grillés<br />
-                                    Servi avec yogourt au concombre
+                                    Viande hachée en sauce tomate, riz & vermicelles
+                                </p>
+                                <span className="text-lg font-bold text-primary mt-2">
+                                    CHF 22.–
+                                </span>
+                            </div>
+
+                            <div className="flex flex-col items-center space-y-2">
+                                <h2 className="text-xl md:text-2xl font-bold text-foreground">
+                                    Option végétarienne
+                                </h2>
+                                <p className="text-sm md:text-base text-foreground/80 font-medium">
+                                    Nos plats du jour peuvent être adaptés sur demande
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
                                     CHF 19.90.–
