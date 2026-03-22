@@ -149,10 +149,10 @@ export default function MenuPage() {
                         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-8 w-full max-w-5xl text-center mt-2">
                             <div className="flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground">
-                                    Feuilles de vignes à la viande
+                                    Feuilles de vigne à la viande
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Garnies de riz et viande d'agneau
+                                    Garnies de riz et d’agneau
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
                                     CHF 25.–
@@ -164,7 +164,7 @@ export default function MenuPage() {
                                     Daoud Basha
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Viande hachée en sauce tomate, riz & vermicelles
+                                    Boulettes de viande en sauce tomate, riz & vermicelles
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
                                     CHF 22.–
@@ -176,7 +176,7 @@ export default function MenuPage() {
                                     Option végétarienne
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Nos plats du jour peuvent être adaptés sur demande
+                                    Adaptation du plat du jour sur demande
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
                                     CHF 19.90.–
