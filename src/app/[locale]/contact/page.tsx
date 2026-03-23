@@ -62,7 +62,7 @@ export default function ContactPage() {
             title: t("hours"),
             content: (
                 <>
-                    Lun - Dim: 12h00 - 14h30 / 19h00 - 21h30
+                    Lun - Dim: 12h00 - 15h00 / 18h30 - 21h30
                 </>
             )
         }
