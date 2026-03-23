@@ -156,7 +156,7 @@ export default function MenuPage() {
                                     servi avec yogourt au concombre
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
-                                    CHF 22.–
+                                    CHF 23.–
                                 </span>
                             </div>
 
