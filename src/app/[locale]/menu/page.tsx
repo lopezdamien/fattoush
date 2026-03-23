@@ -142,29 +142,18 @@ export default function MenuPage() {
 
                         <div className="relative z-10 inline-flex items-center space-x-3 justify-center w-full">
                             <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase text-center">
-                                Plats du jour • Lundi 23 Mars
+                                Plat du jour • Mardi 24 Mars
                             </span>
                         </div>
 
-                        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-8 w-full max-w-5xl text-center mt-2">
+                        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-5xl text-center mt-2">
                             <div className="flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground">
-                                    Feuilles de vigne à la viande
+                                    Ouzi d’agneau
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Garnies de riz et d’agneau
-                                </p>
-                                <span className="text-lg font-bold text-primary mt-2">
-                                    CHF 25.–
-                                </span>
-                            </div>
-                            
-                            <div className="flex flex-col items-center space-y-2">
-                                <h2 className="text-xl md:text-2xl font-bold text-foreground">
-                                    Daoud Basha
-                                </h2>
-                                <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Boulettes de viande en sauce tomate, riz & vermicelles
+                                    Riz parfumé et agneau mijoté enveloppés dans une pâte feuilletée,<br />
+                                    servi avec yogourt au concombre
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
                                     CHF 22.–
