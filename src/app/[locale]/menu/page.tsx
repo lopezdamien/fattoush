@@ -149,11 +149,11 @@ export default function MenuPage() {
                         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-5xl text-center mt-2">
                             <div className="flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground">
-                                    Ouzi d’agneau
+                                    RIZ AU POULET
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Riz parfumé et agneau mijoté enveloppés dans une pâte feuilletée,<br />
-                                    servi avec yogourt au concombre
+                                    Volaille grillée, riz aux vermicelles et cacahuètes<br />
+                                    Servi avec salade & yogurt au concombre
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
                                     CHF 23.–
