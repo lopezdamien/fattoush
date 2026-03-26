@@ -142,27 +142,27 @@ export default function MenuPage() {
 
                         <div className="relative z-10 inline-flex items-center space-x-3 justify-center w-full">
                             <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase text-center">
-                                Plat du jour • Jeudi 26 Mars
+                                Plat du jour • Vendredi 27 Mars
                             </span>
                         </div>
 
                         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-5xl text-center mt-2">
                             <div className="flex flex-col items-center space-y-2">
-                                <h2 className="text-xl md:text-2xl font-bold text-foreground">
-                                    MANSAF D’AGNEAU
+                                <h2 className="text-xl md:text-2xl font-bold text-foreground uppercase">
+                                    FILET DE SAUMON & FREEKEH
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Riz parfumé et agneau<br />
-                                    Servi avec yogourt au concombre
+                                    Blé vert, légumes sautés et oignons caramélisés<br />
+                                    Servi avec salade fraîche
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
-                                    CHF 23.–
+                                    CHF 22.–
                                 </span>
                             </div>
 
                             <div className="flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground">
-                                    Option végétarienne
+                                    OPTION VÉGÉTARIENNE
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
                                     Adaptation du plat du jour sur demande
