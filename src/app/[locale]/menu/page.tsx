@@ -152,7 +152,7 @@ export default function MenuPage() {
                                     MLOUKHIYÉ
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Poulet servi avec des feuilles d’épinard mijotées<br />
+                                    Poulet servi avec des feuilles de corète mijotées<br />
                                     accompagné de riz blanc<br />
                                     Servi avec salade fraîche
                                 </p>
