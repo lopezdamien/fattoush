@@ -83,8 +83,11 @@ export default function SnackPage() {
                             {t("pizzas.category")}
                         </h2>
 
-                        <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-lg p-4 text-center">
-                            <p className="text-primary font-bold text-lg">{t("pizzas.promo")}</p>
+                        <div className="relative bg-[#2E593F] text-white rounded-xl p-5 md:p-6 text-center shadow-lg border-2 border-[#2E593F]/30 overflow-hidden">
+                            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent)] pointer-events-none" />
+                            <p className="relative text-xl md:text-2xl font-extrabold tracking-wide drop-shadow-sm">
+                                🍕 {t("pizzas.promo")} 🍕
+                            </p>
                         </div>
 
                         <p className="text-muted-foreground text-sm italic text-center">
