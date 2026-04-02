@@ -86,7 +86,7 @@ export default function SnackPage() {
                         <div className="relative bg-[#2E593F] text-white rounded-xl p-5 md:p-6 text-center shadow-lg border-2 border-[#2E593F]/30 overflow-hidden">
                             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent)] pointer-events-none" />
                             <p className="relative text-xl md:text-2xl font-extrabold tracking-wide drop-shadow-sm">
-                                🍕 {t("pizzas.promo")} 🍕
+                                {t("pizzas.promo")}
                             </p>
                         </div>
 
