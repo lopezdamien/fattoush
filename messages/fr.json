@@ -426,6 +426,53 @@
         "price": "12.-"
       }
     },
+    "pizzas": {
+      "category": "Pizzas",
+      "promo": "OFFRE SPÉCIALE : Toutes les pizzas à 12.- pendant un mois !!!!",
+      "coming_soon": "Bientôt disponible — restez à l'écoute !",
+      "items": {
+        "margherita": {
+          "name": "Pizza Margherita",
+          "desc": "Tomate, mozzarella, basilic",
+          "price": "12.-"
+        },
+        "sicilienne": {
+          "name": "Pizza Sicilienne",
+          "desc": "Tomate, mozzarella, thon, oignon, olives",
+          "price": "12.-"
+        },
+        "napolitaine": {
+          "name": "Pizza Napolitaine",
+          "desc": "Tomate, mozzarella, anchois, câpres, olives",
+          "price": "12.-"
+        },
+        "quatre_saisons": {
+          "name": "Pizza Quatre Saisons",
+          "desc": "Tomate, mozzarella, poivron, champignon, aubergine, artichaut, olives",
+          "price": "12.-"
+        },
+        "quatre_fromages": {
+          "name": "Pizza 4 Fromages",
+          "desc": "Tomate, mozzarella, gorgonzola, cheddar, parmesan",
+          "price": "12.-"
+        },
+        "calzone": {
+          "name": "Pizza Calzone",
+          "desc": "Tomate, mozzarella, jambon, artichaut, œuf",
+          "price": "12.-"
+        },
+        "champignon": {
+          "name": "Pizza Champignon",
+          "desc": "Tomate, mozzarella, champignons de Paris, olives, basilic",
+          "price": "12.-"
+        },
+        "vegetarienne": {
+          "name": "Pizza Végétarienne",
+          "desc": "Tomate, mozzarella, poivron, champignon, aubergine, courgette",
+          "price": "12.-"
+        }
+      }
+    },
     "footer": {
       "taxes": "Prix en CHF – TVA incluse",
       "allergens": "Informations sur les allergènes disponibles sur demande"

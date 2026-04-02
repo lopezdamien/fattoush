@@ -12,6 +12,17 @@ const snackItems = [
     "makanek",
 ];
 
+const pizzaItems = [
+    "margherita",
+    "sicilienne",
+    "napolitaine",
+    "quatre_saisons",
+    "quatre_fromages",
+    "calzone",
+    "champignon",
+    "vegetarienne",
+];
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: "Snack" });
@@ -56,6 +67,47 @@ export default function SnackPage() {
                                         </div>
                                         <p className="text-muted-foreground text-sm leading-snug">
                                             {t(`items.${item}.desc`)}
+                                        </p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </FadeIn>
+            </div>
+
+            <div className="container mx-auto px-4 pb-12">
+                <FadeIn delay={0.2}>
+                    <div id="pizzas" className="space-y-4 scroll-mt-24">
+                        <h2 className="text-2xl font-bold text-primary border-b border-primary/20 pb-2">
+                            {t("pizzas.category")}
+                        </h2>
+
+                        <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-lg p-4 text-center">
+                            <p className="text-primary font-bold text-lg">{t("pizzas.promo")}</p>
+                        </div>
+
+                        <p className="text-muted-foreground text-sm italic text-center">
+                            {t("pizzas.coming_soon")}
+                        </p>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            {pizzaItems.map((item) => (
+                                <div
+                                    key={item}
+                                    className="flex flex-col justify-between p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow group h-full"
+                                >
+                                    <div className="space-y-1">
+                                        <div className="flex justify-between items-start gap-2">
+                                            <h3 className="text-lg font-semibold group-hover:text-primary transition-colors leading-tight">
+                                                {t(`pizzas.items.${item}.name`)}
+                                            </h3>
+                                            <span className="font-bold text-primary whitespace-nowrap">
+                                                {t(`pizzas.items.${item}.price`)}
+                                            </span>
+                                        </div>
+                                        <p className="text-muted-foreground text-sm leading-snug">
+                                            {t(`pizzas.items.${item}.desc`)}
                                         </p>
                                     </div>
                                 </div>

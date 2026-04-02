@@ -426,6 +426,53 @@
                 "price": "12.-"
             }
         },
+        "pizzas": {
+            "category": "Pizzas",
+            "promo": "SPECIAL OFFER: All pizzas at 12.- for one month!!!!",
+            "coming_soon": "Coming soon — stay tuned!",
+            "items": {
+                "margherita": {
+                    "name": "Pizza Margherita",
+                    "desc": "Tomato, mozzarella, basil",
+                    "price": "12.-"
+                },
+                "sicilienne": {
+                    "name": "Pizza Siciliana",
+                    "desc": "Tomato, mozzarella, tuna, onion, olives",
+                    "price": "12.-"
+                },
+                "napolitaine": {
+                    "name": "Pizza Napoletana",
+                    "desc": "Tomato, mozzarella, anchovies, capers, olives",
+                    "price": "12.-"
+                },
+                "quatre_saisons": {
+                    "name": "Pizza Four Seasons",
+                    "desc": "Tomato, mozzarella, bell pepper, mushroom, eggplant, artichoke, olives",
+                    "price": "12.-"
+                },
+                "quatre_fromages": {
+                    "name": "Pizza 4 Cheeses",
+                    "desc": "Tomato, mozzarella, gorgonzola, cheddar, parmesan",
+                    "price": "12.-"
+                },
+                "calzone": {
+                    "name": "Pizza Calzone",
+                    "desc": "Tomato, mozzarella, ham, artichoke, egg",
+                    "price": "12.-"
+                },
+                "champignon": {
+                    "name": "Pizza Mushroom",
+                    "desc": "Tomato, mozzarella, button mushrooms, olives, basil",
+                    "price": "12.-"
+                },
+                "vegetarienne": {
+                    "name": "Pizza Vegetarian",
+                    "desc": "Tomato, mozzarella, bell pepper, mushroom, eggplant, zucchini",
+                    "price": "12.-"
+                }
+            }
+        },
         "footer": {
             "taxes": "Prices in CHF – VAT included",
             "allergens": "Allergen information available on request"
