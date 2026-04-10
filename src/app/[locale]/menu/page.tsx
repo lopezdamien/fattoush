@@ -142,19 +142,19 @@ export default function MenuPage() {
 
                         <div className="relative z-10 inline-flex items-center space-x-3 justify-center w-full">
                             <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase text-center">
-                                Plat du jour • Jeudi 9 Avril
+                                Plat du jour • Vendredi 10 Avril
                             </span>
                         </div>
 
                         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-5xl text-center mt-2">
                             <div className="flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground uppercase">
-                                    RIZ AU POULET
+                                    SAYADIEH DE DAURADE
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Volaille grillée, riz aux vermicelles et cacahuètes
+                                    Poisson cuit four, accompagné de riz aux épices et oignons
                                     <br />
-                                    Servi avec salade & yogourt au concombre
+                                    Servi avec une salade fraîche
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
                                     CHF 23.–
