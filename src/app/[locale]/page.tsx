@@ -95,7 +95,7 @@ export default function Home() {
 
           <FadeIn delay={0.4}>
             <a
-              href="https://www.just-eat.ch/en/menu/fattoush-2"
+              href="https://www.just-eat.ch/fr/menu/fattoush-2"
               target="_blank"
               rel="noopener noreferrer"
               className="group block relative w-28 h-28 sm:w-32 sm:h-32 mx-auto rounded-[1.25rem] sm:rounded-[1.5rem] overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:scale-105"

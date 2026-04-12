@@ -83,16 +83,6 @@ export default function SnackPage() {
                             {t("pizzas.category")}
                         </h2>
 
-                        <div className="relative bg-[#2E593F] text-white rounded-xl p-5 md:p-6 shadow-lg border-2 border-[#2E593F]/30 overflow-hidden flex flex-col items-center justify-center text-center">
-                            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent)] pointer-events-none" />
-                            <p className="relative text-lg md:text-xl font-extrabold drop-shadow-sm mb-2">
-                                {t("pizzas.coming_soon")}
-                            </p>
-                            <p className="relative text-sm md:text-lg font-semibold drop-shadow-sm">
-                                {t("pizzas.promo")}
-                            </p>
-                        </div>
-
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             {pizzaItems.map((item) => (
                                 <div
