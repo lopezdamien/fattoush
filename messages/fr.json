@@ -428,8 +428,6 @@
     },
     "pizzas": {
       "category": "Pizzas",
-      "promo": "OFFRE SPÉCIALE : Toutes les pizzas à 12.- pendant un mois !",
-      "coming_soon": "Bientôt disponible — restez à l'écoute !",
       "items": {
         "margherita": {
           "name": "Margherita",

@@ -428,8 +428,6 @@
         },
         "pizzas": {
             "category": "Pizzas",
-            "promo": "SPECIAL OFFER: All pizzas at 12.- for one month!",
-            "coming_soon": "Coming soon — stay tuned!",
             "items": {
                 "margherita": {
                     "name": "Margherita",
