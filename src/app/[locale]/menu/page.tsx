@@ -142,19 +142,19 @@ export default function MenuPage() {
 
                         <div className="relative z-10 inline-flex items-center space-x-3 justify-center w-full">
                             <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase text-center">
-                                Plat du jour • Lundi 13 Avril
+                                Plat du jour • Mardi 14 Avril
                             </span>
                         </div>
 
                         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-5xl text-center mt-2">
                             <div className="flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground uppercase">
-                                    MLOUKHIYÉ
+                                    KIBBEH À L'ARNABIEH
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Poulet servi avec des feuilles de mloukhiyé à l'ail et à la coriandre, accompagné de riz et vermicelles
+                                    Boulettes de viande servies dans une sauce au tahini & agrumes, accompagnées de riz
                                     <br />
-                                    Servi avec une salade fraîche
+                                    Servies avec une salade fraîche
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
                                     CHF 22.–
