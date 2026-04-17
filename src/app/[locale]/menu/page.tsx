@@ -149,10 +149,10 @@ export default function MenuPage() {
                         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-5xl text-center mt-2">
                             <div className="flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground uppercase">
-                                    POISSON AU FOUR
+                                    FILET DE SAUMON AU FOUR
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Accompagné de légumes, purée de pommes de terre
+                                    Accompagné de batata harra et de légumes
                                     <br />
                                     Servi avec une salade fraîche
                                 </p>
