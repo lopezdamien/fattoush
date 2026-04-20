@@ -130,79 +130,44 @@ export default function MenuPage() {
                 </FadeIn>
             </div>
 
-            {/* Plats de la semaine */}
-            <div className="container mx-auto px-4 mb-10">
+            {/* Plat du Jour */}
+            <div className="container mx-auto px-4 mb-8">
                 <FadeIn delay={0.1}>
-                    <div className="relative overflow-hidden bg-[#F6F4F0] rounded-2xl border border-primary/10 p-6 md:p-10 shadow-sm">
+                    <div className="relative overflow-hidden bg-[#F6F4F0] rounded-xl border border-primary/10 p-6 md:p-8 flex flex-col items-center justify-center gap-6 shadow-sm text-center">
                         <div className="absolute right-0 top-0 text-primary opacity-5 transform translate-x-1/4 -translate-y-1/4 pointer-events-none">
-                            <Leaf size={300} />
+                            <Leaf size={240} />
                         </div>
 
-                        {/* Header */}
-                        <div className="relative z-10 text-center mb-8">
-                            <span className="text-xs font-bold tracking-[0.25em] text-primary uppercase">
-                                Semaine du 21 au 25 avril
+                        <div className="relative z-10 inline-flex items-center space-x-3 justify-center w-full">
+                            <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase text-center">
+                                Plat du jour • Lundi 21 Avril
                             </span>
-                            <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-1">
-                                Plats de la semaine
-                            </h2>
-                            <p className="text-sm text-muted-foreground mt-1">CHF 22.– · Servi avec salade fraîche</p>
                         </div>
 
-                        {/* Days grid */}
-                        <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                            {[
-                                {
-                                    day: "Lundi",
-                                    date: "21 avr.",
-                                    name: "Courgettes farcies",
-                                    desc: "Sauce au yaourt & riz",
-                                },
-                                {
-                                    day: "Mardi",
-                                    date: "22 avr.",
-                                    name: "Cuisse d'agneau grillée",
-                                    desc: "Sauce marinée & purée de pommes de terre",
-                                },
-                                {
-                                    day: "Mercredi",
-                                    date: "23 avr.",
-                                    name: "Ouzi",
-                                    desc: "Riz à la viande, petits pois & noix",
-                                },
-                                {
-                                    day: "Jeudi",
-                                    date: "24 avr.",
-                                    name: "Mloukhié au poulet",
-                                    desc: "Riz aux vermicelles",
-                                },
-                                {
-                                    day: "Vendredi",
-                                    date: "25 avr.",
-                                    name: "Sayadieh de dorade",
-                                    desc: "Riz épicé & sauce",
-                                },
-                            ].map((item) => (
-                                <div
-                                    key={item.day}
-                                    className="bg-white rounded-xl p-4 flex flex-col gap-2 shadow-sm border border-primary/5 hover:shadow-md hover:border-primary/20 transition-all duration-300"
-                                >
-                                    <div className="flex items-center justify-between lg:flex-col lg:items-start lg:gap-0">
-                                        <span className="text-xs font-bold tracking-widest text-primary uppercase">{item.day}</span>
-                                        <span className="text-xs text-muted-foreground lg:mb-2">{item.date}</span>
-                                    </div>
-                                    <div className="h-px bg-primary/10 hidden lg:block" />
-                                    <p className="font-bold text-foreground text-sm md:text-base leading-tight mt-1">{item.name}</p>
-                                    <p className="text-xs text-muted-foreground leading-snug flex-1">{item.desc}</p>
-                                </div>
-                            ))}
-                        </div>
+                        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-5xl text-center mt-2">
+                            <div className="flex flex-col items-center space-y-2">
+                                <h2 className="text-xl md:text-2xl font-bold text-foreground uppercase">
+                                    COURGETTES FARCIES
+                                </h2>
+                                <p className="text-sm md:text-base text-foreground/80 font-medium">
+                                    Sauce au yaourt, riz et salade
+                                </p>
+                                <span className="text-lg font-bold text-primary mt-2">
+                                    CHF 22.–
+                                </span>
+                            </div>
 
-                        {/* Footer note */}
-                        <div className="relative z-10 mt-6 text-center">
-                            <p className="text-xs text-muted-foreground">
-                                Option végétarienne disponible sur demande · CHF 19.90.–
-                            </p>
+                            <div className="flex flex-col items-center space-y-2">
+                                <h2 className="text-xl md:text-2xl font-bold text-foreground">
+                                    OPTION VÉGÉTARIENNE
+                                </h2>
+                                <p className="text-sm md:text-base text-foreground/80 font-medium">
+                                    Adaptation du plat du jour sur demande
+                                </p>
+                                <span className="text-lg font-bold text-primary mt-2">
+                                    CHF 19.90.–
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </FadeIn>
