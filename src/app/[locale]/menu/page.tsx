@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { getTranslations } from "next-intl/server";
 import { Leaf } from "lucide-react";
+import platDuJour from "../../../../data/plat-du-jour.json";
 
 type MenuCategory = "breakfast" | "cold_mezze" | "hot_mezze" | "mezze_menus" | "main_dishes" | "grill" | "sandwich_menus" | "kids_menus" | "desserts" | "drinks";
 
@@ -140,20 +141,20 @@ export default function MenuPage() {
 
                         <div className="relative z-10 inline-flex items-center space-x-3 justify-center w-full">
                             <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase text-center">
-                                Plat du jour • Lundi 21 Avril
+                                Plat du jour • {platDuJour.date}
                             </span>
                         </div>
 
                         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-5xl text-center mt-2">
                             <div className="flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground uppercase">
-                                    COURGETTES FARCIES
+                                    {platDuJour.name}
                                 </h2>
                                 <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    Sauce au yaourt, riz et salade
+                                    {platDuJour.description}
                                 </p>
                                 <span className="text-lg font-bold text-primary mt-2">
-                                    CHF 22.–
+                                    {platDuJour.price}
                                 </span>
                             </div>
 
