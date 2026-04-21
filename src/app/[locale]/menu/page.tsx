@@ -145,18 +145,20 @@ export default function MenuPage() {
                             </span>
                         </div>
 
-                        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-5xl text-center mt-2">
-                            <div className="flex flex-col items-center space-y-2">
-                                <h2 className="text-xl md:text-2xl font-bold text-foreground uppercase">
-                                    {platDuJour.name}
-                                </h2>
-                                <p className="text-sm md:text-base text-foreground/80 font-medium">
-                                    {platDuJour.description}
-                                </p>
-                                <span className="text-lg font-bold text-primary mt-2">
-                                    {platDuJour.price}
-                                </span>
-                            </div>
+                        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-6 w-full max-w-5xl text-center mt-2">
+                            {platDuJour.plats.map((plat, i) => (
+                                <div key={i} className="flex flex-col items-center space-y-2">
+                                    <h2 className="text-xl md:text-2xl font-bold text-foreground uppercase">
+                                        {plat.name}
+                                    </h2>
+                                    <p className="text-sm md:text-base text-foreground/80 font-medium whitespace-pre-line">
+                                        {plat.description}
+                                    </p>
+                                    <span className="text-lg font-bold text-primary mt-2">
+                                        {plat.price}
+                                    </span>
+                                </div>
+                            ))}
 
                             <div className="flex flex-col items-center space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-foreground">

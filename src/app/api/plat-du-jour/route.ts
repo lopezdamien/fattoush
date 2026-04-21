@@ -1,20 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
-    const { password, date, name, description, price } = await req.json();
+    const { password, date, plats } = await req.json();
 
     if (password !== process.env.ADMIN_PASSWORD) {
         return NextResponse.json({ error: "Mot de passe incorrect" }, { status: 401 });
     }
 
-    const content = JSON.stringify({ date, name, description, price }, null, 2) + "\n";
+    const content = JSON.stringify({ date, plats }, null, 2) + "\n";
     const encoded = Buffer.from(content).toString("base64");
 
     const repo = "lopezdamien/fattoush";
     const filePath = "data/plat-du-jour.json";
     const token = process.env.GITHUB_TOKEN;
 
-    // Get current SHA
     const getRes = await fetch(`https://api.github.com/repos/${repo}/contents/${filePath}`, {
         headers: {
             Authorization: `Bearer ${token}`,
@@ -28,7 +27,6 @@ export async function POST(req: NextRequest) {
 
     const { sha } = await getRes.json();
 
-    // Update file
     const putRes = await fetch(`https://api.github.com/repos/${repo}/contents/${filePath}`, {
         method: "PUT",
         headers: {
@@ -37,7 +35,7 @@ export async function POST(req: NextRequest) {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            message: `Update plat du jour: ${name} — ${date}`,
+            message: `Update plat du jour — ${date}`,
             content: encoded,
             sha,
         }),
