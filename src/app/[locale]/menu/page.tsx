@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { getTranslations } from "next-intl/server";
-import { Leaf } from "lucide-react";
 import platDuJour from "../../../../data/plat-du-jour.json";
 
 type MenuCategory = "breakfast" | "cold_mezze" | "hot_mezze" | "mezze_menus" | "main_dishes" | "grill" | "sandwich_menus" | "kids_menus" | "desserts" | "drinks";
@@ -135,8 +134,8 @@ export default function MenuPage() {
             <div className="container mx-auto px-4 mb-8">
                 <FadeIn delay={0.1}>
                     <div className="relative overflow-hidden bg-[#F6F4F0] rounded-xl border border-primary/10 p-6 md:p-8 flex flex-col items-center justify-center gap-6 shadow-sm text-center">
-                        <div className="absolute right-0 top-0 text-primary opacity-5 transform translate-x-1/4 -translate-y-1/4 pointer-events-none">
-                            <Leaf size={240} />
+                        <div className="absolute right-4 top-1/2 -translate-y-1/2 text-primary opacity-5 pointer-events-none select-none font-serif text-[160px] md:text-[220px] leading-none">
+                            ع
                         </div>
 
                         <div className="relative z-10 inline-flex items-center space-x-3 justify-center w-full">
@@ -145,29 +144,33 @@ export default function MenuPage() {
                             </span>
                         </div>
 
-                        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-6 w-full max-w-5xl text-center mt-2">
+                        <div className="relative z-10 flex flex-wrap justify-center gap-0 w-full max-w-4xl mt-2">
                             {platDuJour.plats.map((plat, i) => (
-                                <div key={i} className="flex flex-col items-center space-y-2">
-                                    <h2 className="text-xl md:text-2xl font-bold text-foreground uppercase">
-                                        {plat.name}
-                                    </h2>
-                                    <p className="text-sm md:text-base text-foreground/80 font-medium whitespace-pre-line">
-                                        {plat.description}
-                                    </p>
-                                    <span className="text-lg font-bold text-primary mt-2">
-                                        {plat.price}
-                                    </span>
-                                </div>
+                                <>
+                                    <div key={i} className="flex flex-col items-center space-y-2 px-8 py-2 flex-1 min-w-[200px]">
+                                        <h2 className="text-xl md:text-2xl font-bold text-foreground uppercase tracking-wide">
+                                            {plat.name}
+                                        </h2>
+                                        <p className="text-sm md:text-base text-foreground/70 whitespace-pre-line leading-relaxed">
+                                            {plat.description}
+                                        </p>
+                                        <span className="text-lg font-bold text-primary mt-1">
+                                            {plat.price}
+                                        </span>
+                                    </div>
+                                    <div className="w-px bg-primary/15 self-stretch hidden md:block" />
+                                    <div className="w-full h-px bg-primary/15 md:hidden my-4" />
+                                </>
                             ))}
 
-                            <div className="flex flex-col items-center space-y-2">
-                                <h2 className="text-xl md:text-2xl font-bold text-foreground">
+                            <div className="flex flex-col items-center space-y-2 px-8 py-2 flex-1 min-w-[200px]">
+                                <h2 className="text-xl md:text-2xl font-bold text-foreground tracking-wide">
                                     OPTION VÉGÉTARIENNE
                                 </h2>
-                                <p className="text-sm md:text-base text-foreground/80 font-medium">
+                                <p className="text-sm md:text-base text-foreground/70 leading-relaxed">
                                     Adaptation du plat du jour sur demande
                                 </p>
-                                <span className="text-lg font-bold text-primary mt-2">
+                                <span className="text-lg font-bold text-primary mt-1">
                                     CHF 19.90.–
                                 </span>
                             </div>
