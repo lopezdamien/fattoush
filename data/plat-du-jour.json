@@ -1,14 +1,9 @@
 {
-  "date": "Mardi 22 Avril",
+  "date": "Mercredi 22 Avril",
   "plats": [
     {
-      "name": "CUISSE D'AGNEAU GRILLÉE AU FOUR",
-      "description": "Sauce marinée, purée de pommes de terre\nServie avec une salade fraîche",
-      "price": "CHF 28.–"
-    },
-    {
-      "name": "MLOUKHIYÉ",
-      "description": "Poulet, feuilles de mloukhiyé, riz et vermicelles\nServi avec une salade fraîche",
+      "name": "OUZI",
+      "description": "Riz et agneau en pâte feuilletée\nPetits pois, noix et salade",
       "price": "CHF 22.–"
     }
   ]
