@@ -1,10 +1,10 @@
 {
-  "date": "Mercredi 29 Avril",
+  "date": "Jeudi 30 Avril",
   "plats": [
     {
-      "name": "CHOU-FLEUR & VIANDE",
-      "description": "Servis avec sauce tahina, accompagnés de riz",
-      "price": "CHF 22.–"
+      "name": "MOUSSAKA GRECQUE",
+      "description": "Viande hachée et fromage\nAccompagnée de riz\nServie avec une salade fraîche",
+      "price": "CHF 23.–"
     }
   ]
 }
