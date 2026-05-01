@@ -31,6 +31,11 @@ export default function ContactPage() {
                     Rue des Gares 7-9<br />
                     1201 Genève
                 </a>
+                <p className="text-sm text-muted-foreground/80 mt-1.5 leading-snug">
+                    À la sortie de la gare Cornavin, côté Monbrillant,<br />
+                    à 2 pas de l&apos;hôtel Monbrillant,<br />
+                    à proximité de la poste
+                </p>
             )
         },
         {
