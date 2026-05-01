@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Section } from "@/components/ui/Section";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Car, Bus, Train } from "lucide-react";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { getTranslations } from "next-intl/server";
 
@@ -17,97 +17,96 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default function ContactPage() {
     const t = useTranslations("Contact");
 
-    const contactInfo = [
-        {
-            icon: MapPin,
-            title: t("address"),
-            content: (
-                <div>
-                    <a
-                        href="https://www.google.com/maps/search/?api=1&query=Rue+des+Gares+7-9,+1201+Genève"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-primary transition-colors font-bold"
-                    >
-                        Rue des Gares 7-9<br />
-                        1201 Genève
-                    </a>
-                    <p className="text-sm text-muted-foreground/80 mt-1.5 leading-snug font-bold italic">
-                        À la sortie de la gare Cornavin, côté Monbrillant,<br />
-                        à 2 pas de l&apos;hôtel Monbrillant,<br />
-                        à proximité de la poste
-                    </p>
-                </div>
-            )
-        },
-        {
-            icon: Phone,
-            title: t("phone"),
-            content: (
-                <a
-                    href="tel:+41229104550"
-                    className="hover:text-primary transition-colors"
-                >
-                    +41 22 910 45 50
-                </a>
-            )
-        },
-        {
-            icon: Mail,
-            title: t("email"),
-            content: (
-                <a
-                    href="mailto:contact@fattoushgeneve.ch"
-                    className="hover:text-primary transition-colors"
-                >
-                    contact@fattoushgeneve.ch
-                </a>
-            )
-        },
-        {
-            icon: Clock,
-            title: t("hours"),
-            content: (
-                <>
-                    Lun - Dim: 12h00 - 15h00 / 18h30 - 21h30
-                </>
-            )
-        }
-    ];
-
     return (
-        <main className="pt-4 md:pt-8 pb-4 md:pb-8 bg-secondary/30">
-            <Section className="text-center space-y-0.5 mb-2 py-0">
+        <main className="pt-4 md:pt-8 pb-12 bg-secondary/30">
+            <Section className="text-center space-y-0.5 mb-6 py-0">
                 <FadeIn>
                     <h1 className="text-4xl md:text-5xl font-bold text-primary">{t("title")}</h1>
                     <p className="text-lg text-muted-foreground">{t("subtitle")}</p>
                 </FadeIn>
             </Section>
 
-            <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 items-start max-w-6xl mx-auto">
-                    {/* Contact Info */}
+            <div className="container mx-auto px-4 max-w-6xl space-y-6">
+
+                {/* Ligne principale : infos + carte */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+
+                    {/* Colonne gauche : coordonnées */}
                     <div className="grid gap-3 content-start">
-                        {contactInfo.map((info, idx) => (
-                            <FadeIn key={idx} delay={0.1 * (idx + 1)} direction="right">
-                                <div className="bg-white px-5 py-4 md:px-6 md:py-5 rounded-xl shadow-sm flex items-center gap-4 border border-border/50 hover:shadow-md transition-shadow h-full">
-                                    <div className="bg-primary/10 p-3 rounded-full text-primary shrink-0">
-                                        <info.icon size={20} />
-                                    </div>
-                                    <div>
-                                        <h3 className="font-bold text-lg mb-0.5 text-foreground">{info.title}</h3>
-                                        <div className="text-muted-foreground leading-snug text-base">
-                                            {info.content}
-                                        </div>
-                                    </div>
+
+                        {/* Adresse */}
+                        <FadeIn delay={0.1} direction="right">
+                            <div className="bg-white px-5 py-4 md:px-6 md:py-5 rounded-xl shadow-sm flex items-start gap-4 border border-border/50 hover:shadow-md transition-shadow">
+                                <div className="bg-primary/10 p-3 rounded-full text-primary shrink-0 mt-0.5">
+                                    <MapPin size={20} />
                                 </div>
-                            </FadeIn>
-                        ))}
+                                <div>
+                                    <h3 className="font-bold text-lg mb-1 text-foreground">{t("address")}</h3>
+                                    <a
+                                        href="https://www.google.com/maps/search/?api=1&query=Rue+des+Gares+7-9,+1201+Genève"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="hover:text-primary transition-colors font-bold text-muted-foreground"
+                                    >
+                                        Rue des Gares 7-9<br />
+                                        1201 Genève
+                                    </a>
+                                    <p className="text-sm text-muted-foreground/80 mt-1.5 leading-snug italic">
+                                        À la sortie de la gare Cornavin, côté Monbrillant,<br />
+                                        à 2 pas de l&apos;hôtel Monbrillant,<br />
+                                        à proximité de la poste
+                                    </p>
+                                </div>
+                            </div>
+                        </FadeIn>
+
+                        {/* Horaires */}
+                        <FadeIn delay={0.2} direction="right">
+                            <div className="bg-white px-5 py-4 md:px-6 md:py-5 rounded-xl shadow-sm flex items-start gap-4 border border-border/50 hover:shadow-md transition-shadow">
+                                <div className="bg-primary/10 p-3 rounded-full text-primary shrink-0 mt-0.5">
+                                    <Clock size={20} />
+                                </div>
+                                <div>
+                                    <h3 className="font-bold text-lg mb-1 text-foreground">{t("hours")}</h3>
+                                    <p className="text-muted-foreground">Lun – Dim : 12h00 – 15h00 / 18h30 – 21h30</p>
+                                </div>
+                            </div>
+                        </FadeIn>
+
+                        {/* Téléphone */}
+                        <FadeIn delay={0.3} direction="right">
+                            <div className="bg-white px-5 py-4 md:px-6 md:py-5 rounded-xl shadow-sm flex items-center gap-4 border border-border/50 hover:shadow-md transition-shadow">
+                                <div className="bg-primary/10 p-3 rounded-full text-primary shrink-0">
+                                    <Phone size={20} />
+                                </div>
+                                <div>
+                                    <h3 className="font-bold text-lg mb-0.5 text-foreground">{t("phone")}</h3>
+                                    <a href="tel:+41229104550" className="text-muted-foreground hover:text-primary transition-colors">
+                                        +41 22 910 45 50
+                                    </a>
+                                </div>
+                            </div>
+                        </FadeIn>
+
+                        {/* Email */}
+                        <FadeIn delay={0.4} direction="right">
+                            <div className="bg-white px-5 py-4 md:px-6 md:py-5 rounded-xl shadow-sm flex items-center gap-4 border border-border/50 hover:shadow-md transition-shadow">
+                                <div className="bg-primary/10 p-3 rounded-full text-primary shrink-0">
+                                    <Mail size={20} />
+                                </div>
+                                <div>
+                                    <h3 className="font-bold text-lg mb-0.5 text-foreground">{t("email")}</h3>
+                                    <a href="mailto:contact@fattoushgeneve.ch" className="text-muted-foreground hover:text-primary transition-colors">
+                                        contact@fattoushgeneve.ch
+                                    </a>
+                                </div>
+                            </div>
+                        </FadeIn>
                     </div>
 
-                    {/* Map */}
-                    <FadeIn delay={0.5} direction="left" className="h-[500px] lg:h-auto lg:min-h-[500px] sticky top-24 lg:self-stretch">
-                        <div className="h-full rounded-xl overflow-hidden shadow-lg bg-white border border-border/50 relative">
+                    {/* Carte */}
+                    <FadeIn delay={0.3} direction="left" className="h-[400px] lg:h-full lg:min-h-[420px] sticky top-24">
+                        <div className="h-full rounded-xl overflow-hidden shadow-lg bg-white border border-border/50">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.8842426868625!2d6.139158676839352!3d46.21557987109594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c65266e7401d1%3A0x629576442651475c!2sRue%20des%20Gares%207%2C%201201%20Gen%C3%A8ve%2C%20Switzerland!5e0!3m2!1sen!2s!4v1707412345678!5m2!1sen!2s"
                                 width="100%"
@@ -121,6 +120,53 @@ export default function ContactPage() {
                         </div>
                     </FadeIn>
                 </div>
+
+                {/* Comment venir */}
+                <FadeIn delay={0.2}>
+                    <div className="bg-white rounded-xl shadow-sm border border-border/50 px-6 py-6 md:px-8 md:py-7">
+                        <h2 className="text-xl font-bold text-primary mb-5">Comment venir</h2>
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+                            <div className="flex items-start gap-4">
+                                <div className="bg-primary/10 p-3 rounded-full text-primary shrink-0 mt-0.5">
+                                    <Train size={20} />
+                                </div>
+                                <div>
+                                    <h3 className="font-bold text-foreground mb-1">En train</h3>
+                                    <p className="text-sm text-muted-foreground leading-snug">
+                                        Gare de Cornavin à 2 minutes à pied — sortie côté Monbrillant, longer la rue des Gares.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex items-start gap-4">
+                                <div className="bg-primary/10 p-3 rounded-full text-primary shrink-0 mt-0.5">
+                                    <Bus size={20} />
+                                </div>
+                                <div>
+                                    <h3 className="font-bold text-foreground mb-1">En tram & bus</h3>
+                                    <p className="text-sm text-muted-foreground leading-snug">
+                                        Arrêt <span className="font-semibold">Gare Cornavin</span> desservi par les trams 14, 15 et de nombreuses lignes de bus TPG.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex items-start gap-4">
+                                <div className="bg-primary/10 p-3 rounded-full text-primary shrink-0 mt-0.5">
+                                    <Car size={20} />
+                                </div>
+                                <div>
+                                    <h3 className="font-bold text-foreground mb-1">En voiture</h3>
+                                    <p className="text-sm text-muted-foreground leading-snug">
+                                        Parking de la Gare Cornavin à 2 pas du restaurant, accessible depuis le Boulevard James-Fazy.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </FadeIn>
+
             </div>
         </main>
     );
