@@ -124,7 +124,7 @@ export default function ContactPage() {
                 {/* Comment venir */}
                 <FadeIn delay={0.2}>
                     <div className="bg-white rounded-xl shadow-sm border border-border/50 px-6 py-6 md:px-8 md:py-7">
-                        <h2 className="text-xl font-bold text-primary mb-5">Comment venir</h2>
+                        <h2 className="text-xl font-bold text-primary mb-5">{t("howToGet.title")}</h2>
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
 
                             <div className="flex items-start gap-4">
@@ -132,9 +132,9 @@ export default function ContactPage() {
                                     <Train size={20} />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-foreground mb-1">En train</h3>
+                                    <h3 className="font-bold text-foreground mb-1">{t("howToGet.train.title")}</h3>
                                     <p className="text-sm text-muted-foreground leading-snug">
-                                        Gare de Cornavin à 2 minutes à pied — sortie côté Monbrillant, longer la rue des Gares.
+                                        {t("howToGet.train.desc")}
                                     </p>
                                 </div>
                             </div>
@@ -144,9 +144,9 @@ export default function ContactPage() {
                                     <Bus size={20} />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-foreground mb-1">En tram & bus</h3>
+                                    <h3 className="font-bold text-foreground mb-1">{t("howToGet.bus.title")}</h3>
                                     <p className="text-sm text-muted-foreground leading-snug">
-                                        Arrêt <span className="font-semibold">Gare Cornavin</span> desservi par les trams 14, 15 et de nombreuses lignes de bus TPG.
+                                        {t("howToGet.bus.stop")} — {t("howToGet.bus.desc")}
                                     </p>
                                 </div>
                             </div>
@@ -156,9 +156,9 @@ export default function ContactPage() {
                                     <Car size={20} />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-foreground mb-1">En voiture</h3>
+                                    <h3 className="font-bold text-foreground mb-1">{t("howToGet.car.title")}</h3>
                                     <p className="text-sm text-muted-foreground leading-snug">
-                                        Parking de la Gare Cornavin à 2 pas du restaurant, accessible depuis le Boulevard James-Fazy.
+                                        {t("howToGet.car.desc")}
                                     </p>
                                 </div>
                             </div>

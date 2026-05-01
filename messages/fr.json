@@ -87,12 +87,12 @@
       "vine_leaves_veg": {
         "name": "Feuille de vigne",
         "desc": "Végétarien (1 pièce)",
-        "price": "1,50.-"
+        "price": "1.50.-"
       },
       "vine_leaves_meat_piece": {
         "name": "Feuille de vigne",
         "desc": "Viande (1 pièce)",
-        "price": "1,50.-"
+        "price": "1.50.-"
       },
       "moutabal": {
         "name": "Moutabbal",
@@ -147,7 +147,7 @@
       "kebbeh_piece": {
         "name": "Kebbeh (1 pièce)",
         "desc": "Boulgour farci à la viande épicée",
-        "price": "3,50.-"
+        "price": "3.50.-"
       },
       "falafel_piece": {
         "name": "Falafel (1 pièce)",
@@ -387,7 +387,7 @@
   },
   "Snack": {
     "title": "Snack",
-    "subtitle": "Sandwichs dans pain libanais ou galette maison",
+    "subtitle": "Sandwichs dans le pain libanais ou galette maison",
     "category": "Sandwichs",
     "items": {
       "falafel": {
@@ -498,11 +498,21 @@
     "hours": "Horaires d'ouverture",
     "phone": "Téléphone",
     "email": "Email",
-    "form": {
-      "name": "Nom complet",
-      "email": "Email",
-      "message": "Votre message",
-      "send": "Envoyer le message"
+    "howToGet": {
+      "title": "Comment venir",
+      "train": {
+        "title": "En train",
+        "desc": "Gare de Cornavin à 2 minutes à pied — sortie côté Monbrillant, longer la rue des Gares."
+      },
+      "bus": {
+        "title": "En tram & bus",
+        "stop": "Gare Cornavin",
+        "desc": "desservi par les trams 14, 15 et de nombreuses lignes de bus TPG."
+      },
+      "car": {
+        "title": "En voiture",
+        "desc": "Parking de la Gare Cornavin à 2 pas du restaurant, accessible depuis le Boulevard James-Fazy."
+      }
     }
   }
 }

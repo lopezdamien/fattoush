@@ -498,11 +498,21 @@
         "hours": "Opening Hours",
         "phone": "Phone",
         "email": "Email",
-        "form": {
-            "name": "Full Name",
-            "email": "Email",
-            "message": "Your Message",
-            "send": "Send Message"
+        "howToGet": {
+            "title": "How to Get Here",
+            "train": {
+                "title": "By Train",
+                "desc": "Cornavin station is a 2-minute walk — exit on the Monbrillant side, follow Rue des Gares."
+            },
+            "bus": {
+                "title": "By Tram & Bus",
+                "stop": "Gare Cornavin",
+                "desc": "served by trams 14, 15 and many TPG bus lines."
+            },
+            "car": {
+                "title": "By Car",
+                "desc": "Gare Cornavin parking is steps away, accessible from Boulevard James-Fazy."
+            }
         }
     }
 }
