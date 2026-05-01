@@ -22,20 +22,22 @@ export default function ContactPage() {
             icon: MapPin,
             title: t("address"),
             content: (
-                <a
-                    href="https://www.google.com/maps/search/?api=1&query=Rue+des+Gares+7-9,+1201+Genève"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-primary transition-colors"
-                >
-                    Rue des Gares 7-9<br />
-                    1201 Genève
-                </a>
-                <p className="text-sm text-muted-foreground/80 mt-1.5 leading-snug">
-                    À la sortie de la gare Cornavin, côté Monbrillant,<br />
-                    à 2 pas de l&apos;hôtel Monbrillant,<br />
-                    à proximité de la poste
-                </p>
+                <div>
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=Rue+des+Gares+7-9,+1201+Genève"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-primary transition-colors"
+                    >
+                        Rue des Gares 7-9<br />
+                        1201 Genève
+                    </a>
+                    <p className="text-sm text-muted-foreground/80 mt-1.5 leading-snug">
+                        À la sortie de la gare Cornavin, côté Monbrillant,<br />
+                        à 2 pas de l&apos;hôtel Monbrillant,<br />
+                        à proximité de la poste
+                    </p>
+                </div>
             )
         },
         {
