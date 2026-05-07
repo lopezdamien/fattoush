@@ -3,7 +3,7 @@ import { FadeIn } from "@/components/ui/FadeIn";
 import { getTranslations } from "next-intl/server";
 import platDuJour from "../../../../data/plat-du-jour.json";
 
-type MenuCategory = "breakfast" | "cold_mezze" | "hot_mezze" | "mezze_menus" | "main_dishes" | "grill" | "sandwich_menus" | "kids_menus" | "desserts" | "drinks";
+type MenuCategory = "breakfast" | "cold_mezze" | "hot_mezze" | "mezze_menus" | "main_dishes" | "grill" | "sandwich_menus" | "kids_menus" | "desserts" | "shisha";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -23,7 +23,6 @@ export default function MenuPage() {
         breakfast: [
             "manouche_cheese",
             "manouche_zaatar",
-            "shanklish",
             "lahm_bi_ajeen",
             "foul"
         ],
@@ -67,8 +66,10 @@ export default function MenuPage() {
             "kebbeh_bil_laban",
             "vine_leaves_main",
             "arayes",
+            "ouzi_agneau",
             "arayes_family",
-            "mixed_mezze_plate"
+            "mixed_mezze_plate",
+            "vege_plate"
         ],
         grill: [
             "lamb_plate",
@@ -82,29 +83,22 @@ export default function MenuPage() {
         ],
         sandwich_menus: [
             "falafel_sandwich_menu",
-            "chicken_sandwich_menu",
             "meat_sandwich_menu",
-            "vege_plate"
+            "chicken_sandwich_menu"
         ],
         kids_menus: [
             "kids_menu"
         ],
         desserts: [
-            "knafeh",
-            "basboussa",
             "baklava",
+            "basboussa",
             "mouhalabieh",
-            "katayef_walnut",
-            "katayef_kashta"
-        ],
-        drinks: [
-            "coffee_tea",
-            "black_tea",
+            "layali_lubnan",
             "gourmet_coffee",
-            "mint_tea",
-            "soft_drinks",
-            "wine_glass",
-            "ayran"
+            "dessert_du_moment"
+        ],
+        shisha: [
+            "shisha"
         ]
     };
 
@@ -118,7 +112,7 @@ export default function MenuPage() {
         "sandwich_menus",
         "kids_menus",
         "desserts",
-        "drinks"
+        "shisha"
     ];
 
     return (
@@ -183,9 +177,16 @@ export default function MenuPage() {
                 {(categories).map((category, sectionIndex) => (
                     <FadeIn key={category} delay={sectionIndex * 0.1}>
                         <div id={category} className="space-y-4 scroll-mt-24">
-                            <h2 className="text-2xl font-bold text-primary border-b border-primary/20 pb-2">
-                                {t(`categories.${category}`)}
-                            </h2>
+                            <div className="border-b border-primary/20 pb-2">
+                                <h2 className="text-2xl font-bold text-primary">
+                                    {t(`categories.${category}`)}
+                                </h2>
+                                {t.has(`categories.${category}_subtitle`) && (
+                                    <p className="text-sm text-muted-foreground italic mt-0.5">
+                                        {t(`categories.${category}_subtitle`)}
+                                    </p>
+                                )}
+                            </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                 {menuStructure[category].map((item: string) => (
                                     <div key={item} className="flex flex-col justify-between p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow group h-full">
