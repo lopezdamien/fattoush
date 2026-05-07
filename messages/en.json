@@ -48,8 +48,7 @@
             "sandwich_menus": "Sandwich Menus",
             "sandwich_menus_subtitle": "Served with hummus, garlic sauce, harissa, fries and salad",
             "kids_menus": "Kids Menu",
-            "desserts": "Desserts",
-            "shisha": "Shisha"
+            "desserts": "Desserts"
         },
         "items": {
             "manouche_cheese": {
@@ -347,11 +346,6 @@
                 "desc": "",
                 "price": "7.-"
             },
-            "shisha": {
-                "name": "Shisha",
-                "desc": "",
-                "price": "35.-"
-            }
         },
         "footer": {
             "taxes": "Prices in CHF – VAT included",

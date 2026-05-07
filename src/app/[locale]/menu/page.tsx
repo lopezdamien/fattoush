@@ -3,7 +3,7 @@ import { FadeIn } from "@/components/ui/FadeIn";
 import { getTranslations } from "next-intl/server";
 import platDuJour from "../../../../data/plat-du-jour.json";
 
-type MenuCategory = "breakfast" | "cold_mezze" | "hot_mezze" | "mezze_menus" | "main_dishes" | "grill" | "sandwich_menus" | "kids_menus" | "desserts" | "shisha";
+type MenuCategory = "breakfast" | "cold_mezze" | "hot_mezze" | "mezze_menus" | "main_dishes" | "grill" | "sandwich_menus" | "kids_menus" | "desserts";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -97,9 +97,6 @@ export default function MenuPage() {
             "gourmet_coffee",
             "dessert_du_moment"
         ],
-        shisha: [
-            "shisha"
-        ]
     };
 
     const categories: MenuCategory[] = [
@@ -111,8 +108,7 @@ export default function MenuPage() {
         "grill",
         "sandwich_menus",
         "kids_menus",
-        "desserts",
-        "shisha"
+        "desserts"
     ];
 
     return (

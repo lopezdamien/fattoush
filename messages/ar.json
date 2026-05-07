@@ -48,8 +48,7 @@
             "sandwich_menus": "قوائم السندويشات",
             "sandwich_menus_subtitle": "تُقدَّم مع حمص وصوص ثوم وهريسة وبطاطا وسلطة",
             "kids_menus": "قائمة الأطفال",
-            "desserts": "حلويات",
-            "shisha": "أرجيلة"
+            "desserts": "حلويات"
         },
         "items": {
             "manouche_cheese": {
@@ -347,11 +346,6 @@
                 "desc": "",
                 "price": "7.-"
             },
-            "shisha": {
-                "name": "أرجيلة",
-                "desc": "",
-                "price": "35.-"
-            }
         },
         "footer": {
             "taxes": "الأسعار بالفرنك السويسري – شاملة الضريبة",
