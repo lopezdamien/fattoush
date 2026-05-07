@@ -345,7 +345,7 @@
                 "name": "Dessert of the Day",
                 "desc": "",
                 "price": "7.-"
-            },
+            }
         },
         "footer": {
             "taxes": "Prices in CHF – VAT included",

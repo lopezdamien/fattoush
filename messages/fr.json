@@ -345,7 +345,7 @@
         "name": "Dessert du moment",
         "desc": "",
         "price": "7.-"
-      },
+      }
     },
     "footer": {
       "taxes": "Prix en CHF – TVA incluse",
