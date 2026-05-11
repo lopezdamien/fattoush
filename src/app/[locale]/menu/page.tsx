@@ -123,17 +123,19 @@ export default function MenuPage() {
             {/* Plat du Jour */}
             <div className="container mx-auto px-4 mb-8">
                 <FadeIn delay={0.1}>
-                    <div className="relative overflow-hidden rounded-xl shadow-md text-center"
-                        style={{ background: "linear-gradient(135deg, #7D1A2B 0%, #A52535 60%, #C4394E 100%)" }}>
+                    <div className="relative overflow-hidden rounded-xl shadow-sm border border-stone-200 text-center bg-[#F9F6F1]">
+
+                        {/* Bande colorée en haut */}
+                        <div className="h-1.5 w-full" style={{ background: "linear-gradient(to right, #7D1A2B, #3B6E4A)" }} />
 
                         {/* Filigrane */}
-                        <div className="absolute right-4 top-1/2 -translate-y-1/2 text-white opacity-5 pointer-events-none select-none font-serif text-[160px] md:text-[220px] leading-none">
+                        <div className="absolute right-4 top-1/2 -translate-y-1/2 text-[#3B6E4A] opacity-5 pointer-events-none select-none font-serif text-[160px] md:text-[220px] leading-none">
                             ع
                         </div>
 
                         {/* Bandeau date */}
-                        <div className="relative z-10 px-6 pt-6 pb-3">
-                            <span className="inline-block text-xs md:text-sm font-bold tracking-[0.2em] text-white/80 uppercase border border-white/20 rounded-full px-4 py-1">
+                        <div className="relative z-10 px-6 pt-5 pb-3">
+                            <span className="inline-block text-xs md:text-sm font-bold tracking-[0.2em] uppercase px-4 py-1 rounded-full border text-[#3B6E4A] border-[#3B6E4A]/30 bg-[#3B6E4A]/5">
                                 Plat du jour • {platDuJour.date}
                             </span>
                         </div>
@@ -143,23 +145,23 @@ export default function MenuPage() {
                             {platDuJour.plats.map((plat, i) => (
                                 <>
                                     <div key={i} className="flex flex-col items-center space-y-2 px-8 py-3 flex-1 min-w-[200px]">
-                                        <h2 className="text-xl md:text-2xl font-bold text-white uppercase tracking-wide">
+                                        <h2 className="text-xl md:text-2xl font-bold text-primary uppercase tracking-wide">
                                             {plat.name}
                                         </h2>
-                                        <p className="text-sm md:text-base text-white/75 whitespace-pre-line leading-relaxed">
+                                        <p className="text-sm md:text-base text-foreground/65 whitespace-pre-line leading-relaxed">
                                             {plat.description}
                                         </p>
                                     </div>
-                                    <div className="w-px bg-white/20 self-stretch hidden md:block" />
-                                    <div className="w-full h-px bg-white/20 md:hidden my-3" />
+                                    <div className="w-px bg-stone-200 self-stretch hidden md:block" />
+                                    <div className="w-full h-px bg-stone-200 md:hidden my-3" />
                                 </>
                             ))}
 
                             <div className="flex flex-col items-center space-y-2 px-8 py-3 flex-1 min-w-[200px]">
-                                <h2 className="text-xl md:text-2xl font-bold text-white tracking-wide">
+                                <h2 className="text-xl md:text-2xl font-bold tracking-wide" style={{ color: "#3B6E4A" }}>
                                     OPTION VÉGÉTARIENNE
                                 </h2>
-                                <p className="text-sm md:text-base text-white/75 leading-relaxed">
+                                <p className="text-sm md:text-base text-foreground/65 leading-relaxed">
                                     Adaptation du plat du jour sur demande
                                 </p>
                             </div>
