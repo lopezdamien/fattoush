@@ -144,9 +144,6 @@ export default function MenuPage() {
                                         <p className="text-sm md:text-base text-foreground/70 whitespace-pre-line leading-relaxed">
                                             {plat.description}
                                         </p>
-                                        <span className="text-lg font-bold text-primary mt-1">
-                                            {plat.price}
-                                        </span>
                                     </div>
                                     <div className="w-px bg-primary/15 self-stretch hidden md:block" />
                                     <div className="w-full h-px bg-primary/15 md:hidden my-4" />
@@ -160,9 +157,6 @@ export default function MenuPage() {
                                 <p className="text-sm md:text-base text-foreground/70 leading-relaxed">
                                     Adaptation du plat du jour sur demande
                                 </p>
-                                <span className="text-lg font-bold text-primary mt-1">
-                                    CHF 19.90.–
-                                </span>
                             </div>
                         </div>
                     </div>
