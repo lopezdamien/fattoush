@@ -123,34 +123,31 @@ export default function MenuPage() {
             {/* Plat du Jour */}
             <div className="container mx-auto px-4 mb-8">
                 <FadeIn delay={0.1}>
-                    <div className="relative overflow-hidden rounded-xl shadow-md text-center" style={{ background: "#1E1E1C" }}>
+                    <div className="relative overflow-hidden rounded-xl shadow-sm text-center border border-primary/10" style={{ background: "#FAF5EC" }}>
 
                         {/* Filigrane */}
-                        <div className="absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none select-none font-serif text-[180px] md:text-[240px] leading-none text-white opacity-[0.03]">
+                        <div className="absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none select-none font-serif text-[180px] md:text-[240px] leading-none text-primary opacity-[0.04]">
                             ع
                         </div>
 
-                        {/* Ligne décorative rouge + verte */}
-                        <div className="flex h-1 w-full">
-                            <div className="flex-1" style={{ background: "#7D1A2B" }} />
-                            <div className="flex-1" style={{ background: "#3B6E4A" }} />
-                        </div>
+                        {/* Ligne fine bordeaux en haut */}
+                        <div className="h-[3px] w-full bg-primary" />
 
                         {/* Date */}
                         <div className="relative z-10 pt-6 pb-2 px-6">
-                            <p className="text-[11px] font-bold tracking-[0.3em] uppercase text-white/40">
+                            <p className="text-[11px] font-bold tracking-[0.3em] uppercase text-primary/50">
                                 Plat du jour
                             </p>
-                            <p className="text-sm font-semibold tracking-widest text-white/60 mt-0.5">
+                            <p className="text-sm font-semibold tracking-widest text-foreground/40 mt-0.5">
                                 {platDuJour.date}
                             </p>
                         </div>
 
                         {/* Séparateur ornemental */}
                         <div className="flex items-center justify-center gap-3 px-12 py-2">
-                            <div className="flex-1 h-px bg-white/10" />
-                            <span className="text-white/20 text-xs">✦</span>
-                            <div className="flex-1 h-px bg-white/10" />
+                            <div className="flex-1 h-px bg-primary/10" />
+                            <span className="text-primary/20 text-xs">✦</span>
+                            <div className="flex-1 h-px bg-primary/10" />
                         </div>
 
                         {/* Plats */}
@@ -158,32 +155,26 @@ export default function MenuPage() {
                             {platDuJour.plats.map((plat, i) => (
                                 <>
                                     <div key={i} className="flex flex-col items-center space-y-2 px-8 py-4 flex-1 min-w-[200px]">
-                                        <h2 className="text-xl md:text-2xl font-bold uppercase tracking-wide" style={{ color: "#E8C4A0" }}>
+                                        <h2 className="text-xl md:text-2xl font-bold uppercase tracking-wide text-primary">
                                             {plat.name}
                                         </h2>
-                                        <p className="text-sm md:text-base text-white/50 whitespace-pre-line leading-relaxed">
+                                        <p className="text-sm md:text-base text-foreground/60 whitespace-pre-line leading-relaxed">
                                             {plat.description}
                                         </p>
                                     </div>
-                                    <div className="w-px bg-white/10 self-stretch hidden md:block mx-2" />
-                                    <div className="w-3/4 h-px bg-white/10 md:hidden my-3 mx-auto" />
+                                    <div className="w-px bg-primary/10 self-stretch hidden md:block mx-2" />
+                                    <div className="w-3/4 h-px bg-primary/10 md:hidden my-3 mx-auto" />
                                 </>
                             ))}
 
                             <div className="flex flex-col items-center space-y-2 px-8 py-4 flex-1 min-w-[200px]">
-                                <h2 className="text-xl md:text-2xl font-bold tracking-wide" style={{ color: "#7BB89A" }}>
+                                <h2 className="text-xl md:text-2xl font-bold tracking-wide" style={{ color: "#4A7A5A" }}>
                                     OPTION VÉGÉTARIENNE
                                 </h2>
-                                <p className="text-sm md:text-base text-white/50 leading-relaxed">
+                                <p className="text-sm md:text-base text-foreground/60 leading-relaxed">
                                     Adaptation du plat du jour sur demande
                                 </p>
                             </div>
-                        </div>
-
-                        {/* Ligne décorative bas */}
-                        <div className="flex h-1 w-full">
-                            <div className="flex-1" style={{ background: "#3B6E4A" }} />
-                            <div className="flex-1" style={{ background: "#7D1A2B" }} />
                         </div>
                     </div>
                 </FadeIn>
