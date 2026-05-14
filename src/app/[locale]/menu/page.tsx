@@ -123,55 +123,45 @@ export default function MenuPage() {
             {/* Plat du Jour */}
             <div className="container mx-auto px-4 mb-8">
                 <FadeIn delay={0.1}>
-                    <div className="relative overflow-hidden rounded-xl shadow-sm text-center border border-primary/10" style={{ background: "#FAF5EC" }}>
+                    <div className="relative overflow-hidden rounded-xl shadow-sm text-center bg-white border border-border/50">
 
                         {/* Filigrane */}
-                        <div className="absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none select-none font-serif text-[180px] md:text-[240px] leading-none text-primary opacity-[0.04]">
+                        <div className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none select-none font-serif text-[200px] md:text-[260px] leading-none text-primary opacity-[0.03] translate-x-1/4">
                             ع
                         </div>
 
-                        {/* Ligne fine bordeaux en haut */}
-                        <div className="h-[3px] w-full bg-primary" />
-
-                        {/* Date */}
-                        <div className="relative z-10 pt-6 pb-2 px-6">
-                            <p className="text-[11px] font-bold tracking-[0.3em] uppercase text-primary/50">
+                        {/* En-tête date */}
+                        <div className="relative z-10 bg-primary px-6 py-4">
+                            <p className="text-xs font-bold tracking-[0.25em] uppercase text-white/60 mb-1">
                                 Plat du jour
                             </p>
-                            <p className="text-sm font-semibold tracking-widest text-foreground/40 mt-0.5">
+                            <p className="text-lg md:text-xl font-bold text-white tracking-wide">
                                 {platDuJour.date}
                             </p>
                         </div>
 
-                        {/* Séparateur ornemental */}
-                        <div className="flex items-center justify-center gap-3 px-12 py-2">
-                            <div className="flex-1 h-px bg-primary/10" />
-                            <span className="text-primary/20 text-xs">✦</span>
-                            <div className="flex-1 h-px bg-primary/10" />
-                        </div>
-
                         {/* Plats */}
-                        <div className="relative z-10 flex flex-wrap justify-center w-full max-w-4xl mx-auto px-4 pb-8 pt-2">
+                        <div className="relative z-10 flex flex-wrap justify-center w-full max-w-4xl mx-auto px-4 py-6">
                             {platDuJour.plats.map((plat, i) => (
                                 <>
-                                    <div key={i} className="flex flex-col items-center space-y-2 px-8 py-4 flex-1 min-w-[200px]">
-                                        <h2 className="text-xl md:text-2xl font-bold uppercase tracking-wide text-primary">
+                                    <div key={i} className="flex flex-col items-center space-y-2 px-8 py-3 flex-1 min-w-[220px]">
+                                        <h2 className="text-xl md:text-2xl font-bold uppercase tracking-wide text-foreground">
                                             {plat.name}
                                         </h2>
-                                        <p className="text-sm md:text-base text-foreground/60 whitespace-pre-line leading-relaxed">
+                                        <p className="text-sm md:text-base text-muted-foreground whitespace-pre-line leading-relaxed">
                                             {plat.description}
                                         </p>
                                     </div>
-                                    <div className="w-px bg-primary/10 self-stretch hidden md:block mx-2" />
-                                    <div className="w-3/4 h-px bg-primary/10 md:hidden my-3 mx-auto" />
+                                    <div className="w-px bg-border self-stretch hidden md:block" />
+                                    <div className="w-3/4 h-px bg-border md:hidden my-3 mx-auto" />
                                 </>
                             ))}
 
-                            <div className="flex flex-col items-center space-y-2 px-8 py-4 flex-1 min-w-[200px]">
-                                <h2 className="text-xl md:text-2xl font-bold tracking-wide" style={{ color: "#4A7A5A" }}>
-                                    OPTION VÉGÉTARIENNE
+                            <div className="flex flex-col items-center space-y-2 px-8 py-3 flex-1 min-w-[220px]">
+                                <h2 className="text-xl md:text-2xl font-bold tracking-wide text-foreground">
+                                    Option Végétarienne
                                 </h2>
-                                <p className="text-sm md:text-base text-foreground/60 leading-relaxed">
+                                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                                     Adaptation du plat du jour sur demande
                                 </p>
                             </div>
