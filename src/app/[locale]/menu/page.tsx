@@ -131,8 +131,8 @@ export default function MenuPage() {
                         </div>
 
                         {/* En-tête date */}
-                        <div className="relative z-10 bg-primary px-6 py-4">
-                            <p className="text-xs font-bold tracking-[0.25em] uppercase text-white/60 mb-1">
+                        <div className="relative z-10 px-6 py-4" style={{ background: "#C9788A" }}>
+                            <p className="text-xs font-bold tracking-[0.25em] uppercase text-white/70 mb-1">
                                 Plat du jour
                             </p>
                             <p className="text-lg md:text-xl font-bold text-white tracking-wide">
@@ -141,27 +141,27 @@ export default function MenuPage() {
                         </div>
 
                         {/* Plats */}
-                        <div className="relative z-10 flex flex-wrap justify-center w-full max-w-4xl mx-auto px-4 py-6">
+                        <div className="relative z-10 flex flex-wrap justify-center w-full max-w-4xl mx-auto px-4 py-6" style={{ background: "#FDF6F0" }}>
                             {platDuJour.plats.map((plat, i) => (
                                 <>
                                     <div key={i} className="flex flex-col items-center space-y-2 px-8 py-3 flex-1 min-w-[220px]">
-                                        <h2 className="text-xl md:text-2xl font-bold uppercase tracking-wide text-foreground">
+                                        <h2 className="text-xl md:text-2xl font-bold uppercase tracking-wide" style={{ color: "#A0455A" }}>
                                             {plat.name}
                                         </h2>
-                                        <p className="text-sm md:text-base text-muted-foreground whitespace-pre-line leading-relaxed">
+                                        <p className="text-sm md:text-base whitespace-pre-line leading-relaxed" style={{ color: "#7A6A64" }}>
                                             {plat.description}
                                         </p>
                                     </div>
-                                    <div className="w-px bg-border self-stretch hidden md:block" />
-                                    <div className="w-3/4 h-px bg-border md:hidden my-3 mx-auto" />
+                                    <div className="w-px self-stretch hidden md:block" style={{ background: "#E8D5CC" }} />
+                                    <div className="w-3/4 h-px md:hidden my-3 mx-auto" style={{ background: "#E8D5CC" }} />
                                 </>
                             ))}
 
                             <div className="flex flex-col items-center space-y-2 px-8 py-3 flex-1 min-w-[220px]">
-                                <h2 className="text-xl md:text-2xl font-bold tracking-wide text-foreground">
+                                <h2 className="text-xl md:text-2xl font-bold tracking-wide" style={{ color: "#5E8C6A" }}>
                                     Option Végétarienne
                                 </h2>
-                                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                                <p className="text-sm md:text-base leading-relaxed" style={{ color: "#7A6A64" }}>
                                     Adaptation du plat du jour sur demande
                                 </p>
                             </div>
