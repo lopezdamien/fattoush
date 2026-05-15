@@ -123,47 +123,29 @@ export default function MenuPage() {
             {/* Plat du Jour */}
             <div className="container mx-auto px-4 mb-8">
                 <FadeIn delay={0.1}>
-                    <div className="relative overflow-hidden rounded-xl shadow-sm text-center bg-white border border-border/50">
+                    <div>
+                        {/* En-tête */}
+                        <h2 className="text-2xl font-bold text-primary border-b border-primary/20 pb-2 mb-4">
+                            Plat du jour
+                            <span className="text-base font-normal text-muted-foreground ml-3">{platDuJour.date}</span>
+                        </h2>
 
-                        {/* Filigrane */}
-                        <div className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none select-none font-serif text-[200px] md:text-[260px] leading-none text-primary opacity-[0.03] translate-x-1/4">
-                            ع
-                        </div>
-
-                        {/* En-tête date */}
-                        <div className="relative z-10 px-6 py-4" style={{ background: "#C9788A" }}>
-                            <p className="text-xs font-bold tracking-[0.25em] uppercase text-white/70 mb-1">
-                                Plat du jour
-                            </p>
-                            <p className="text-lg md:text-xl font-bold text-white tracking-wide">
-                                {platDuJour.date}
-                            </p>
-                        </div>
-
-                        {/* Plats */}
-                        <div className="relative z-10 flex flex-wrap justify-center w-full max-w-4xl mx-auto px-4 py-6" style={{ background: "#FDF6F0" }}>
+                        {/* Cartes */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {platDuJour.plats.map((plat, i) => (
-                                <>
-                                    <div key={i} className="flex flex-col items-center space-y-2 px-8 py-3 flex-1 min-w-[220px]">
-                                        <h2 className="text-xl md:text-2xl font-bold uppercase tracking-wide" style={{ color: "#A0455A" }}>
-                                            {plat.name}
-                                        </h2>
-                                        <p className="text-sm md:text-base whitespace-pre-line leading-relaxed" style={{ color: "#7A6A64" }}>
-                                            {plat.description}
-                                        </p>
+                                <div key={i} className="flex flex-col justify-between p-4 bg-white rounded-lg shadow-sm border border-border/50 h-full">
+                                    <div className="space-y-1">
+                                        <h3 className="text-lg font-semibold leading-tight uppercase">{plat.name}</h3>
+                                        <p className="text-foreground text-sm leading-snug">{plat.description}</p>
                                     </div>
-                                    <div className="w-px self-stretch hidden md:block" style={{ background: "#E8D5CC" }} />
-                                    <div className="w-3/4 h-px md:hidden my-3 mx-auto" style={{ background: "#E8D5CC" }} />
-                                </>
+                                </div>
                             ))}
 
-                            <div className="flex flex-col items-center space-y-2 px-8 py-3 flex-1 min-w-[220px]">
-                                <h2 className="text-xl md:text-2xl font-bold tracking-wide" style={{ color: "#5E8C6A" }}>
-                                    Option Végétarienne
-                                </h2>
-                                <p className="text-sm md:text-base leading-relaxed" style={{ color: "#7A6A64" }}>
-                                    Adaptation du plat du jour sur demande
-                                </p>
+                            <div className="flex flex-col justify-between p-4 bg-white rounded-lg shadow-sm border border-border/50 h-full">
+                                <div className="space-y-1">
+                                    <h3 className="text-lg font-semibold leading-tight uppercase">OPTION VÉGÉTARIENNE</h3>
+                                    <p className="text-foreground text-sm leading-snug">Adaptation du plat du jour sur demande</p>
+                                </div>
                             </div>
                         </div>
                     </div>
