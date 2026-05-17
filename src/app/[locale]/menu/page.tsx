@@ -140,13 +140,6 @@ export default function MenuPage() {
                                     </div>
                                 </div>
                             ))}
-
-                            <div className="flex flex-col justify-between p-4 bg-white rounded-lg shadow-sm border border-border/50 h-full">
-                                <div className="space-y-1">
-                                    <h3 className="text-lg font-semibold leading-tight uppercase">OPTION VÉGÉTARIENNE</h3>
-                                    <p className="text-foreground text-sm leading-snug">Adaptation du plat du jour sur demande</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </FadeIn>
