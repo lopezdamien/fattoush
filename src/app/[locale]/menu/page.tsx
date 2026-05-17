@@ -123,21 +123,33 @@ export default function MenuPage() {
             {/* Plat du Jour */}
             <div className="container mx-auto px-4 mb-8">
                 <FadeIn delay={0.1}>
-                    <div>
-                        {/* En-tête */}
-                        <h2 className="text-2xl font-bold text-primary border-b border-primary/20 pb-2 mb-4">
-                            Plat du jour
-                            <span className="text-base font-normal text-muted-foreground ml-3">{platDuJour.date}</span>
-                        </h2>
+                    <div className="flex justify-center">
+                        <div className="relative overflow-hidden rounded-2xl shadow-sm w-full max-w-xl text-center px-8 py-8" style={{ background: "linear-gradient(135deg, #FDE8E4 0%, #FDF3E3 50%, #E8F4EC 100%)" }}>
 
-                        {/* Cartes */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {/* Filigrane */}
+                            <div className="absolute right-0 bottom-0 pointer-events-none select-none font-serif text-[140px] leading-none opacity-[0.06] translate-x-6 translate-y-4" style={{ color: "#A0455A" }}>
+                                ع
+                            </div>
+
+                            {/* Label */}
+                            <p className="text-[11px] font-bold tracking-[0.3em] uppercase mb-1" style={{ color: "#B06070" }}>
+                                Plat du jour
+                            </p>
+
+                            {/* Date */}
+                            <p className="text-sm font-semibold tracking-wide mb-5" style={{ color: "#9A8880" }}>
+                                {platDuJour.date}
+                            </p>
+
+                            {/* Plats */}
                             {platDuJour.plats.map((plat, i) => (
-                                <div key={i} className="flex flex-col justify-between p-4 bg-white rounded-lg shadow-sm border border-border/50 h-full">
-                                    <div className="space-y-1">
-                                        <h3 className="text-lg font-semibold leading-tight uppercase">{plat.name}</h3>
-                                        <p className="text-foreground text-sm leading-snug">{plat.description}</p>
-                                    </div>
+                                <div key={i} className="relative z-10 space-y-2">
+                                    <h2 className="text-2xl md:text-3xl font-bold uppercase tracking-wide" style={{ color: "#2C2420" }}>
+                                        {plat.name}
+                                    </h2>
+                                    <p className="text-sm md:text-base leading-relaxed" style={{ color: "#4A3F3A" }}>
+                                        {plat.description}
+                                    </p>
                                 </div>
                             ))}
                         </div>
