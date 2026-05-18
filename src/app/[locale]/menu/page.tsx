@@ -132,12 +132,12 @@ export default function MenuPage() {
                             </div>
 
                             {/* Label */}
-                            <p className="text-[11px] font-bold tracking-[0.3em] uppercase mb-1" style={{ color: "#B06070" }}>
+                            <p className="text-base font-bold tracking-[0.2em] uppercase mb-1" style={{ color: "#B06070" }}>
                                 Plat du jour
                             </p>
 
                             {/* Date */}
-                            <p className="text-sm font-semibold tracking-wide mb-5" style={{ color: "#9A8880" }}>
+                            <p className="text-lg font-semibold tracking-wide mb-5" style={{ color: "#9A8880" }}>
                                 {platDuJour.date}
                             </p>
 
