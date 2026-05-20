@@ -92,7 +92,6 @@ export default function TraiteurPage() {
 
                         {status === "success" ? (
                             <div className="text-center py-12 space-y-3 border border-border rounded-xl">
-                                <p className="text-3xl">🎉</p>
                                 <p className="font-bold text-foreground text-lg">Votre demande a bien été envoyée !</p>
                                 <p className="text-muted-foreground text-sm">Nous reviendrons vers vous dans les meilleurs délais.</p>
                             </div>
