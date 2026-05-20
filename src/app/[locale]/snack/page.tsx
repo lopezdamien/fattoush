@@ -43,7 +43,6 @@ export default function SnackPage() {
             <div className="container mx-auto px-4 text-center space-y-2 pb-6">
                 <FadeIn>
                     <h1 className="text-4xl md:text-5xl font-bold text-primary">{t("title")}</h1>
-                    <p className="text-lg md:text-xl text-muted-foreground mt-2">{t("subtitle")}</p>
                 </FadeIn>
             </div>
 
@@ -107,6 +106,7 @@ export default function SnackPage() {
             </div>
 
             <div className="container mx-auto px-4 mt-8 pb-12 text-center text-muted-foreground text-sm space-y-2">
+                <p className="text-base italic">{t("subtitle")}</p>
                 <p>{t("footer.taxes")}</p>
                 <p>{t("footer.allergens")}</p>
             </div>
