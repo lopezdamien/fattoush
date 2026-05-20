@@ -113,7 +113,7 @@ export function Header() {
                 </div>
 
                 {/* Mobile Logo (Centered) */}
-                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden z-50">
+                <div className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden z-50 transition-opacity duration-200 ${isMenuOpen ? "opacity-0 pointer-events-none" : "opacity-100"}`}>
                     <Link href="/" className="font-bold text-2xl text-white tracking-wider hover:opacity-90 transition-opacity">
                         FATTOUSH
                     </Link>
