@@ -117,6 +117,7 @@ export default function MenuPage() {
                 <FadeIn>
                     <h1 className="text-4xl md:text-5xl font-bold text-primary">{t("title")}</h1>
                     <p className="text-lg md:text-xl text-muted-foreground mt-2">{t("subtitle")}</p>
+                    <p className="text-sm font-semibold text-primary/70 italic mt-1">{t("homemade_bread")}</p>
                 </FadeIn>
             </div>
 

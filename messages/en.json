@@ -19,7 +19,8 @@
             "description": "A journey through the flavors of the Levant. Our cuisine celebrates sharing, freshness, and legendary Lebanese hospitality.",
             "fresh": "Fresh Ingredients",
             "tradition": "Traditional Savoir-Faire",
-            "sharing": "Conviviality"
+            "sharing": "Conviviality",
+            "homemade_bread": "Our Lebanese bread is prepared and baked fresh in-house, every day."
         },
         "specialties": {
             "title": "Our Specialties",
@@ -37,6 +38,7 @@
     "Menu": {
         "title": "The Menu",
         "subtitle": "Authentic and Generous Lebanese Cuisine",
+        "homemade_bread": "Our Lebanese bread is prepared and baked fresh in-house, every day.",
         "categories": {
             "breakfast": "Lebanese Breakfast",
             "cold_mezze": "Cold Mezze",

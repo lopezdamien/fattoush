@@ -19,7 +19,8 @@
       "description": "Situé à la Rue des Gares à Genève, à quelques minutes de la Gare Cornavin, Fattoush vous invite à découvrir une cuisine libanaise authentique. Notre maison célèbre la fraîcheur des produits, le savoir-faire traditionnel et la convivialité propre à l'hospitalité libanaise.",
       "fresh": "Produits Frais",
       "tradition": "Savoir-faire Traditionnel",
-      "sharing": "Convivialité"
+      "sharing": "Convivialité",
+      "homemade_bread": "Notre pain libanais est préparé et cuit maison, chaque jour."
     },
     "specialties": {
       "title": "Nos Spécialités",
@@ -37,6 +38,7 @@
   "Menu": {
     "title": "La Carte",
     "subtitle": "Cuisine libanaise authentique et généreuse",
+    "homemade_bread": "Notre pain libanais est préparé et cuit maison, chaque jour.",
     "categories": {
       "breakfast": "Petit-déjeuner Libanais",
       "cold_mezze": "Mezzés Froids",

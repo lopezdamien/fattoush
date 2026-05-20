@@ -119,6 +119,9 @@ export default function Home() {
             <p className="text-lg text-muted-foreground leading-relaxed">
               {t("spirit.description")}
             </p>
+            <p className="text-base font-semibold text-primary/80 italic">
+              {t("spirit.homemade_bread")}
+            </p>
           </div>
         </FadeIn>
 
