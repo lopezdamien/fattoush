@@ -14,13 +14,16 @@ const snackItems = [
 
 const pizzaItems = [
     "margherita",
-    "sicilienne",
-    "napolitaine",
-    "quatre_saisons",
-    "quatre_fromages",
-    "calzone",
-    "champignon",
+    "jambon",
+    "al_funghi",
+    "napoletana",
+    "parma",
     "vegetarienne",
+    "capricciosa",
+    "calabraise",
+    "quatre_fromages",
+    "sicilienne",
+    "calzone",
 ];
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -46,49 +49,13 @@ export default function SnackPage() {
 
             <div className="container mx-auto px-4 pb-12">
                 <FadeIn delay={0.1}>
-                    <div id="sandwichs" className="space-y-4 scroll-mt-24">
-                        <h2 className="text-2xl font-bold text-primary border-b border-primary/20 pb-2">
-                            {t("category")}
-                        </h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                            {snackItems.map((item) => (
-                                <div
-                                    key={item}
-                                    className="flex flex-col justify-between p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow group h-full"
-                                >
-                                    <div className="space-y-1">
-                                        <div className="flex justify-between items-start gap-2">
-                                            <h3 className="text-lg font-semibold group-hover:text-primary transition-colors leading-tight">
-                                                {t(`items.${item}.name`)}
-                                            </h3>
-                                            <span className="font-bold text-primary whitespace-nowrap">
-                                                {t(`items.${item}.price`)}
-                                            </span>
-                                        </div>
-                                        <p className="text-muted-foreground text-sm leading-snug">
-                                            {t(`items.${item}.desc`)}
-                                        </p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </FadeIn>
-            </div>
-
-            <div className="container mx-auto px-4 pb-12">
-                <FadeIn delay={0.2}>
                     <div id="pizzas" className="space-y-4 scroll-mt-24">
                         <h2 className="text-2xl font-bold text-primary border-b border-primary/20 pb-2">
                             {t("pizzas.category")}
                         </h2>
-
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             {pizzaItems.map((item) => (
-                                <div
-                                    key={item}
-                                    className="flex flex-col justify-between p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow group h-full"
-                                >
+                                <div key={item} className="flex flex-col justify-between p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow group h-full">
                                     <div className="space-y-1">
                                         <div className="flex justify-between items-start gap-2">
                                             <h3 className="text-lg font-semibold group-hover:text-primary transition-colors leading-tight">
@@ -100,6 +67,36 @@ export default function SnackPage() {
                                         </div>
                                         <p className="text-muted-foreground text-sm leading-snug">
                                             {t(`pizzas.items.${item}.desc`)}
+                                        </p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                        <p className="text-sm font-semibold text-primary/70 italic pt-2">{t("pizzas.takeaway")}</p>
+                    </div>
+                </FadeIn>
+            </div>
+
+            <div className="container mx-auto px-4 pb-12">
+                <FadeIn delay={0.2}>
+                    <div id="sandwichs" className="space-y-4 scroll-mt-24">
+                        <h2 className="text-2xl font-bold text-primary border-b border-primary/20 pb-2">
+                            {t("category")}
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            {snackItems.map((item) => (
+                                <div key={item} className="flex flex-col justify-between p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow group h-full">
+                                    <div className="space-y-1">
+                                        <div className="flex justify-between items-start gap-2">
+                                            <h3 className="text-lg font-semibold group-hover:text-primary transition-colors leading-tight">
+                                                {t(`items.${item}.name`)}
+                                            </h3>
+                                            <span className="font-bold text-primary whitespace-nowrap">
+                                                {t(`items.${item}.price`)}
+                                            </span>
+                                        </div>
+                                        <p className="text-muted-foreground text-sm leading-snug">
+                                            {t(`items.${item}.desc`)}
                                         </p>
                                     </div>
                                 </div>

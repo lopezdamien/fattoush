@@ -398,46 +398,62 @@
         },
         "pizzas": {
             "category": "Pizzas",
+            "takeaway": "Our pizzas are also available for takeaway!",
             "items": {
                 "margherita": {
                     "name": "Margherita",
-                    "desc": "Tomato, mozzarella, basil",
-                    "price": "12.-"
+                    "desc": "Tomato sauce, mozzarella, basil, olive oil",
+                    "price": "17.-"
                 },
-                "sicilienne": {
-                    "name": "Siciliana",
-                    "desc": "Tomato, mozzarella, tuna, onion, olives",
-                    "price": "12.-"
+                "jambon": {
+                    "name": "Ham",
+                    "desc": "Tomato sauce, mozzarella, ham",
+                    "price": "20.-"
                 },
-                "napolitaine": {
+                "al_funghi": {
+                    "name": "Al Funghi",
+                    "desc": "Tomato sauce, mozzarella, fresh mushrooms",
+                    "price": "20.-"
+                },
+                "napoletana": {
                     "name": "Napoletana",
-                    "desc": "Tomato, mozzarella, anchovies, capers, olives",
-                    "price": "12.-"
+                    "desc": "Tomato sauce, mozzarella, anchovies, capers, olives, oregano",
+                    "price": "20.-"
                 },
-                "quatre_saisons": {
-                    "name": "Four Seasons",
-                    "desc": "Tomato, mozzarella, bell pepper, mushroom, eggplant, artichoke, olives",
-                    "price": "12.-"
-                },
-                "quatre_fromages": {
-                    "name": "4 Cheeses",
-                    "desc": "Tomato, mozzarella, gorgonzola, cheddar, parmesan",
-                    "price": "12.-"
-                },
-                "calzone": {
-                    "name": "Calzone",
-                    "desc": "Tomato, mozzarella, ham, artichoke, egg",
-                    "price": "12.-"
-                },
-                "champignon": {
-                    "name": "Mushroom",
-                    "desc": "Tomato, mozzarella, button mushrooms, olives, basil",
-                    "price": "12.-"
+                "parma": {
+                    "name": "Parma",
+                    "desc": "Tomato sauce, mozzarella, Parma ham, rocket, Grana Padano",
+                    "price": "22.-"
                 },
                 "vegetarienne": {
                     "name": "Vegetarian",
-                    "desc": "Tomato, mozzarella, bell pepper, mushroom, eggplant, zucchini",
-                    "price": "12.-"
+                    "desc": "Tomato sauce, eggplant, zucchini, peppers",
+                    "price": "23.-"
+                },
+                "capricciosa": {
+                    "name": "Capricciosa",
+                    "desc": "Tomato sauce, mozzarella, fresh mushrooms, ham, artichokes",
+                    "price": "24.-"
+                },
+                "calabraise": {
+                    "name": "Calabrese",
+                    "desc": "Tomato sauce, mozzarella, spicy salami, onions, olives",
+                    "price": "24.-"
+                },
+                "quatre_fromages": {
+                    "name": "Four Cheeses",
+                    "desc": "Mozzarella, gorgonzola, Grana Padano, gruyère",
+                    "price": "24.-"
+                },
+                "sicilienne": {
+                    "name": "Siciliana",
+                    "desc": "Tomato sauce, mozzarella, tuna, red onions, cherry tomatoes",
+                    "price": "24.-"
+                },
+                "calzone": {
+                    "name": "Calzone",
+                    "desc": "Tomato sauce, mozzarella, fresh mushrooms, ham",
+                    "price": "24.-"
                 }
             }
         },
