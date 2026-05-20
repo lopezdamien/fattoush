@@ -167,7 +167,7 @@ export function Header() {
                                     <Link
                                         href={link.href}
                                         onClick={toggleMenu}
-                                        className="block text-3xl font-black text-white hover:text-[var(--color-green)] transition-colors tracking-tight py-1 uppercase"
+                                        className="block text-xl font-bold text-white hover:text-[var(--color-green)] transition-colors tracking-wide py-1 uppercase"
                                     >
                                         {t(link.label)}
                                     </Link>
