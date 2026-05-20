@@ -33,24 +33,14 @@ export default function TraiteurPage() {
     return (
         <main className="min-h-screen bg-[#FAF5EC]">
 
-            {/* Hero avec photo */}
-            <div className="relative h-[55vh] min-h-[380px] w-full overflow-hidden">
-                <Image
-                    src="/images/mezze.jpg"
-                    alt="Traiteur Fattoush"
-                    fill
-                    className="object-cover"
-                    priority
-                />
-                <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.55) 100%)" }} />
-                <div className="absolute inset-0 flex flex-col items-center justify-end pb-12 px-4 text-center">
-                    <FadeIn>
-                        <h1 className="text-5xl md:text-6xl font-black text-white tracking-tight mb-3">Traiteur</h1>
-                        <p className="text-white/80 text-lg md:text-xl max-w-lg">
-                            La cuisine de Fattoush pour vos événements privés et professionnels
-                        </p>
-                    </FadeIn>
-                </div>
+            {/* Hero */}
+            <div className="bg-primary pt-24 pb-14 px-4 text-center">
+                <FadeIn>
+                    <h1 className="text-5xl md:text-6xl font-black text-white tracking-tight mb-3">Traiteur</h1>
+                    <p className="text-white/75 text-lg md:text-xl max-w-lg mx-auto">
+                        La cuisine de Fattoush pour vos événements privés et professionnels
+                    </p>
+                </FadeIn>
             </div>
 
             {/* Intro + photo secondaire */}
