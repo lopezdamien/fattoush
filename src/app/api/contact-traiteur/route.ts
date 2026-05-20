@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
     }
 
     await resend.emails.send({
-        from: "Fattoush Traiteur <traiteur@fattoushgeneve.ch>",
+        from: "Fattoush Traiteur <contact@fattoushgeneve.ch>",
         to: "contact@fattoushgeneve.ch",
         replyTo: email,
         subject: `Demande traiteur – ${eventType || "Événement"} – ${name}`,
