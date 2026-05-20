@@ -35,6 +35,7 @@ export function Header() {
         { href: "/", label: "home" },
         { href: "/menu", label: "menu" },
         { href: "/snack", label: "snack" },
+        { href: "/traiteur", label: "traiteur" },
         { href: "/gallery", label: "gallery" },
         { href: "/contact", label: "contact" },
     ];
