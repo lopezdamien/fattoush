@@ -457,6 +457,34 @@
             "sharing": "Joy of Sharing"
         }
     },
+    "Traiteur": {
+        "title": "Catering",
+        "subtitle": "Fattoush cuisine for your private and professional events in Geneva and French-speaking Switzerland.",
+        "intro_title": "A generous Lebanese meal, delivered to you",
+        "intro_p1": "Whether it's a wedding, a birthday, a corporate reception or a dinner with friends, we prepare mezze, grills and slow-cooked dishes using the same fresh ingredients as in our Rue des Gares restaurant.",
+        "intro_p2": "Every order is tailored to your needs — menu, quantities, presentation — to make your event a success.",
+        "specialties": ["Cold & hot mezze", "Grills & kafta", "Slow-cooked dishes & rice", "Oriental desserts", "Buffets & meal trays"],
+        "form_title": "Request a quote",
+        "form_subtitle": "Fill in the form — we'll get back to you within 48 hours.",
+        "form": {
+            "name": "Full name",
+            "email": "Email",
+            "phone": "Phone",
+            "event_type": "Event type",
+            "event_placeholder": "Select…",
+            "events": ["Wedding", "Birthday", "Corporate event", "Private buffet", "Meal tray", "Other"],
+            "guests": "Number of guests",
+            "guests_placeholder": "e.g. 50",
+            "date": "Preferred date",
+            "message": "Message",
+            "message_placeholder": "Describe your event, dietary preferences, constraints…",
+            "submit": "Send my request",
+            "sending": "Sending…",
+            "success_title": "Your request has been sent!",
+            "success_desc": "We will get back to you as soon as possible.",
+            "error": "An error occurred. Please contact us directly at contact@fattoushgeneve.ch"
+        }
+    },
     "Gallery": {
         "title": "Gallery",
         "subtitle": "A glimpse into our culinary universe"

@@ -457,6 +457,34 @@
       "sharing": "Plaisir du Partage"
     }
   },
+  "Traiteur": {
+    "title": "Traiteur",
+    "subtitle": "La cuisine de Fattoush pour vos événements privés et professionnels à Genève et en Suisse romande.",
+    "intro_title": "Un repas libanais généreux, livré chez vous",
+    "intro_p1": "Que ce soit pour un mariage, un anniversaire, une réception d'entreprise ou un repas entre amis, nous préparons des mezzés, grillades et plats mijotés avec les mêmes produits frais que dans notre restaurant de la Rue des Gares.",
+    "intro_p2": "Chaque commande est pensée sur mesure — menu, quantités, présentation — pour que votre événement soit une réussite.",
+    "specialties": ["Mezzés froids & chauds", "Grillades & kafta", "Plats mijotés & riz", "Desserts orientaux", "Plateaux repas & buffets"],
+    "form_title": "Demande de devis",
+    "form_subtitle": "Remplissez le formulaire — nous vous répondons sous 48h.",
+    "form": {
+      "name": "Nom complet",
+      "email": "Email",
+      "phone": "Téléphone",
+      "event_type": "Type d'événement",
+      "event_placeholder": "Sélectionner…",
+      "events": ["Mariage", "Anniversaire", "Événement d'entreprise", "Buffet privé", "Plateau repas", "Autre"],
+      "guests": "Nombre de personnes",
+      "guests_placeholder": "ex. 50",
+      "date": "Date souhaitée",
+      "message": "Message",
+      "message_placeholder": "Décrivez votre événement, vos préférences alimentaires, vos contraintes…",
+      "submit": "Envoyer ma demande",
+      "sending": "Envoi en cours…",
+      "success_title": "Votre demande a bien été envoyée !",
+      "success_desc": "Nous reviendrons vers vous dans les meilleurs délais.",
+      "error": "Une erreur est survenue. Contactez-nous directement à contact@fattoushgeneve.ch"
+    }
+  },
   "Gallery": {
     "title": "Galerie",
     "subtitle": "Un aperçu de notre univers culinaire"
