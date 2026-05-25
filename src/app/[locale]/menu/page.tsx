@@ -148,7 +148,7 @@ export default function MenuPage() {
                                     <h2 className="text-2xl md:text-3xl font-bold uppercase tracking-wide" style={{ color: "#2C2420" }}>
                                         {plat.name}
                                     </h2>
-                                    <p className="text-sm md:text-base leading-relaxed" style={{ color: "#4A3F3A" }}>
+                                    <p className="text-sm md:text-base leading-relaxed whitespace-pre-line" style={{ color: "#4A3F3A" }}>
                                         {plat.description}
                                     </p>
                                 </div>
