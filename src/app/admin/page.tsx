@@ -1,47 +1,120 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-const DAYS = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+type DayMenu = { name: string; description: string; dateLabel?: string };
+type WeeklyMenuState = {
+    lundi: DayMenu;
+    mardi: DayMenu;
+    mercredi: DayMenu;
+    jeudi: DayMenu;
+    vendredi: DayMenu;
+};
+
+const emptyDay = (): DayMenu => ({ name: "", description: "" });
+
+const PRIMARY = "#3a6b47";
+const DAYS_OF_WEEK: (keyof WeeklyMenuState)[] = ["lundi", "mardi", "mercredi", "jeudi", "vendredi"];
+const FRENCH_DAYS = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"];
 const MONTHS = [
     "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
     "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"
 ];
 
-function todayLabel() {
+// Helper to find the Monday of the current or next week
+function getInitialMondayStr() {
     const d = new Date();
-    return `${DAYS[d.getDay() === 0 ? 6 : d.getDay() - 1]} ${d.getDate()} ${MONTHS[d.getMonth()]}`;
+    const day = d.getDay(); // 0 is Sunday, 1 is Monday, etc.
+    const diff = d.getDate() - day + (day === 0 ? -6 : 1); // get current week's Monday
+    const monday = new Date(d.setDate(diff));
+    if (day === 6 || day === 0) { // Saturday or Sunday, configure next week
+        monday.setDate(monday.getDate() + 7);
+    }
+    return monday.toISOString().split("T")[0]; // YYYY-MM-DD
 }
 
-type Plat = { name: string; description: string; price: string };
-
-const emptyPlat = (): Plat => ({ name: "", description: "", price: "CHF 22.–" });
-
-const PRIMARY = "#3a6b47";
+// Helper to compute date labels for the week starting on Monday
+function getWeekDaysLabels(mondayStr: string) {
+    if (!mondayStr) return [];
+    const parts = mondayStr.split("-");
+    const monday = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+    
+    return FRENCH_DAYS.map((dayName, index) => {
+        const d = new Date(monday);
+        d.setDate(monday.getDate() + index);
+        return `${dayName} ${d.getDate()} ${MONTHS[d.getMonth()]}`;
+    });
+}
 
 export default function AdminPage() {
     const [password, setPassword] = useState("");
     const [authed, setAuthed] = useState(false);
     const [authError, setAuthError] = useState(false);
 
-    const [date, setDate] = useState(todayLabel());
-    const [plats, setPlats] = useState<Plat[]>([emptyPlat()]);
+    const [weekStarting, setWeekStarting] = useState(getInitialMondayStr());
+    const [menu, setMenu] = useState<WeeklyMenuState>({
+        lundi: emptyDay(),
+        mardi: emptyDay(),
+        mercredi: emptyDay(),
+        jeudi: emptyDay(),
+        vendredi: emptyDay()
+    });
 
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState("");
 
-    function updatePlat(index: number, field: keyof Plat, value: string) {
-        setPlats(prev => prev.map((p, i) => i === index ? { ...p, [field]: value } : p));
+    // Load active menu on mount
+    useEffect(() => {
+        async function fetchMenu() {
+            try {
+                const res = await fetch("/api/plat-du-jour");
+                if (res.ok) {
+                    const data = await res.json();
+                    if (data.weekStarting) {
+                        setWeekStarting(data.weekStarting);
+                    }
+                    if (data.menu) {
+                        setMenu({
+                            lundi: data.menu.lundi || emptyDay(),
+                            mardi: data.menu.mardi || emptyDay(),
+                            mercredi: data.menu.mercredi || emptyDay(),
+                            jeudi: data.menu.jeudi || emptyDay(),
+                            vendredi: data.menu.vendredi || emptyDay()
+                        });
+                    }
+                }
+            } catch (e) {
+                console.error("Impossible de récupérer le plat du jour :", e);
+            }
+        }
+        fetchMenu();
+    }, []);
+
+    const dateLabels = getWeekDaysLabels(weekStarting);
+
+    function updateDay(day: keyof WeeklyMenuState, field: keyof DayMenu, value: string) {
+        setMenu(prev => ({
+            ...prev,
+            [day]: {
+                ...prev[day],
+                [field]: value
+            }
+        }));
         setSuccess(false);
     }
 
-    function addPlat() {
-        if (plats.length < 3) setPlats(prev => [...prev, emptyPlat()]);
-    }
-
-    function removePlat(index: number) {
-        if (plats.length > 1) setPlats(prev => prev.filter((_, i) => i !== index));
+    function handleWeekChange(e: React.ChangeEvent<HTMLInputElement>) {
+        const val = e.target.value;
+        if (!val) return;
+        
+        // Align date to the Monday of that week
+        const d = new Date(val);
+        const day = d.getDay();
+        const diff = d.getDate() - day + (day === 0 ? -6 : 1);
+        const monday = new Date(d.setDate(diff));
+        setWeekStarting(monday.toISOString().split("T")[0]);
+        setSuccess(false);
     }
 
     async function handleAuth(e: React.FormEvent) {
@@ -57,10 +130,19 @@ export default function AdminPage() {
         setSuccess(false);
         setError("");
 
+        // Prepare the payload with calculated dateLabels
+        const payloadMenu = { ...menu };
+        DAYS_OF_WEEK.forEach((day, index) => {
+            payloadMenu[day] = {
+                ...payloadMenu[day],
+                dateLabel: dateLabels[index]
+            };
+        });
+
         const payload = {
             password,
-            date,
-            plats: plats.map(p => ({ ...p, name: p.name.toUpperCase() })),
+            weekStarting,
+            menu: payloadMenu
         };
 
         const res = await fetch("/api/plat-du-jour", {
@@ -146,17 +228,20 @@ export default function AdminPage() {
                 </div>
 
                 {/* Aperçu */}
-                {plats.some(p => p.name) && (
+                {DAYS_OF_WEEK.some(d => menu[d].name) && (
                     <div className="rounded-2xl p-5 text-white shadow-lg" style={{ background: `linear-gradient(135deg, ${PRIMARY}, #2e5538)` }}>
-                        <p className="text-xs font-bold tracking-widest uppercase opacity-70 mb-3">Aperçu · {date || "—"}</p>
-                        <div className={`grid gap-4 ${plats.length > 1 ? "grid-cols-2" : "grid-cols-1"}`}>
-                            {plats.map((p, i) => p.name ? (
-                                <div key={i}>
-                                    <p className="text-sm font-bold uppercase leading-tight">{p.name}</p>
-                                    {p.description && <p className="text-xs opacity-75 mt-1 whitespace-pre-line">{p.description}</p>}
-                                    {p.price && <p className="text-sm font-bold mt-1.5">{p.price}</p>}
-                                </div>
-                            ) : null)}
+                        <p className="text-xs font-bold tracking-widest uppercase opacity-70 mb-3">Aperçu de la semaine</p>
+                        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2">
+                            {DAYS_OF_WEEK.map((day, index) => {
+                                const m = menu[day];
+                                return m.name ? (
+                                    <div key={day} className="border-b border-white/10 pb-2 last:border-0 last:pb-0">
+                                        <p className="text-xs font-bold tracking-wider opacity-60 uppercase">{dateLabels[index]}</p>
+                                        <p className="text-sm font-bold uppercase leading-tight mt-0.5">{m.name}</p>
+                                        {m.description && <p className="text-xs opacity-75 mt-0.5 whitespace-pre-line">{m.description}</p>}
+                                    </div>
+                                ) : null;
+                            })}
                         </div>
                     </div>
                 )}
@@ -164,70 +249,50 @@ export default function AdminPage() {
                 {/* Formulaire */}
                 <form onSubmit={handleSubmit} className="bg-white rounded-3xl shadow-xl p-7 space-y-6">
 
-                    {/* Date */}
+                    {/* Date picker for target week */}
                     <div className="space-y-1.5">
-                        <label className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Date</label>
+                        <label className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Semaine du (Lundi)</label>
                         <input
-                            type="text"
-                            value={date}
-                            onChange={e => { setDate(e.target.value); setSuccess(false); }}
-                            placeholder="ex : Mardi 22 Avril"
+                            type="date"
+                            value={weekStarting}
+                            onChange={handleWeekChange}
                             className="w-full border border-gray-100 bg-gray-50 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#3a6b47]/20 focus:bg-white transition-all"
                             required
                         />
                     </div>
 
-                    {/* Plats */}
-                    {plats.map((plat, i) => (
-                        <div key={i} className="space-y-3">
-                            <div className="flex items-center justify-between">
-                                <span className="text-xs font-bold uppercase tracking-widest" style={{ color: PRIMARY }}>
-                                    {plats.length > 1 ? `Plat ${i + 1}` : "Plat du jour"}
-                                </span>
-                                {plats.length > 1 && (
-                                    <button type="button" onClick={() => removePlat(i)} className="text-xs text-gray-400 hover:text-red-400 transition-colors">
-                                        Supprimer
-                                    </button>
-                                )}
-                            </div>
-                            <input
-                                type="text"
-                                value={plat.name}
-                                onChange={e => updatePlat(i, "name", e.target.value)}
-                                placeholder="Nom du plat"
-                                className="w-full border border-gray-100 bg-gray-50 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#3a6b47]/20 focus:bg-white transition-all"
-                                required
-                            />
-                            <textarea
-                                value={plat.description}
-                                onChange={e => updatePlat(i, "description", e.target.value)}
-                                placeholder="Description"
-                                rows={2}
-                                className="w-full border border-gray-100 bg-gray-50 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#3a6b47]/20 focus:bg-white transition-all resize-none"
-                                required
-                            />
-                            <input
-                                type="text"
-                                value={plat.price}
-                                onChange={e => updatePlat(i, "price", e.target.value)}
-                                placeholder="Prix (ex : CHF 22.–)"
-                                className="w-full border border-gray-100 bg-gray-50 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#3a6b47]/20 focus:bg-white transition-all"
-                                required
-                            />
-                            {i < plats.length - 1 && <div className="border-b border-gray-100 pt-1" />}
+                    {/* Weekdays menu configuration */}
+                    <div className="space-y-6">
+                        <div className="border-b border-gray-100 pb-2">
+                            <span className="text-xs font-bold uppercase tracking-widest text-gray-400">Plats du lundi au vendredi</span>
                         </div>
-                    ))}
-
-                    {/* Ajouter un plat */}
-                    {plats.length < 3 && (
-                        <button
-                            type="button"
-                            onClick={addPlat}
-                            className="w-full border-2 border-dashed border-gray-200 rounded-xl py-3 text-sm text-gray-400 hover:border-[#3a6b47]/40 hover:text-[#3a6b47] transition-all"
-                        >
-                            + Ajouter un deuxième plat
-                        </button>
-                    )}
+                        {DAYS_OF_WEEK.map((day, index) => {
+                            const m = menu[day];
+                            return (
+                                <div key={day} className="space-y-2 border-b border-gray-100 pb-6 last:border-0 last:pb-0">
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-sm font-bold uppercase tracking-widest" style={{ color: PRIMARY }}>
+                                            {dateLabels[index]}
+                                        </span>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        value={m.name}
+                                        onChange={e => updateDay(day, "name", e.target.value)}
+                                        placeholder="Nom du plat (laisser vide si pas de plat)"
+                                        className="w-full border border-gray-100 bg-gray-50 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#3a6b47]/20 focus:bg-white transition-all"
+                                    />
+                                    <textarea
+                                        value={m.description}
+                                        onChange={e => updateDay(day, "description", e.target.value)}
+                                        placeholder="Description (ex: accompagnements, sauce...)"
+                                        rows={2}
+                                        className="w-full border border-gray-100 bg-gray-50 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#3a6b47]/20 focus:bg-white transition-all resize-none"
+                                    />
+                                </div>
+                            );
+                        })}
+                    </div>
 
                     {error && (
                         <div className="flex items-center gap-2 bg-red-50 border border-red-100 rounded-xl px-4 py-3">
@@ -240,7 +305,7 @@ export default function AdminPage() {
                         <div className="flex items-center gap-3 bg-emerald-50 border border-emerald-100 rounded-xl px-4 py-3">
                             <span className="text-emerald-500 text-lg">✓</span>
                             <div>
-                                <p className="text-emerald-700 text-sm font-semibold">Mis à jour avec succès !</p>
+                                <p className="text-emerald-700 text-sm font-semibold">Semaine mise à jour avec succès !</p>
                                 <p className="text-emerald-600 text-xs mt-0.5">Le site sera actualisé dans ~1 minute.</p>
                             </div>
                         </div>
@@ -260,7 +325,7 @@ export default function AdminPage() {
                                 </svg>
                                 Enregistrement…
                             </span>
-                        ) : "Mettre à jour le site →"}
+                        ) : "Enregistrer la semaine →"}
                     </button>
                 </form>
 

@@ -1,13 +1,34 @@
 import { NextRequest, NextResponse } from "next/server";
+import fs from "fs/promises";
+import path from "path";
+
+export async function GET() {
+    try {
+        const filePath = path.join(process.cwd(), "data/plat-du-jour.json");
+        const fileContent = await fs.readFile(filePath, "utf8");
+        return NextResponse.json(JSON.parse(fileContent));
+    } catch (e) {
+        return NextResponse.json({ error: "Impossible de lire le plat du jour" }, { status: 500 });
+    }
+}
 
 export async function POST(req: NextRequest) {
-    const { password, date, plats } = await req.json();
+    const { password, weekStarting, menu } = await req.json();
 
     if (password !== process.env.ADMIN_PASSWORD) {
         return NextResponse.json({ error: "Mot de passe incorrect" }, { status: 401 });
     }
 
-    const content = JSON.stringify({ date, plats }, null, 2) + "\n";
+    // Format all plate names to uppercase
+    const formattedMenu = { ...menu };
+    for (const day in formattedMenu) {
+        const key = day as keyof typeof formattedMenu;
+        if (formattedMenu[key]) {
+            formattedMenu[key].name = formattedMenu[key].name.toUpperCase();
+        }
+    }
+
+    const content = JSON.stringify({ weekStarting, menu: formattedMenu }, null, 2) + "\n";
     const encoded = Buffer.from(content).toString("base64");
 
     const repo = "lopezdamien/fattoush";
@@ -35,7 +56,7 @@ export async function POST(req: NextRequest) {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            message: `Update plat du jour — ${date}`,
+            message: `Update plat du jour — Week of ${weekStarting}`,
             content: encoded,
             sha,
         }),

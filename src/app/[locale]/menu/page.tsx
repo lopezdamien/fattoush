@@ -3,6 +3,8 @@ import { FadeIn } from "@/components/ui/FadeIn";
 import { getTranslations } from "next-intl/server";
 import platDuJour from "../../../../data/plat-du-jour.json";
 
+export const dynamic = "force-dynamic";
+
 type MenuCategory = "breakfast" | "cold_mezze" | "hot_mezze" | "mezze_menus" | "main_dishes" | "grill" | "sandwich_menus" | "kids_menus" | "desserts";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -17,6 +19,27 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default function MenuPage() {
     const t = useTranslations("Menu");
+
+    // Dynamic selection of daily special based on Swiss time
+    const now = new Date();
+    const genevaHour = parseInt(
+        new Intl.DateTimeFormat('fr-CH', { hour: 'numeric', hour12: false, timeZone: 'Europe/Zurich' }).format(now),
+        10
+    );
+    const genevaDay = new Intl.DateTimeFormat('en-US', { weekday: 'short', timeZone: 'Europe/Zurich' }).format(now);
+
+    const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    let dayIndex = weekdays.indexOf(genevaDay);
+
+    // Switch to tomorrow's plat du jour after 14:00 (2 PM)
+    if (genevaHour >= 14) {
+        dayIndex = (dayIndex + 1) % 7;
+    }
+
+    const dayKeys = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];
+    const targetDayKey = dayKeys[dayIndex] as keyof typeof platDuJour.menu;
+    const activePlat = platDuJour.menu && platDuJour.menu[targetDayKey] ? platDuJour.menu[targetDayKey] : null;
+    const hasPlat = activePlat && activePlat.name && activePlat.description;
 
     // Definition of the menu structure with items for each category
     const menuStructure: Record<MenuCategory, string[]> = {
@@ -122,41 +145,41 @@ export default function MenuPage() {
             </div>
 
             {/* Plat du Jour */}
-            <div className="container mx-auto px-4 mb-8">
-                <FadeIn delay={0.1}>
-                    <div className="flex justify-center">
-                        <div className="relative overflow-hidden rounded-2xl shadow-sm w-full max-w-xl text-center px-8 py-8" style={{ background: "linear-gradient(135deg, #FDE8E4 0%, #FDF3E3 50%, #E8F4EC 100%)" }}>
+            {hasPlat && (
+                <div className="container mx-auto px-4 mb-8">
+                    <FadeIn delay={0.1}>
+                        <div className="flex justify-center">
+                            <div className="relative overflow-hidden rounded-2xl shadow-sm w-full max-w-xl text-center px-8 py-8" style={{ background: "linear-gradient(135deg, #FDE8E4 0%, #FDF3E3 50%, #E8F4EC 100%)" }}>
 
-                            {/* Filigrane */}
-                            <div className="absolute right-0 bottom-0 pointer-events-none select-none font-serif text-[140px] leading-none opacity-[0.06] translate-x-6 translate-y-4" style={{ color: "#A0455A" }}>
-                                ع
-                            </div>
+                                {/* Filigrane */}
+                                <div className="absolute right-0 bottom-0 pointer-events-none select-none font-serif text-[140px] leading-none opacity-[0.06] translate-x-6 translate-y-4" style={{ color: "#A0455A" }}>
+                                    ع
+                                </div>
 
-                            {/* Label */}
-                            <p className="text-base font-bold tracking-[0.2em] uppercase mb-1" style={{ color: "#B06070" }}>
-                                Plat du jour
-                            </p>
+                                {/* Label */}
+                                <p className="text-base font-bold tracking-[0.2em] uppercase mb-1" style={{ color: "#B06070" }}>
+                                    Plat du jour
+                                </p>
 
-                            {/* Date */}
-                            <p className="text-lg font-semibold tracking-wide mb-5" style={{ color: "#9A8880" }}>
-                                {platDuJour.date}
-                            </p>
+                                {/* Date */}
+                                <p className="text-lg font-semibold tracking-wide mb-5" style={{ color: "#9A8880" }}>
+                                    {activePlat.dateLabel}
+                                </p>
 
-                            {/* Plats */}
-                            {platDuJour.plats.map((plat, i) => (
-                                <div key={i} className="relative z-10 space-y-2">
+                                {/* Plat */}
+                                <div className="relative z-10 space-y-2">
                                     <h2 className="text-2xl md:text-3xl font-bold uppercase tracking-wide" style={{ color: "#2C2420" }}>
-                                        {plat.name}
+                                        {activePlat.name}
                                     </h2>
                                     <p className="text-sm md:text-base leading-relaxed whitespace-pre-line" style={{ color: "#4A3F3A" }}>
-                                        {plat.description}
+                                        {activePlat.description}
                                     </p>
                                 </div>
-                            ))}
+                            </div>
                         </div>
-                    </div>
-                </FadeIn>
-            </div>
+                    </FadeIn>
+                </div>
+            )}
 
             <div className="container mx-auto px-4 pb-12 space-y-8">
                 {(categories).map((category, sectionIndex) => (

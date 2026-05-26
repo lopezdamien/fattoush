@@ -1,9 +1,30 @@
 {
-  "date": "Mercredi 27 Mai",
-  "plats": [
-    {
+  "weekStarting": "2026-05-25",
+  "menu": {
+    "lundi": {
+      "dateLabel": "Lundi 25 Mai",
+      "name": "",
+      "description": ""
+    },
+    "mardi": {
+      "dateLabel": "Mardi 26 Mai",
+      "name": "MOUSSAKA GRECQUE",
+      "description": "Viande hachée et fromage\nAccompagnée d’une salade fraîche"
+    },
+    "mercredi": {
+      "dateLabel": "Mercredi 27 Mai",
       "name": "OUZI",
       "description": "Riz avec viande\npetits pois, noix\nServi avec une salade fraîche"
+    },
+    "jeudi": {
+      "dateLabel": "Jeudi 28 Mai",
+      "name": "COUSCOUS DE FATTOUSH",
+      "description": "Semoule, légumes\n& garniture du jour\nServi avec une salade fraîche"
+    },
+    "vendredi": {
+      "dateLabel": "Vendredi 29 Mai",
+      "name": "SAYADIEH DE DAURADE",
+      "description": "Daurade avec sauce et riz épicé\nAccompagnée d’une salade fraîche"
     }
-  ]
+  }
 }
