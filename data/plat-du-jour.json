@@ -1,30 +1,30 @@
 {
-  "weekStarting": "2026-05-25",
+  "weekStarting": "2026-06-01",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 25 Mai",
+      "dateLabel": "Lundi 1er Juin",
+      "name": "MAQLOUBA D’AUBERGINES",
+      "description": "Poulet & viande, servi avec une sauce au yogourt"
+    },
+    "mardi": {
+      "dateLabel": "Mardi 2 Juin",
       "name": "",
       "description": ""
     },
-    "mardi": {
-      "dateLabel": "Mardi 26 Mai",
-      "name": "MOUSSAKA GRECQUE",
-      "description": "Viande hachée et fromage\nAccompagnée d’une salade fraîche"
-    },
     "mercredi": {
-      "dateLabel": "Mercredi 27 Mai",
-      "name": "OUZI",
-      "description": "Riz avec viande, petits pois & noix\nServi avec une salade fraîche"
+      "dateLabel": "Mercredi 3 Juin",
+      "name": "",
+      "description": ""
     },
     "jeudi": {
-      "dateLabel": "Jeudi 28 Mai",
-      "name": "TAJINE D'AGNEAU",
-      "description": "Servi avec une salade fraîche"
+      "dateLabel": "Jeudi 4 Juin",
+      "name": "",
+      "description": ""
     },
     "vendredi": {
-      "dateLabel": "Vendredi 29 Mai",
-      "name": "SAYADIEH DE DAURADE",
-      "description": "Daurade avec sauce et riz épicé\nAccompagnée d’une salade fraîche"
+      "dateLabel": "Vendredi 5 Juin",
+      "name": "",
+      "description": ""
     }
   }
 }
