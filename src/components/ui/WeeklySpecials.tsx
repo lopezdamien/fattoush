@@ -39,13 +39,10 @@ export function WeeklySpecials({ menu, currentDay }: WeeklySpecialsProps) {
         <div className="relative z-10 w-full max-w-xl mx-auto bg-secondary rounded-2xl shadow-sm border border-primary/10 p-5 md:p-8 space-y-6">
             
             {/* Header */}
-            <div className="text-center space-y-2">
+            <div className="text-center">
                 <h2 className="text-2xl md:text-3xl font-bold text-primary">
                     Nos plats du jour
                 </h2>
-                <p className="text-xs md:text-sm text-muted-foreground leading-relaxed max-w-md mx-auto">
-                    Découvrez nos spécialités maison, préparées chaque jour par notre chef.
-                </p>
             </div>
 
             {/* Tabs Buttons */}
