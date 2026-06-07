@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { getTranslations } from "next-intl/server";
 import platDuJour from "../../../../data/plat-du-jour.json";
-import { ChefHat } from "lucide-react";
+import { WeeklySpecials } from "@/components/ui/WeeklySpecials";
 
 export const dynamic = "force-dynamic";
 
@@ -140,78 +140,16 @@ export default function MenuPage() {
                 <div className="container mx-auto px-4 mb-12">
                     <FadeIn delay={0.1}>
                         <div 
-                            className="relative overflow-hidden rounded-3xl shadow-sm w-full max-w-7xl mx-auto px-6 py-10 md:px-10 md:py-12" 
+                            className="relative overflow-hidden rounded-3xl shadow-sm w-full max-w-4xl mx-auto px-4 py-8 md:px-10 md:py-12" 
                             style={{ background: "linear-gradient(135deg, #FAF6F0 0%, #F5EFE6 50%, #EFE3D3 100%)" }}
                         >
 
                             {/* Filigrane */}
-                            <div className="absolute right-0 bottom-0 pointer-events-none select-none font-serif text-[180px] leading-none opacity-[0.04] translate-x-12 translate-y-12" style={{ color: "#A0455A" }}>
+                            <div className="absolute right-0 bottom-0 pointer-events-none select-none font-serif text-[180px] leading-none opacity-[0.03] translate-x-12 translate-y-12" style={{ color: "#A0455A" }}>
                                 ع
                             </div>
 
-                            {/* Header */}
-                            <div className="relative z-10 text-center max-w-2xl mx-auto mb-10 space-y-3">
-                                <h2 className="text-3xl md:text-4xl font-serif font-bold tracking-wide" style={{ color: "#2C2420" }}>
-                                    Menus de la semaine
-                                </h2>
-                                <p className="text-sm md:text-base leading-relaxed" style={{ color: "#4A3F3A" }}>
-                                    Découvrez nos spécialités maison préparées chaque jour par notre chef.
-                                </p>
-                                <p className="text-xs font-semibold uppercase tracking-[0.15em]" style={{ color: "#B06070" }}>
-                                    Tous les plats du jour sont accompagnés d’une salade fraîche.
-                                </p>
-                            </div>
-
-                            {/* Cards Grid / Mobile Horizontal Slider */}
-                            <div 
-                                className="relative z-10 flex overflow-x-auto snap-x snap-mandatory scrollbar-none pb-6 gap-4 px-6 -mx-6 md:mx-0 md:px-0 md:pb-0 md:grid md:grid-cols-3 lg:grid-cols-5 md:gap-6 md:overflow-visible items-stretch"
-                                style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-                            >
-                                {weekdaysKeys.map((dayKey) => {
-                                    const m = platDuJour.menu[dayKey];
-                                    const isToday = currentDayOfWeekName === dayKey;
-                                    if (!m || !m.name) return null;
-
-                                    const dayName = m.dateLabel ? m.dateLabel.split(" ")[0] : dayKey;
-
-                                    return (
-                                        <div
-                                            key={dayKey}
-                                            className={`relative flex flex-col justify-between p-6 rounded-2xl w-[280px] shrink-0 snap-center md:w-auto md:shrink md:snap-align-none transition-all duration-300 ${
-                                                isToday
-                                                ? "bg-white border-2 shadow-md lg:scale-105 z-10 hover:-translate-y-2 hover:shadow-lg"
-                                                : "bg-white/85 border border-black/5 shadow-sm hover:bg-white hover:-translate-y-2 hover:shadow-md"
-                                            }`}
-                                            style={{ borderColor: isToday ? "#3a6b47" : "transparent" }}
-                                        >
-                                            {isToday && (
-                                                <span className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#3a6b47] text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full shadow-sm">
-                                                    Aujourd'hui
-                                                </span>
-                                            )}
-
-                                            <div className="flex flex-col h-full justify-between space-y-4">
-                                                <div className="text-center pb-3 border-b border-black/5">
-                                                    <p className="text-xs font-bold tracking-[0.2em] uppercase" style={{ color: "#B06070" }}>
-                                                        {dayName}
-                                                    </p>
-                                                </div>
-
-                                                <div className="flex flex-col items-center text-center flex-grow py-4 justify-center">
-                                                    <ChefHat size={18} className="mb-2.5 opacity-35" style={{ color: "#3a6b47" }} />
-                                                    <h3 className="text-lg md:text-xl font-serif font-bold uppercase tracking-wide leading-snug px-1 min-h-[52px] flex items-center justify-center" style={{ color: "#2C2420" }}>
-                                                        {m.name}
-                                                    </h3>
-                                                    <div className="h-0.5 w-6 my-3.5 bg-primary/20 rounded"></div>
-                                                    <p className="text-xs md:text-sm leading-relaxed opacity-95 text-balance whitespace-pre-line" style={{ color: "#4A3F3A" }}>
-                                                        {m.description}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    );
-                                })}
-                            </div>
+                            <WeeklySpecials menu={platDuJour.menu} currentDay={currentDayOfWeekName} />
                         </div>
                     </FadeIn>
                 </div>
