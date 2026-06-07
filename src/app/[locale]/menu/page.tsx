@@ -140,12 +140,12 @@ export default function MenuPage() {
                 <div className="container mx-auto px-4 mb-12">
                     <FadeIn delay={0.1}>
                         <div 
-                            className="relative overflow-hidden rounded-3xl shadow-sm w-full max-w-4xl mx-auto px-4 py-8 md:px-10 md:py-12" 
+                            className="relative overflow-hidden rounded-3xl shadow-sm w-full max-w-4xl mx-auto px-4 py-8 md:px-10 md:py-12 border border-primary/10" 
                             style={{ background: "linear-gradient(135deg, #FAF6F0 0%, #F5EFE6 50%, #EFE3D3 100%)" }}
                         >
 
                             {/* Filigrane */}
-                            <div className="absolute right-0 bottom-0 pointer-events-none select-none font-serif text-[180px] leading-none opacity-[0.03] translate-x-12 translate-y-12" style={{ color: "#A0455A" }}>
+                            <div className="absolute right-0 bottom-0 pointer-events-none select-none font-serif text-[180px] leading-none opacity-[0.03] translate-x-12 translate-y-12" style={{ color: "#962d3e" }}>
                                 ع
                             </div>
 
