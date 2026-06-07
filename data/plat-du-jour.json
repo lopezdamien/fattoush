@@ -1,30 +1,30 @@
 {
-  "weekStarting": "2026-06-01",
+  "weekStarting": "2026-06-08",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 1er Juin",
-      "name": "MAQLOUBA D’AUBERGINES",
-      "description": "Poulet & viande, servi avec une sauce au yogourt"
+      "dateLabel": "Lundi 8 Juin",
+      "name": "Freekeh",
+      "description": "Blé vert aux épices accompagné de viande d’agneau."
     },
     "mardi": {
-      "dateLabel": "Mardi 2 Juin",
-      "name": "MLOUKHIYÉ",
-      "description": "Volaille, riz aux vermicelles et salade fraîche"
+      "dateLabel": "Mardi 9 Juin",
+      "name": "Shish Barak",
+      "description": "Raviolis libanais farcis à la viande, servis dans une sauce au yaourt."
     },
     "mercredi": {
-      "dateLabel": "Mercredi 3 Juin",
-      "name": "MOUSSAKA GRECQUE",
-      "description": "Viande hachée, fromage et salade fraîche"
+      "dateLabel": "Mercredi 10 Juin",
+      "name": "Rez A Djej",
+      "description": "Riz au poulet parfumé, accompagné d’amandes et de pignons."
     },
     "jeudi": {
-      "dateLabel": "Jeudi 4 Juin",
-      "name": "KLEFTIKO À LA GRECQUE",
-      "description": "Souris d’agneau au four\nFeta, légumes & pommes de terre\nAccompagnée d’une salade fraîche"
+      "dateLabel": "Jeudi 11 Juin",
+      "name": "Légumes Farcis & Côtelettes d’Agneau",
+      "description": "Courgettes, aubergines, chou et feuilles de vigne farcis à la viande hachée d’agneau, accompagnés de côtelettes d’agneau."
     },
     "vendredi": {
-      "dateLabel": "Vendredi 5 Juin",
-      "name": "FILET DE SAUMON",
-      "description": "À la crème et aux tomates cerises\nAccompagné d’une salade fraîche"
+      "dateLabel": "Vendredi 12 Juin",
+      "name": "Saumon aux Asperges",
+      "description": "Filet de saumon, sauce aux asperges, légumes sautés et riz."
     }
   }
 }

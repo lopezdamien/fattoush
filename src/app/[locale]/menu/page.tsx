@@ -20,26 +20,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default function MenuPage() {
     const t = useTranslations("Menu");
 
-    // Dynamic selection of daily special based on Swiss time
+    // Dynamic selection of daily special based on Swiss time to highlight today
     const now = new Date();
-    const genevaHour = parseInt(
-        new Intl.DateTimeFormat('fr-CH', { hour: 'numeric', hour12: false, timeZone: 'Europe/Zurich' }).format(now),
-        10
-    );
     const genevaDay = new Intl.DateTimeFormat('en-US', { weekday: 'short', timeZone: 'Europe/Zurich' }).format(now);
-
-    const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    let dayIndex = weekdays.indexOf(genevaDay);
-
-    // Switch to tomorrow's plat du jour after 14:00 (2 PM)
-    if (genevaHour >= 14) {
-        dayIndex = (dayIndex + 1) % 7;
-    }
-
+    const weekdaysShort = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const dayIndex = weekdaysShort.indexOf(genevaDay);
     const dayKeys = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];
-    const targetDayKey = dayKeys[dayIndex] as keyof typeof platDuJour.menu;
-    const activePlat = platDuJour.menu && platDuJour.menu[targetDayKey] ? platDuJour.menu[targetDayKey] : null;
-    const hasPlat = activePlat && activePlat.name && activePlat.description;
+    const currentDayOfWeekName = dayKeys[dayIndex];
+
+    const weekdaysKeys = ["lundi", "mardi", "mercredi", "jeudi", "vendredi"] as const;
+    const hasWeeklyMenu = weekdaysKeys.some(dayKey => platDuJour.menu[dayKey] && platDuJour.menu[dayKey].name);
 
     // Definition of the menu structure with items for each category
     const menuStructure: Record<MenuCategory, string[]> = {
@@ -144,37 +134,78 @@ export default function MenuPage() {
                 </FadeIn>
             </div>
 
-            {/* Plat du Jour */}
-            {hasPlat && (
-                <div className="container mx-auto px-4 mb-8">
+            {/* Plat du Jour (Weekly Schedule layout) */}
+            {hasWeeklyMenu && (
+                <div className="container mx-auto px-4 mb-10">
                     <FadeIn delay={0.1}>
-                        <div className="flex justify-center">
-                            <div className="relative overflow-hidden rounded-2xl shadow-sm w-full max-w-xl text-center px-8 py-8" style={{ background: "linear-gradient(135deg, #FDE8E4 0%, #FDF3E3 50%, #E8F4EC 100%)" }}>
+                        <div className="relative overflow-hidden rounded-3xl shadow-sm w-full max-w-7xl mx-auto px-6 py-10 md:px-10 md:py-12" style={{ background: "linear-gradient(135deg, #FDE8E4 0%, #FDF3E3 50%, #E8F4EC 100%)" }}>
 
-                                {/* Filigrane */}
-                                <div className="absolute right-0 bottom-0 pointer-events-none select-none font-serif text-[140px] leading-none opacity-[0.06] translate-x-6 translate-y-4" style={{ color: "#A0455A" }}>
-                                    ع
-                                </div>
+                            {/* Filigrane */}
+                            <div className="absolute right-0 bottom-0 pointer-events-none select-none font-serif text-[180px] leading-none opacity-[0.05] translate-x-12 translate-y-12" style={{ color: "#A0455A" }}>
+                                ع
+                            </div>
 
-                                {/* Label */}
-                                <p className="text-base font-bold tracking-[0.2em] uppercase mb-1" style={{ color: "#B06070" }}>
-                                    Plat du jour
+                            {/* Header */}
+                            <div className="relative z-10 text-center max-w-2xl mx-auto mb-10 space-y-2">
+                                <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-wide animate-fade-in" style={{ color: "#2C2420" }}>
+                                    Menus de la semaine
+                                </h2>
+                                <p className="text-sm md:text-base leading-relaxed" style={{ color: "#4A3F3A" }}>
+                                    Découvrez nos spécialités préparées chaque jour par notre chef.
                                 </p>
-
-                                {/* Date */}
-                                <p className="text-lg font-semibold tracking-wide mb-5" style={{ color: "#9A8880" }}>
-                                    {activePlat.dateLabel}
+                                <p className="text-xs font-semibold uppercase tracking-wider mt-1" style={{ color: "#B06070" }}>
+                                    Tous les plats du jour sont accompagnés d’une salade fraîche.
                                 </p>
+                            </div>
 
-                                {/* Plat */}
-                                <div className="relative z-10 space-y-2">
-                                    <h2 className="text-2xl md:text-3xl font-bold uppercase tracking-wide" style={{ color: "#2C2420" }}>
-                                        {activePlat.name}
-                                    </h2>
-                                    <p className="text-sm md:text-base leading-relaxed whitespace-pre-line" style={{ color: "#4A3F3A" }}>
-                                        {activePlat.description}
-                                    </p>
-                                </div>
+                            {/* Cards Grid */}
+                            <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                                {weekdaysKeys.map((dayKey) => {
+                                    const m = platDuJour.menu[dayKey];
+                                    const isToday = currentDayOfWeekName === dayKey;
+                                    if (!m || !m.name) return null;
+
+                                    const dayName = m.dateLabel ? m.dateLabel.split(" ")[0] : dayKey;
+                                    const datePart = m.dateLabel ? m.dateLabel.split(" ").slice(1).join(" ") : "";
+
+                                    return (
+                                        <div
+                                            key={dayKey}
+                                            className={`relative flex flex-col justify-between p-6 rounded-2xl transition-all duration-300 ${
+                                                isToday
+                                                ? "bg-white border-2 shadow-md lg:scale-105 z-10"
+                                                : "bg-white/80 border border-black/5 shadow-sm hover:bg-white hover:shadow-md hover:scale-[1.02]"
+                                            }`}
+                                            style={{ borderColor: isToday ? "#3a6b47" : "transparent" }}
+                                        >
+                                            {isToday && (
+                                                <span className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#3a6b47] text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full shadow-sm">
+                                                    Aujourd'hui
+                                                </span>
+                                            )}
+
+                                            <div className="space-y-4 flex flex-col h-full justify-between">
+                                                <div className="text-center pb-2 border-b border-black/5">
+                                                    <p className="text-sm font-bold tracking-widest uppercase" style={{ color: "#B06070" }}>
+                                                        {dayName}
+                                                    </p>
+                                                    <p className="text-xs font-semibold opacity-75 mt-0.5" style={{ color: "#9A8880" }}>
+                                                        {datePart}
+                                                    </p>
+                                                </div>
+
+                                                <div className="space-y-2 text-center flex-grow flex flex-col justify-center py-2">
+                                                    <h3 className="text-base font-bold uppercase tracking-wide leading-tight min-h-[44px] flex items-center justify-center" style={{ color: "#2C2420" }}>
+                                                        {m.name}
+                                                    </h3>
+                                                    <p className="text-xs md:text-sm leading-relaxed opacity-90 whitespace-pre-line" style={{ color: "#4A3F3A" }}>
+                                                        {m.description}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    );
+                                })}
                             </div>
                         </div>
                     </FadeIn>
