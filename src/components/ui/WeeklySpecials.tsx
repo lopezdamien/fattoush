@@ -41,10 +41,10 @@ export function WeeklySpecials({ menu, currentDay }: WeeklySpecialsProps) {
             {/* Header */}
             <div className="text-center space-y-2">
                 <h2 className="text-2xl md:text-3xl font-bold text-primary">
-                    Menus de la semaine
+                    Nos plats du jour
                 </h2>
                 <p className="text-xs md:text-sm text-muted-foreground leading-relaxed max-w-md mx-auto">
-                    Découvrez nos spécialités maison préparées chaque jour par notre chef.
+                    Découvrez nos spécialités maison, préparées chaque jour par notre chef.
                 </p>
             </div>
 
@@ -57,7 +57,7 @@ export function WeeklySpecials({ menu, currentDay }: WeeklySpecialsProps) {
                             key={dayKey}
                             type="button"
                             onClick={() => setSelectedDay(dayKey)}
-                            className={`py-2 text-[10px] xs:text-xs md:text-sm font-semibold tracking-wide rounded-lg transition-all duration-200 cursor-pointer ${
+                            className={`py-2 text-[10px] xs:text-xs md:text-sm font-bold tracking-wide rounded-lg transition-all duration-200 cursor-pointer ${
                                 isActive
                                 ? "bg-primary text-white shadow-sm"
                                 : "text-muted-foreground hover:text-primary hover:bg-primary/5"
@@ -99,7 +99,7 @@ export function WeeklySpecials({ menu, currentDay }: WeeklySpecialsProps) {
 
             {/* Mention */}
             <div className="text-center pt-3 border-t border-black/5">
-                <p className="text-[9px] md:text-xs font-semibold uppercase tracking-[0.15em] text-primary/70">
+                <p className="text-[9px] md:text-xs font-bold uppercase tracking-[0.15em] text-primary/70">
                     Tous les plats du jour sont accompagnés d’une salade fraîche.
                 </p>
             </div>
