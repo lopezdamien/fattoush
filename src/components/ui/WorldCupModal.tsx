@@ -7,8 +7,8 @@ export function WorldCupModal() {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        // Check if user has already dismissed the modal
-        const hasSeen = localStorage.getItem("fattoush_worldcup_modal_seen");
+        // Check if user has already dismissed the modal in this session
+        const hasSeen = sessionStorage.getItem("fattoush_worldcup_modal_seen");
         if (!hasSeen) {
             // Show modal with a tiny delay for a smoother effect
             const timer = setTimeout(() => {
@@ -20,7 +20,7 @@ export function WorldCupModal() {
 
     const handleClose = () => {
         setIsOpen(false);
-        localStorage.setItem("fattoush_worldcup_modal_seen", "true");
+        sessionStorage.setItem("fattoush_worldcup_modal_seen", "true");
     };
 
     if (!isOpen) return null;
