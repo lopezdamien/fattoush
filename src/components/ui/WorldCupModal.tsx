@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { X } from "lucide-react";
+import Image from "next/image";
 
 export function WorldCupModal() {
     const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ export function WorldCupModal() {
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 animate-fade-in">
             {/* Backdrop with blur */}
             <div 
                 className="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300"
@@ -34,50 +35,65 @@ export function WorldCupModal() {
             />
 
             {/* Modal Body */}
-            <div className="relative z-10 w-full max-w-sm overflow-hidden bg-secondary rounded-3xl border border-primary/10 shadow-2xl p-6 md:p-8 text-center space-y-6 transform scale-100 transition-all duration-300 animate-fade-in">
-                {/* Close Button */}
-                <button 
-                    onClick={handleClose}
-                    className="absolute top-4 right-4 text-muted-foreground hover:text-primary transition-colors p-1 rounded-full hover:bg-black/5 cursor-pointer"
-                    aria-label="Fermer"
-                >
-                    <X size={20} />
-                </button>
-
-                {/* Content */}
-                <div className="space-y-4 pt-2">
-                    {/* Sport emoji badge */}
-                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/5 text-primary text-2xl">
-                        ⚽
-                    </div>
-                    
-                    <h3 className="text-xl md:text-2xl font-bold text-primary tracking-tight leading-snug">
-                        FATTOUSH diffuse les matchs de la coupe du monde 2026 !!
-                    </h3>
-                    
-                    <p className="text-sm text-muted-foreground">
-                        Venez vibrer avec nous et profitez de nos spécialités libanaises authentiques en direct sur grand écran.
-                    </p>
+            <div className="relative z-10 w-full max-w-sm overflow-hidden bg-secondary rounded-3xl border border-primary/10 shadow-2xl transform scale-100 transition-all duration-300">
+                {/* Header Image */}
+                <div className="relative w-full h-48 bg-black/10">
+                    <Image 
+                        src="/images/worldcup.jpg" 
+                        alt="Coupe du Monde 2026 chez Fattoush" 
+                        fill
+                        className="object-cover"
+                        priority
+                    />
+                    {/* Dark gradient overlay on the image bottom */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
                 </div>
 
-                {/* Actions */}
-                <div className="flex flex-col gap-2 pt-2">
-                    <a 
-                        href="https://widget.thefork.com/5461ec0f-3804-499f-8328-955b4654321f" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        onClick={handleClose}
-                        className="w-full bg-primary text-white text-sm font-bold py-3.5 px-4 rounded-xl shadow-md hover:opacity-90 active:scale-[0.98] transition-all text-center block"
-                    >
-                        Réserver une table
-                    </a>
-                    <button 
-                        type="button"
-                        onClick={handleClose}
-                        className="w-full bg-transparent hover:bg-black/5 text-muted-foreground text-sm font-semibold py-3 px-4 rounded-xl transition-all cursor-pointer"
-                    >
-                        Fermer
-                    </button>
+                {/* Close Button (Overlay on image) */}
+                <button 
+                    onClick={handleClose}
+                    className="absolute top-4 right-4 text-white hover:text-primary-foreground hover:scale-105 transition-all p-1.5 rounded-full bg-black/30 backdrop-blur-sm cursor-pointer z-20"
+                    aria-label="Fermer"
+                >
+                    <X size={18} />
+                </button>
+
+                {/* Content Container */}
+                <div className="p-6 md:p-8 space-y-6 text-center">
+                    {/* Content */}
+                    <div className="space-y-3">
+                        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+                            <span>⚽</span> Événement
+                        </div>
+                        
+                        <h3 className="text-xl font-bold text-primary tracking-tight leading-snug">
+                            FATTOUSH diffuse les matchs de la coupe du monde 2026 !!
+                        </h3>
+                        
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                            Venez vibrer avec nous et profitez de nos spécialités libanaises authentiques en direct sur grand écran.
+                        </p>
+                    </div>
+
+                    {/* Actions */}
+                    <div className="flex flex-col gap-2">
+                        <a 
+                            href="https://widget.thefork.com/5461ec0f-3804-499f-8328-955b4654321f" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            onClick={handleClose}
+                            className="w-full bg-primary text-white text-sm font-bold py-3.5 px-4 rounded-xl shadow-md hover:opacity-90 active:scale-[0.98] transition-all text-center block"
+                        >
+                            Réserver une table
+                        </a>
+                        <button 
+                            type="button"
+                            onClick={handleClose}
+                            className="w-full bg-transparent hover:bg-black/5 text-muted-foreground text-sm font-semibold py-3 px-4 rounded-xl transition-all cursor-pointer"
+                        >
+                            Fermer
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
