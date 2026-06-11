@@ -35,32 +35,30 @@ export function WorldCupModal() {
             />
 
             {/* Modal Body */}
-            <div className="relative z-10 w-full max-w-sm overflow-hidden bg-secondary rounded-3xl border border-primary/10 shadow-2xl transform scale-100 transition-all duration-300">
-                {/* Header Image */}
-                <div className="relative w-full h-48 bg-black/10">
-                    <Image 
-                        src="/images/worldcup.jpg" 
-                        alt="Coupe du Monde 2026 chez Fattoush" 
-                        fill
-                        className="object-cover"
-                        priority
-                    />
-                    {/* Dark gradient overlay on the image bottom */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
-                </div>
-
-                {/* Close Button (Overlay on image) */}
+            <div className="relative z-10 w-full max-w-sm overflow-hidden bg-secondary rounded-3xl border border-primary/10 shadow-2xl p-6 md:p-8 text-center space-y-6 transform scale-100 transition-all duration-300">
+                {/* Close Button */}
                 <button 
                     onClick={handleClose}
-                    className="absolute top-4 right-4 text-white hover:text-primary-foreground hover:scale-105 transition-all p-1.5 rounded-full bg-black/30 backdrop-blur-sm cursor-pointer z-20"
+                    className="absolute top-4 right-4 text-muted-foreground hover:text-primary transition-all p-1.5 rounded-full hover:bg-black/5 cursor-pointer z-20"
                     aria-label="Fermer"
                 >
                     <X size={18} />
                 </button>
 
                 {/* Content Container */}
-                <div className="p-6 md:p-8 space-y-6 text-center">
-                    {/* Content */}
+                <div className="space-y-5 pt-2">
+                    {/* Centered Square Image (1:1 aspect ratio matching the 1024x1024 image) */}
+                    <div className="relative w-48 h-48 mx-auto rounded-2xl overflow-hidden shadow-md border border-primary/10 bg-black/5">
+                        <Image 
+                            src="/images/worldcup.jpg" 
+                            alt="Coupe du Monde 2026 chez Fattoush" 
+                            fill
+                            className="object-cover"
+                            priority
+                        />
+                    </div>
+
+                    {/* Text Content */}
                     <div className="space-y-3">
                         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
                             <span>⚽</span> Événement
@@ -74,26 +72,26 @@ export function WorldCupModal() {
                             Venez vibrer avec nous et profitez de nos spécialités libanaises authentiques en direct sur grand écran.
                         </p>
                     </div>
+                </div>
 
-                    {/* Actions */}
-                    <div className="flex flex-col gap-2">
-                        <a 
-                            href="https://widget.thefork.com/5461ec0f-3804-499f-8328-955b4654321f" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            onClick={handleClose}
-                            className="w-full bg-primary text-white text-sm font-bold py-3.5 px-4 rounded-xl shadow-md hover:opacity-90 active:scale-[0.98] transition-all text-center block"
-                        >
-                            Réserver une table
-                        </a>
-                        <button 
-                            type="button"
-                            onClick={handleClose}
-                            className="w-full bg-transparent hover:bg-black/5 text-muted-foreground text-sm font-semibold py-3 px-4 rounded-xl transition-all cursor-pointer"
-                        >
-                            Fermer
-                        </button>
-                    </div>
+                {/* Actions */}
+                <div className="flex flex-col gap-2">
+                    <a 
+                        href="https://widget.thefork.com/5461ec0f-3804-499f-8328-955b4654321f" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        onClick={handleClose}
+                        className="w-full bg-primary text-white text-sm font-bold py-3.5 px-4 rounded-xl shadow-md hover:opacity-90 active:scale-[0.98] transition-all text-center block"
+                    >
+                        Réserver une table
+                    </a>
+                    <button 
+                        type="button"
+                        onClick={handleClose}
+                        className="w-full bg-transparent hover:bg-black/5 text-muted-foreground text-sm font-semibold py-3 px-4 rounded-xl transition-all cursor-pointer"
+                    >
+                        Fermer
+                    </button>
                 </div>
             </div>
         </div>
