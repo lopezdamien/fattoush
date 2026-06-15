@@ -1,30 +1,30 @@
 {
-  "weekStarting": "2026-06-08",
+  "weekStarting": "2026-06-15",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 8 Juin",
-      "name": "Freekeh",
-      "description": "Blé vert aux épices accompagné de viande d’agneau."
+      "dateLabel": "Lundi 15 Juin",
+      "name": "Bamia bil-lahm",
+      "description": "Ragoût avec gombos, viande d’agneau et riz"
     },
     "mardi": {
-      "dateLabel": "Mardi 9 Juin",
-      "name": "Shish Barak",
-      "description": "Raviolis libanais farcis à la viande, servis dans une sauce au yaourt."
+      "dateLabel": "Mardi 16 Juin",
+      "name": "Mloukhiyé",
+      "description": "Feuilles de corète, poulet effiloché, riz aux vermicelles"
     },
     "mercredi": {
-      "dateLabel": "Mercredi 10 Juin",
-      "name": "Rez A Djej",
-      "description": "Riz au poulet parfumé, accompagné d’amandes et de pignons."
+      "dateLabel": "Mercredi 17 Juin",
+      "name": "Kafta",
+      "description": "Viande d’agneau et pommes de terres au four"
     },
     "jeudi": {
-      "dateLabel": "Jeudi 11 Juin",
-      "name": "Légumes Farcis & Côtelettes d’Agneau",
-      "description": "Courgettes, aubergines, chou et feuilles de vigne farcis à la viande hachée d’agneau, accompagnés de côtelettes d’agneau."
+      "dateLabel": "Jeudi 18 Juin",
+      "name": "Makloubeh",
+      "description": "Riz renversé aux aubergines et à la viande hachée"
     },
     "vendredi": {
-      "dateLabel": "Vendredi 12 Juin",
-      "name": "Saumon aux Asperges",
-      "description": "Filet de saumon, sauce aux asperges, légumes sautés et riz."
+      "dateLabel": "Vendredi 19 Juin",
+      "name": "Sayadieh",
+      "description": "Poisson et riz"
     }
   }
 }
