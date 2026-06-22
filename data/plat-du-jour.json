@@ -1,30 +1,30 @@
 {
-  "weekStarting": "2026-06-15",
+  "weekStarting": "2026-06-22",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 15 Juin",
-      "name": "Bamia bil-lahm",
-      "description": "Ragoût avec gombos, viande d’agneau et riz"
+      "dateLabel": "Lundi 22 Juin",
+      "name": "Légumes farcis",
+      "description": "Courgettes, aubergines, choux et feuilles de vignes farcis à la viande hachée d’agneau"
     },
     "mardi": {
-      "dateLabel": "Mardi 16 Juin",
+      "dateLabel": "Mardi 23 Juin",
       "name": "Mloukhiyé",
-      "description": "Feuilles de corète, poulet effiloché, riz aux vermicelles"
+      "description": "Feuilles de corètes, poulet effiloché, riz aux vermicelles"
     },
     "mercredi": {
-      "dateLabel": "Mercredi 17 Juin",
-      "name": "Kafta",
-      "description": "Viande d’agneau et pommes de terres au four"
+      "dateLabel": "Mercredi 24 Juin",
+      "name": "Moussaka à la grecque",
+      "description": "Aubergines, viande hachée d’agneau, pommes de terre, sauce tomates"
     },
     "jeudi": {
-      "dateLabel": "Jeudi 18 Juin",
-      "name": "Makloubeh",
-      "description": "Riz renversé aux aubergines et à la viande hachée"
+      "dateLabel": "Jeudi 25 Juin",
+      "name": "Souris d’agneau",
+      "description": "Purée de pommes de terre et légumes sautés"
     },
     "vendredi": {
-      "dateLabel": "Vendredi 19 Juin",
-      "name": "Sayadieh",
-      "description": "Filet de saumon\nPurée de pommes de terre\nlégumes sautés\n& salade fraîche"
+      "dateLabel": "Vendredi 26 Juin",
+      "name": "Filet de saumon",
+      "description": "Pommes de terre épicées, blé vert"
     }
   }
 }
