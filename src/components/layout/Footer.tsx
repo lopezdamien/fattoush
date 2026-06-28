@@ -31,7 +31,8 @@ export function Footer() {
                 <div className="space-y-4 flex flex-col items-center justify-center">
                     <h4 className="font-semibold text-xl">Horaires</h4>
                     <ul className="space-y-2 text-sm opacity-90">
-                        <li>Lun - Dim: 12h00 - 15h00 / 18h30 - 21h30</li>
+                        <li>Lun - Ven: 12h00 - 15h00 / 18h30 - 00h00</li>
+                        <li>Sam - Dim: 12h00 - 00h00</li>
                     </ul>
                 </div>
             </div>

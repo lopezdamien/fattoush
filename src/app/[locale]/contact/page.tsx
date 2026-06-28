@@ -68,7 +68,10 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-lg mb-1 text-foreground">{t("hours")}</h3>
-                                    <p className="text-muted-foreground">Lun – Dim : 12h00 – 15h00 / 18h30 – 21h30</p>
+                                    <div className="text-muted-foreground text-sm md:text-base space-y-0.5">
+                                        <p>Lun – Ven : 12h00 – 15h00 / 18h30 – 00h00</p>
+                                        <p>Sam – Dim : 12h00 – 00h00</p>
+                                    </div>
                                 </div>
                             </div>
                         </FadeIn>
