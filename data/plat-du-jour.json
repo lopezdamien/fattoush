@@ -1,30 +1,30 @@
 {
-  "weekStarting": "2026-06-22",
+  "weekStarting": "2026-06-29",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 22 Juin",
-      "name": "Légumes farcis",
-      "description": "Courgettes, aubergines, choux et feuilles de vignes farcis à la viande hachée d’agneau, servis avec des côtelettes d'agneau"
+      "dateLabel": "Lundi 29 Juin",
+      "name": "",
+      "description": ""
     },
     "mardi": {
-      "dateLabel": "Mardi 23 Juin",
-      "name": "Mloukhiyé",
-      "description": "Feuilles de corètes, poulet effiloché, riz aux vermicelles"
+      "dateLabel": "Mardi 30 Juin",
+      "name": "",
+      "description": ""
     },
     "mercredi": {
-      "dateLabel": "Mercredi 24 Juin",
-      "name": "Moussaka à la grecque",
-      "description": "Aubergines, viande hachée d’agneau, pommes de terre, sauce tomates"
+      "dateLabel": "Mercredi 1 Juillet",
+      "name": "",
+      "description": ""
     },
     "jeudi": {
-      "dateLabel": "Jeudi 25 Juin",
-      "name": "Cheikh el mahchi aux aubergines",
-      "description": "Aubergines farcies à la viande, sauce tomate et riz"
+      "dateLabel": "Jeudi 2 Juillet",
+      "name": "",
+      "description": ""
     },
     "vendredi": {
-      "dateLabel": "Vendredi 26 Juin",
-      "name": "Filet de saumon",
-      "description": "Pommes de terre épicées, blé vert"
+      "dateLabel": "Vendredi 3 Juillet",
+      "name": "",
+      "description": ""
     }
   }
 }
