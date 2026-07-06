@@ -41,10 +41,15 @@ export function WeeklySpecials({ menu, currentDay }: WeeklySpecialsProps) {
         <div className="relative z-10 w-full max-w-xl mx-auto bg-secondary rounded-2xl shadow-sm border border-primary/10 p-5 md:p-8 space-y-6">
             
             {/* Header */}
-            <div className="text-center">
-                <h2 className="text-2xl md:text-3xl font-bold text-primary">
-                    Nos plats du jour
+            <div className="text-center space-y-1">
+                <h2 className="text-2xl md:text-3xl font-bold text-primary uppercase tracking-wide">
+                    PLAT DU JOUR
                 </h2>
+                {activePlat?.dateLabel && (
+                    <p className="text-xs md:text-sm font-bold uppercase tracking-widest text-muted-foreground/85">
+                        {activePlat.dateLabel}
+                    </p>
+                )}
             </div>
 
             {/* Tabs Buttons - Only visible if there are multiple configured days */}
