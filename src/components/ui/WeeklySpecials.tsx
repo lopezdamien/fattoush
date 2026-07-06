@@ -26,11 +26,13 @@ const DAY_LABELS = {
 };
 
 export function WeeklySpecials({ menu, currentDay }: WeeklySpecialsProps) {
-    const defaultDay = ["lundi", "mardi", "mercredi", "jeudi", "vendredi"].includes(currentDay)
-        ? (currentDay as keyof WeeklyMenu)
-        : "lundi";
+    const activeDays = DAYS_KEYS.filter((dayKey) => menu[dayKey] && menu[dayKey].name);
 
-    const [selectedDay, setSelectedDay] = useState<keyof WeeklyMenu>(defaultDay);
+    const initialDay = activeDays.includes(currentDay as any)
+        ? (currentDay as keyof WeeklyMenu)
+        : (activeDays[0] || "lundi");
+
+    const [selectedDay, setSelectedDay] = useState<keyof WeeklyMenu>(initialDay);
 
     const activePlat = menu[selectedDay];
     const hasPlat = activePlat && activePlat.name && activePlat.description;
@@ -45,26 +47,28 @@ export function WeeklySpecials({ menu, currentDay }: WeeklySpecialsProps) {
                 </h2>
             </div>
 
-            {/* Tabs Buttons */}
-            <div className="grid grid-cols-5 gap-1.5 p-1 bg-primary/5 rounded-xl max-w-md mx-auto">
-                {DAYS_KEYS.map((dayKey) => {
-                    const isActive = selectedDay === dayKey;
-                    return (
-                        <button
-                            key={dayKey}
-                            type="button"
-                            onClick={() => setSelectedDay(dayKey)}
-                            className={`py-2 text-[10px] xs:text-xs md:text-sm font-bold tracking-wide rounded-lg transition-all duration-200 cursor-pointer ${
-                                isActive
-                                ? "bg-primary text-white shadow-sm"
-                                : "text-muted-foreground hover:text-primary hover:bg-primary/5"
-                            }`}
-                        >
-                            {DAY_LABELS[dayKey]}
-                        </button>
-                    );
-                })}
-            </div>
+            {/* Tabs Buttons - Only visible if there are multiple configured days */}
+            {activeDays.length > 1 && (
+                <div className="flex flex-wrap justify-center gap-1.5 p-1 bg-primary/5 rounded-xl max-w-md mx-auto">
+                    {activeDays.map((dayKey) => {
+                        const isActive = selectedDay === dayKey;
+                        return (
+                            <button
+                                key={dayKey}
+                                type="button"
+                                onClick={() => setSelectedDay(dayKey)}
+                                className={`px-4 py-2 text-xs md:text-sm font-bold tracking-wide rounded-lg transition-all duration-200 cursor-pointer ${
+                                    isActive
+                                    ? "bg-primary text-white shadow-sm"
+                                    : "text-muted-foreground hover:text-primary hover:bg-primary/5"
+                                }`}
+                            >
+                                {DAY_LABELS[dayKey]}
+                            </button>
+                        );
+                    })}
+                </div>
+            )}
 
             {/* Selected Dish Content */}
             <div className="relative min-h-[120px] flex flex-col justify-center py-6 border-t border-black/5">
