@@ -1,28 +1,28 @@
 {
-  "weekStarting": "2026-06-29",
+  "weekStarting": "2026-07-06",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 29 Juin",
-      "name": "",
-      "description": ""
+      "dateLabel": "Lundi 6 Juillet",
+      "name": "Bamia bil-lahm",
+      "description": "Ragoût avec viande d’agneau, sauce tomates, gombos et riz aux vermicelles\n& salade fraîche"
     },
     "mardi": {
-      "dateLabel": "Mardi 30 Juin",
+      "dateLabel": "Mardi 7 Juillet",
       "name": "",
       "description": ""
     },
     "mercredi": {
-      "dateLabel": "Mercredi 1 Juillet",
+      "dateLabel": "Mercredi 8 Juillet",
       "name": "",
       "description": ""
     },
     "jeudi": {
-      "dateLabel": "Jeudi 2 Juillet",
+      "dateLabel": "Jeudi 9 Juillet",
       "name": "",
       "description": ""
     },
     "vendredi": {
-      "dateLabel": "Vendredi 3 Juillet",
+      "dateLabel": "Vendredi 10 Juillet",
       "name": "",
       "description": ""
     }
