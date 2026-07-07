@@ -20,6 +20,7 @@
             "fresh": "Fresh Ingredients",
             "tradition": "Traditional Savoir-Faire",
             "sharing": "Conviviality",
+            "halal": "Halal Meats",
             "homemade_bread": "Our Lebanese bread is prepared and baked fresh in-house, every day."
         },
         "specialties": {
@@ -352,7 +353,8 @@
         },
         "footer": {
             "taxes": "Prices in CHF – VAT included",
-            "allergens": "Allergen information available on request"
+            "allergens": "Allergen information available on request",
+            "halal": "All our meats are halal certified"
         }
     },
     "Snack": {
@@ -528,5 +530,8 @@
                 "desc": "Gare Cornavin parking is steps away, accessible from Boulevard James-Fazy."
             }
         }
+    },
+    "Footer": {
+        "halal": "All our meats are halal certified"
     }
 }

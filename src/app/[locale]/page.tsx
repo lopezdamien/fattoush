@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { Section } from "@/components/ui/Section";
 import { Card, CardTitle, CardHeader } from "@/components/ui/Card";
 import Image from "next/image";
-import { Leaf, ScrollText, Users, ChevronRight } from "lucide-react";
+import { Leaf, ScrollText, Users, ChevronRight, ShieldCheck } from "lucide-react";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { getTranslations } from "next-intl/server";
 import { WorldCupModal } from "@/components/ui/WorldCupModal";
@@ -127,7 +127,7 @@ export default function Home() {
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-8">
           <FadeIn delay={0.2}>
             <div className="flex flex-col items-center space-y-4 p-6 rounded-xl hover:bg-secondary/50 transition-colors">
               <div className="p-4 bg-secondary rounded-full text-primary">
@@ -150,6 +150,14 @@ export default function Home() {
                 <Users size={32} />
               </div>
               <h3 className="text-xl font-semibold">{t("spirit.sharing")}</h3>
+            </div>
+          </FadeIn>
+          <FadeIn delay={0.8}>
+            <div className="flex flex-col items-center space-y-4 p-6 rounded-xl hover:bg-secondary/50 transition-colors">
+              <div className="p-4 bg-green/10 rounded-full text-green">
+                <ShieldCheck size={32} />
+              </div>
+              <h3 className="text-xl font-semibold">{t("spirit.halal")}</h3>
             </div>
           </FadeIn>
         </div>

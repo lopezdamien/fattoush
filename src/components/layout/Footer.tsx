@@ -4,6 +4,7 @@ import Image from "next/image";
 
 export function Footer() {
     const t = useTranslations("Navigation");
+    const tFooter = useTranslations("Footer");
 
     return (
         <footer className="bg-primary text-white pt-16 pb-8">
@@ -35,6 +36,12 @@ export function Footer() {
                         <li>Sam - Dim: 12h00 - 00h00</li>
                     </ul>
                 </div>
+            </div>
+            <div className="container mx-auto px-4 mt-4 text-center text-sm opacity-75">
+                <p className="inline-flex items-center gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                    {tFooter("halal")}
+                </p>
             </div>
             <div className="container mx-auto px-4 mt-8 pt-8 border-t border-white/20 text-center text-sm opacity-60">
                 &copy; {new Date().getFullYear()} FATTOUSH. All rights reserved.

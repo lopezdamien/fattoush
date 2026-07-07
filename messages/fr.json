@@ -20,6 +20,7 @@
       "fresh": "Produits Frais",
       "tradition": "Savoir-faire Traditionnel",
       "sharing": "Convivialité",
+      "halal": "Viandes Halal",
       "homemade_bread": "Notre pain libanais est préparé et cuit maison, chaque jour."
     },
     "specialties": {
@@ -352,7 +353,8 @@
     },
     "footer": {
       "taxes": "Prix en CHF – TVA incluse",
-      "allergens": "Informations sur les allergènes disponibles sur demande"
+      "allergens": "Informations sur les allergènes disponibles sur demande",
+      "halal": "Toutes nos viandes sont certifiées halal"
     }
   },
   "Snack": {
@@ -528,5 +530,8 @@
         "desc": "Parking de la Gare Cornavin à 2 pas du restaurant, accessible depuis le Boulevard James-Fazy."
       }
     }
+  },
+  "Footer": {
+    "halal": "Toutes nos viandes sont certifiées halal"
   }
 }
