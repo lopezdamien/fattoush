@@ -1,28 +1,28 @@
 {
-  "weekStarting": "2026-07-06",
+  "weekStarting": "2026-07-13",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 6 Juillet",
-      "name": "Bamia bil-lahm",
-      "description": "Ragoût avec viande d’agneau, sauce tomates, gombos et riz aux vermicelles"
+      "dateLabel": "Lundi 13 Juillet",
+      "name": "",
+      "description": ""
     },
     "mardi": {
-      "dateLabel": "Mardi 7 Juillet",
+      "dateLabel": "Mardi 14 Juillet",
       "name": "Mloukhiyé",
       "description": "Feuilles de corètes, poulet effiloché, riz aux vermicelles"
     },
     "mercredi": {
-      "dateLabel": "Mercredi 8 Juillet",
-      "name": "MOUSSAKA À LA GRECQUE",
-      "description": "Aubergines, viande hachée d'agneau, pommes de terre & sauce tomates"
+      "dateLabel": "Mercredi 15 Juillet",
+      "name": "",
+      "description": ""
     },
     "jeudi": {
-      "dateLabel": "Jeudi 9 Juillet",
+      "dateLabel": "Jeudi 16 Juillet",
       "name": "",
       "description": ""
     },
     "vendredi": {
-      "dateLabel": "Vendredi 10 Juillet",
+      "dateLabel": "Vendredi 17 Juillet",
       "name": "",
       "description": ""
     }
