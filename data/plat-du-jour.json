@@ -8,13 +8,13 @@
     },
     "mardi": {
       "dateLabel": "Mardi 14 Juillet",
-      "name": "Mloukhiyé",
-      "description": "Feuilles de corètes, poulet effiloché, riz aux vermicelles"
+      "name": "",
+      "description": ""
     },
     "mercredi": {
       "dateLabel": "Mercredi 15 Juillet",
-      "name": "",
-      "description": ""
+      "name": "Bamia bil-lahm",
+      "description": "Ragoût avec gombos, viande d’agneau, sauce tomates et riz"
     },
     "jeudi": {
       "dateLabel": "Jeudi 16 Juillet",
