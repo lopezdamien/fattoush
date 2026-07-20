@@ -1,30 +1,30 @@
 {
-  "weekStarting": "2026-07-13",
+  "weekStarting": "2026-07-20",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 13 Juillet",
-      "name": "",
-      "description": ""
+      "dateLabel": "Lundi 20 Juillet",
+      "name": "DAOUD BACHA",
+      "description": "Boulettes de viande, sauce tomate\nServi avec du riz"
     },
     "mardi": {
-      "dateLabel": "Mardi 14 Juillet",
+      "dateLabel": "Mardi 21 Juillet",
       "name": "",
       "description": ""
     },
     "mercredi": {
-      "dateLabel": "Mercredi 15 Juillet",
-      "name": "Bamia bil-lahm",
-      "description": "Ragoût avec gombos, viande d’agneau, sauce tomates et riz"
+      "dateLabel": "Mercredi 22 Juillet",
+      "name": "",
+      "description": ""
     },
     "jeudi": {
-      "dateLabel": "Jeudi 16 Juillet",
-      "name": "COURGETTES FARCIES",
-      "description": "à la viande hachée, sauce yogourt\n& riz aux vermicelles"
+      "dateLabel": "Jeudi 23 Juillet",
+      "name": "",
+      "description": ""
     },
     "vendredi": {
-      "dateLabel": "Vendredi 17 Juillet",
-      "name": "SAYADIEH DE DAURADE",
-      "description": "accompagné de riz"
+      "dateLabel": "Vendredi 24 Juillet",
+      "name": "",
+      "description": ""
     }
   }
 }
