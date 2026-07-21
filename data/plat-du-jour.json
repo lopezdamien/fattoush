@@ -8,23 +8,23 @@
     },
     "mardi": {
       "dateLabel": "Mardi 21 Juillet",
-      "name": "",
-      "description": ""
+      "name": "Mloukhiyé",
+      "description": "Feuilles de corètes, poulet effiloché, riz aux vermicelles"
     },
     "mercredi": {
       "dateLabel": "Mercredi 22 Juillet",
-      "name": "",
-      "description": ""
+      "name": "Moussaka à la grecque",
+      "description": "Aubergines, viande hachée d’agneau, pommes de terre, sauce tomates"
     },
     "jeudi": {
       "dateLabel": "Jeudi 23 Juillet",
-      "name": "",
-      "description": ""
+      "name": "Courgettes farcies",
+      "description": "à la viande hachée d’agneau et riz"
     },
     "vendredi": {
       "dateLabel": "Vendredi 24 Juillet",
-      "name": "",
-      "description": ""
+      "name": "Dorade grillée",
+      "description": "frites et salade"
     }
   }
 }
