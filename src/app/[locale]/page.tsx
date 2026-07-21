@@ -7,7 +7,6 @@ import Image from "next/image";
 import { Leaf, ScrollText, Users, ChevronRight, ShieldCheck } from "lucide-react";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { getTranslations } from "next-intl/server";
-import { WorldCupModal } from "@/components/ui/WorldCupModal";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -24,7 +23,6 @@ export default function Home() {
 
   return (
     <main className="flex flex-col w-full">
-      <WorldCupModal />
       {/* Hero Section */}
       <section className="relative h-[80vh] w-full flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 z-0">
