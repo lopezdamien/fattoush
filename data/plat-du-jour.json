@@ -1,30 +1,30 @@
 {
-  "weekStarting": "2026-07-20",
+  "weekStarting": "2026-07-27",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 20 Juillet",
-      "name": "DAOUD BACHA",
-      "description": "Boulettes de viande, sauce tomate\nServi avec du riz"
+      "dateLabel": "Lundi 27 Juillet",
+      "name": "CHEIKH EL MEHCHI",
+      "description": "Aubergines farcies à la viande hachée d’agneau, sauce tomates et riz"
     },
     "mardi": {
-      "dateLabel": "Mardi 21 Juillet",
-      "name": "Mloukhiyé",
-      "description": "Feuilles de corètes, poulet effiloché, riz aux vermicelles"
+      "dateLabel": "Mardi 28 Juillet",
+      "name": "MLOUKHIYÉ",
+      "description": "Feuilles de corètes, poulet effilochés, riz aux vermicelles"
     },
     "mercredi": {
-      "dateLabel": "Mercredi 22 Juillet",
-      "name": "Moussaka à la grecque",
-      "description": "Aubergines, viande hachée d’agneau, pommes de terre, sauce tomates"
+      "dateLabel": "Mercredi 29 Juillet",
+      "name": "",
+      "description": ""
     },
     "jeudi": {
-      "dateLabel": "Jeudi 23 Juillet",
-      "name": "Courgettes farcies",
-      "description": "à la viande hachée d’agneau et riz"
+      "dateLabel": "Jeudi 30 Juillet",
+      "name": "",
+      "description": ""
     },
     "vendredi": {
-      "dateLabel": "Vendredi 24 Juillet",
-      "name": "Dorade grillée",
-      "description": "servi avec batata harra"
+      "dateLabel": "Vendredi 31 Juillet",
+      "name": "",
+      "description": ""
     }
   }
 }
