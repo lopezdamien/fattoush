@@ -13,18 +13,18 @@
     },
     "mercredi": {
       "dateLabel": "Mercredi 29 Juillet",
-      "name": "",
-      "description": ""
+      "name": "FREEKEH",
+      "description": "Viande d'agneau & blé vert"
     },
     "jeudi": {
       "dateLabel": "Jeudi 30 Juillet",
-      "name": "",
-      "description": ""
+      "name": "COURGETTES FARCIES",
+      "description": "à la viande hachée d’agneau et riz"
     },
     "vendredi": {
       "dateLabel": "Vendredi 31 Juillet",
-      "name": "",
-      "description": ""
+      "name": "FILET DE SAUMON",
+      "description": "Filet de saumon"
     }
   }
 }
