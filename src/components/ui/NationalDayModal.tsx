@@ -14,19 +14,25 @@ const AUTO_EXPIRE_DATE = "2026-08-03"; // Automatically hides starting from this
 export function NationalDayModal() {
     const t = useTranslations("NationalDayModal");
     const dialogRef = useRef<HTMLDialogElement>(null);
-    const [isOpen, setIsOpen] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
 
     // Date-based helper to auto-expire the modal
     const isBeforeEndDate = () => {
         try {
             // Get current date in Switzerland (Zurich) timezone in YYYY-MM-DD format
-            const formatter = new Intl.DateTimeFormat("sv-SE", {
+            const formatter = new Intl.DateTimeFormat("en-US", {
                 timeZone: "Europe/Zurich",
                 year: "numeric",
                 month: "2-digit",
                 day: "2-digit",
             });
-            const [{ value: year }, , { value: month }, , { value: day }] = formatter.formatToParts(new Date());
+            const parts = formatter.formatToParts(new Date());
+            const year = parts.find(p => p.type === 'year')?.value;
+            const month = parts.find(p => p.type === 'month')?.value;
+            const day = parts.find(p => p.type === 'day')?.value;
+
+            if (!year || !month || !day) return true;
+
             const todayStr = `${year}-${month}-${day}`;
             return todayStr < AUTO_EXPIRE_DATE;
         } catch {
@@ -46,22 +52,28 @@ export function NationalDayModal() {
         // Check if user has already dismissed the modal in this session
         const hasSeen = sessionStorage.getItem("fattoush_nationalday_seen");
         if (!hasSeen) {
-            // Show modal after 1.5 seconds for a smoother initial load transition
+            // Set isMounted to true after 1.5 seconds delay
             const timer = setTimeout(() => {
-                if (dialogRef.current) {
-                    dialogRef.current.showModal();
-                    setIsOpen(true);
-                }
+                setIsMounted(true);
             }, 1500);
             return () => clearTimeout(timer);
         }
     }, []);
 
+    // Call showModal once the dialog element is rendered/mounted in the DOM
+    useEffect(() => {
+        if (isMounted && dialogRef.current) {
+            if (!dialogRef.current.open) {
+                dialogRef.current.showModal();
+            }
+        }
+    }, [isMounted]);
+
     const handleClose = () => {
         if (dialogRef.current) {
             dialogRef.current.close();
         }
-        setIsOpen(false);
+        setIsMounted(false);
         sessionStorage.setItem("fattoush_nationalday_seen", "true");
     };
 
@@ -80,7 +92,7 @@ export function NationalDayModal() {
         }
     };
 
-    if (!isOpen) return null;
+    if (!isMounted) return null;
 
     return (
         <dialog 
