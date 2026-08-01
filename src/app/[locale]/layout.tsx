@@ -23,6 +23,7 @@ export function generateStaticParams() {
 
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { NationalDayModal } from "@/components/ui/NationalDayModal";
 
 // ... imports remain the same
 
@@ -56,6 +57,7 @@ export default async function RootLayout({
               {children}
             </div>
             <Footer />
+            <NationalDayModal />
           </div>
         </NextIntlClientProvider>
       </body>
