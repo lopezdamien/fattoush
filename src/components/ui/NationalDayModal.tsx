@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 // CONFIGURATION
 // ==========================================
 const ENABLE_MODAL = true; // Set to false to force-disable the modal
-const AUTO_EXPIRE_DATE = "2026-08-03"; // Automatically hides starting from this date (YYYY-MM-DD local time)
+const AUTO_EXPIRE_DATETIME = "2026-08-02T22:00:00+02:00"; // Target expiration date/time (Sunday Aug 2nd, 22:00 Zurich time)
 
 export function NationalDayModal() {
     const t = useTranslations("NationalDayModal");
@@ -16,47 +16,24 @@ export function NationalDayModal() {
     const [isMounted, setIsMounted] = useState(false);
 
     // Date-based helper to auto-expire the modal
-    const isBeforeEndDate = () => {
+    const isBeforeEndDateTime = () => {
         try {
-            // Get current date in Switzerland (Zurich) timezone in YYYY-MM-DD format
-            const formatter = new Intl.DateTimeFormat("en-US", {
-                timeZone: "Europe/Zurich",
-                year: "numeric",
-                month: "2-digit",
-                day: "2-digit",
-            });
-            const parts = formatter.formatToParts(new Date());
-            const year = parts.find(p => p.type === 'year')?.value;
-            const month = parts.find(p => p.type === 'month')?.value;
-            const day = parts.find(p => p.type === 'day')?.value;
-
-            if (!year || !month || !day) return true;
-
-            const todayStr = `${year}-${month}-${day}`;
-            return todayStr < AUTO_EXPIRE_DATE;
+            const now = new Date();
+            const target = new Date(AUTO_EXPIRE_DATETIME);
+            return now < target;
         } catch {
-            // Fallback to local time if formatting fails
-            const today = new Date();
-            const year = today.getFullYear();
-            const month = String(today.getMonth() + 1).padStart(2, "0");
-            const day = String(today.getDate()).padStart(2, "0");
-            const todayStr = `${year}-${month}-${day}`;
-            return todayStr < AUTO_EXPIRE_DATE;
+            return true; // Fallback to showing if Date parsing fails
         }
     };
 
     useEffect(() => {
-        if (!ENABLE_MODAL || !isBeforeEndDate()) return;
+        if (!ENABLE_MODAL || !isBeforeEndDateTime()) return;
 
-        // Check if user has already dismissed the modal in this session
-        const hasSeen = sessionStorage.getItem("fattoush_nationalday_seen");
-        if (!hasSeen) {
-            // Set isMounted to true after 1.5 seconds delay
-            const timer = setTimeout(() => {
-                setIsMounted(true);
-            }, 1500);
-            return () => clearTimeout(timer);
-        }
+        // Set isMounted to true after 1.5 seconds delay (on every visit/refresh)
+        const timer = setTimeout(() => {
+            setIsMounted(true);
+        }, 1500);
+        return () => clearTimeout(timer);
     }, []);
 
     // Call showModal once the dialog element is rendered/mounted in the DOM
@@ -73,7 +50,6 @@ export function NationalDayModal() {
             dialogRef.current.close();
         }
         setIsMounted(false);
-        sessionStorage.setItem("fattoush_nationalday_seen", "true");
     };
 
     // Close when clicking the backdrop (light-dismiss fallback for unsupported browsers)
