@@ -5,10 +5,10 @@ import { useState } from "react";
 type DayMenu = { name: string; description: string; dateLabel?: string };
 type WeeklyMenu = {
     lundi: DayMenu;
-    mardi: DayMenu;
-    mercredi: DayMenu;
-    jeudi: DayMenu;
-    vendredi: DayMenu;
+    mardi?: DayMenu;
+    mercredi?: DayMenu;
+    jeudi?: DayMenu;
+    vendredi?: DayMenu;
 };
 
 interface WeeklySpecialsProps {

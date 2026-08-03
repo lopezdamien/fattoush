@@ -1,7 +1,21 @@
 import { useTranslations } from "next-intl";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { getTranslations } from "next-intl/server";
-import platDuJour from "../../../../data/plat-du-jour.json";
+import platDuJourRaw from "../../../../data/plat-du-jour.json";
+
+type DayMenu = { name: string; description: string; dateLabel?: string };
+type WeeklyMenu = {
+    lundi: DayMenu;
+    mardi?: DayMenu;
+    mercredi?: DayMenu;
+    jeudi?: DayMenu;
+    vendredi?: DayMenu;
+};
+
+const platDuJour = platDuJourRaw as unknown as {
+    weekStarting: string;
+    menu: WeeklyMenu;
+};
 import { WeeklySpecials } from "@/components/ui/WeeklySpecials";
 
 export const dynamic = "force-dynamic";
@@ -30,7 +44,7 @@ export default function MenuPage() {
     const currentDayOfWeekName = dayKeys[dayIndex];
 
     const weekdaysKeys = ["lundi", "mardi", "mercredi", "jeudi", "vendredi"] as const;
-    const hasWeeklyMenu = weekdaysKeys.some(dayKey => platDuJour.menu[dayKey] && platDuJour.menu[dayKey].name);
+    const hasWeeklyMenu = weekdaysKeys.some(dayKey => platDuJour.menu[dayKey]?.name);
 
     // Definition of the menu structure with items for each category
     const menuStructure: Record<MenuCategory, string[]> = {
