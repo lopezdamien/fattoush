@@ -10,6 +10,11 @@
       "dateLabel": "Mardi 4 Août",
       "name": "MLOUKHIYÉ",
       "description": "Feuilles de corètes\npoulet effiloché\n& riz aux vermicelles"
+    },
+    "mercredi": {
+      "dateLabel": "Mercredi 5 Août",
+      "name": "MUJADDARA",
+      "description": "Riz aux vermicelles avec lentilles et oignons caramélisés\nservi avec yogurt"
     }
   }
 }
