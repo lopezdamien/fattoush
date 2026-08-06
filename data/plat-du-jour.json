@@ -15,6 +15,11 @@
       "dateLabel": "Mercredi 5 Août",
       "name": "MUJADDARA",
       "description": "Riz, lentilles\n& oignons caramélisés\nservi avec yogurt"
+    },
+    "jeudi": {
+      "dateLabel": "Jeudi 6 Août",
+      "name": "SOURIS D'AGNEAU / MUJADARA",
+      "description": "Souris d'agneau confite, purée de pommes de terre et légumes sautés — 35.-\n\nOu\n\nMujadara (vegan) – Lentilles, riz, oignons croustillants et salade. Yogurt en supplément sur demande. — 19.-"
     }
   }
 }
