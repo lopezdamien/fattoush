@@ -20,6 +20,11 @@
       "dateLabel": "Jeudi 6 Août",
       "name": "SOURIS D'AGNEAU / MUJADARA",
       "description": "Souris d'agneau confite, purée de pommes de terre et légumes sautés — 35.-\n\nOu\n\nMujadara (vegan) – Lentilles, riz, oignons croustillants et salade. Yogurt en supplément sur demande. — 19.-"
+    },
+    "vendredi": {
+      "dateLabel": "Vendredi 7 Août",
+      "name": "KLEFTIKO",
+      "description": "Souris d'agneau cuite au four\nLégumes & pommes de terre"
     }
   }
 }
