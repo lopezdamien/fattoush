@@ -3,6 +3,7 @@ import { FadeIn } from "@/components/ui/FadeIn";
 import { getTranslations } from "next-intl/server";
 import { Clock, Phone } from "lucide-react";
 import Image from "next/image";
+import { PhotoGallery } from "@/components/ui/PhotoGallery";
 
 const pizzaGalleryImages = [
     { src: "/images/pizza1.jpg", alt: "Pizza Fattoush" },
@@ -75,7 +76,7 @@ export default function SnackPage() {
 
                 <div className="relative z-10 container mx-auto px-4">
                     <FadeIn direction="up">
-                        <h1 className="text-5xl md:text-7xl font-bold tracking-tight drop-shadow-md">
+                        <h1 className="text-5xl md:text-7xl font-bold tracking-tight uppercase drop-shadow-md">
                             {t("title")}
                         </h1>
                     </FadeIn>
@@ -137,22 +138,7 @@ export default function SnackPage() {
             <div className="container mx-auto px-4 pb-12">
                 <FadeIn delay={0.1}>
                     <div id="pizzas" className="space-y-4 scroll-mt-24">
-                        <div className="grid grid-cols-3 gap-3">
-                            {pizzaGalleryImages.map((img) => (
-                                <div
-                                    key={img.src}
-                                    className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group"
-                                >
-                                    <Image
-                                        src={img.src}
-                                        alt={img.alt}
-                                        fill
-                                        sizes="(max-width: 640px) 33vw, 400px"
-                                        className="object-cover group-hover:scale-110 transition-transform duration-500"
-                                    />
-                                </div>
-                            ))}
-                        </div>
+                        <PhotoGallery images={pizzaGalleryImages} />
                         <h2 className="text-2xl font-bold text-primary border-b border-primary/20 pb-2">
                             {t("pizzas.category")}
                         </h2>
@@ -182,22 +168,7 @@ export default function SnackPage() {
             <div className="container mx-auto px-4 pb-12">
                 <FadeIn delay={0.2}>
                     <div id="sandwichs" className="space-y-4 scroll-mt-24">
-                        <div className="grid grid-cols-3 gap-3">
-                            {sandwichGalleryImages.map((img) => (
-                                <div
-                                    key={img.src}
-                                    className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group"
-                                >
-                                    <Image
-                                        src={img.src}
-                                        alt={img.alt}
-                                        fill
-                                        sizes="(max-width: 640px) 33vw, 400px"
-                                        className="object-cover group-hover:scale-110 transition-transform duration-500"
-                                    />
-                                </div>
-                            ))}
-                        </div>
+                        <PhotoGallery images={sandwichGalleryImages} />
                         <h2 className="text-2xl font-bold text-primary border-b border-primary/20 pb-2">
                             {t("category")}
                         </h2>
