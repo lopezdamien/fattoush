@@ -358,8 +358,23 @@
     }
   },
   "Snack": {
-    "title": "Snack",
+    "title": "Snack by Fattoush",
     "subtitle": "Sandwichs dans le pain libanais ou galette maison",
+    "hours": {
+      "title": "Horaires",
+      "monday": "Lundi",
+      "closed": "Fermé",
+      "tuesday_sunday": "Mardi – Dimanche"
+    },
+    "phone": {
+      "title": "Commande par téléphone",
+      "subtitle": "Retrait sur place"
+    },
+    "ubereats": {
+      "title": "Commander en ligne",
+      "subtitle": "Livraison et à emporter",
+      "cta": "Commander sur Uber Eats"
+    },
     "category": "Sandwichs",
     "items": {
       "falafel": {
@@ -481,7 +496,13 @@
     "intro_title": "Un repas libanais généreux, livré chez vous",
     "intro_p1": "Que ce soit pour un mariage, un anniversaire, une réception d'entreprise ou un repas entre amis, nous préparons des mezzés, grillades et plats mijotés avec les mêmes produits frais que dans notre restaurant de la Rue des Gares.",
     "intro_p2": "Chaque commande est pensée sur mesure — menu, quantités, présentation — pour que votre événement soit une réussite.",
-    "specialties": ["Mezzés froids & chauds", "Grillades & kafta", "Plats mijotés & riz", "Desserts orientaux", "Plateaux repas & buffets"],
+    "specialties": [
+      "Mezzés froids & chauds",
+      "Grillades & kafta",
+      "Plats mijotés & riz",
+      "Desserts orientaux",
+      "Plateaux repas & buffets"
+    ],
     "form_title": "Demande de devis",
     "form_subtitle": "Remplissez le formulaire — nous vous répondons sous 48h.",
     "form": {
@@ -490,7 +511,14 @@
       "phone": "Téléphone",
       "event_type": "Type d'événement",
       "event_placeholder": "Sélectionner…",
-      "events": ["Mariage", "Anniversaire", "Événement d'entreprise", "Buffet privé", "Plateau repas", "Autre"],
+      "events": [
+        "Mariage",
+        "Anniversaire",
+        "Événement d'entreprise",
+        "Buffet privé",
+        "Plateau repas",
+        "Autre"
+      ],
       "guests": "Nombre de personnes",
       "guests_placeholder": "ex. 50",
       "date": "Date souhaitée",
