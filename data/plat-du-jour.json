@@ -1,30 +1,15 @@
 {
-  "weekStarting": "2026-08-03",
+  "weekStarting": "2026-08-10",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 3 Août",
-      "name": "CHEIKH EL MEHCHI",
-      "description": "Aubergines farcies à la viande hachée d'agneau, sauce tomate & riz"
+      "dateLabel": "Lundi 10 Août",
+      "name": "BAMIA BIL LAHM",
+      "description": "Ragoût de gombos à la viande, servi avec du riz"
     },
     "mardi": {
-      "dateLabel": "Mardi 4 Août",
+      "dateLabel": "Mardi 11 Août",
       "name": "MLOUKHIYÉ",
       "description": "Feuilles de corètes\npoulet effiloché\n& riz aux vermicelles"
-    },
-    "mercredi": {
-      "dateLabel": "Mercredi 5 Août",
-      "name": "MUJADDARA",
-      "description": "Riz, lentilles\n& oignons caramélisés\nservi avec yogurt"
-    },
-    "jeudi": {
-      "dateLabel": "Jeudi 6 Août",
-      "name": "SOURIS D'AGNEAU / MUJADARA",
-      "description": "Souris d'agneau confite, purée de pommes de terre et légumes sautés — 35.-\n\nOu\n\nMujadara (vegan) – Lentilles, riz, oignons croustillants et salade. Yogurt en supplément sur demande. — 19.-"
-    },
-    "vendredi": {
-      "dateLabel": "Vendredi 7 Août",
-      "name": "KLEFTIKO",
-      "description": "Souris d'agneau cuite au four\nLégumes & pommes de terre"
     }
   }
 }
