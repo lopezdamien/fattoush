@@ -137,36 +137,6 @@ export default function SnackPage() {
 
             <div className="container mx-auto px-4 pb-12">
                 <FadeIn delay={0.1}>
-                    <div id="pizzas" className="space-y-4 scroll-mt-24">
-                        <PhotoGallery images={pizzaGalleryImages} />
-                        <h2 className="text-2xl font-bold text-primary border-b border-primary/20 pb-2">
-                            {t("pizzas.category")}
-                        </h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                            {pizzaItems.map((item) => (
-                                <div key={item} className="flex flex-col justify-between p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow group h-full">
-                                    <div className="space-y-1">
-                                        <div className="flex justify-between items-start gap-2">
-                                            <h3 className="text-lg font-semibold group-hover:text-primary transition-colors leading-tight">
-                                                {t(`pizzas.items.${item}.name`)}
-                                            </h3>
-                                            <span className="font-bold text-primary whitespace-nowrap">
-                                                {t(`pizzas.items.${item}.price`)}
-                                            </span>
-                                        </div>
-                                        <p className="text-muted-foreground text-sm leading-snug">
-                                            {t(`pizzas.items.${item}.desc`)}
-                                        </p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </FadeIn>
-            </div>
-
-            <div className="container mx-auto px-4 pb-12">
-                <FadeIn delay={0.2}>
                     <div id="sandwichs" className="space-y-4 scroll-mt-24">
                         <PhotoGallery images={sandwichGalleryImages} />
                         <h2 className="text-2xl font-bold text-primary border-b border-primary/20 pb-2">
@@ -186,6 +156,36 @@ export default function SnackPage() {
                                         </div>
                                         <p className="text-muted-foreground text-sm leading-snug">
                                             {t(`items.${item}.desc`)}
+                                        </p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </FadeIn>
+            </div>
+
+            <div className="container mx-auto px-4 pb-12">
+                <FadeIn delay={0.2}>
+                    <div id="pizzas" className="space-y-4 scroll-mt-24">
+                        <PhotoGallery images={pizzaGalleryImages} />
+                        <h2 className="text-2xl font-bold text-primary border-b border-primary/20 pb-2">
+                            {t("pizzas.category")}
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            {pizzaItems.map((item) => (
+                                <div key={item} className="flex flex-col justify-between p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow group h-full">
+                                    <div className="space-y-1">
+                                        <div className="flex justify-between items-start gap-2">
+                                            <h3 className="text-lg font-semibold group-hover:text-primary transition-colors leading-tight">
+                                                {t(`pizzas.items.${item}.name`)}
+                                            </h3>
+                                            <span className="font-bold text-primary whitespace-nowrap">
+                                                {t(`pizzas.items.${item}.price`)}
+                                            </span>
+                                        </div>
+                                        <p className="text-muted-foreground text-sm leading-snug">
+                                            {t(`pizzas.items.${item}.desc`)}
                                         </p>
                                     </div>
                                 </div>
