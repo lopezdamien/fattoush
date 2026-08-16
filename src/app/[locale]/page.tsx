@@ -60,6 +60,15 @@ export default function Home() {
                   {t("book")}
                 </Button>
               </a>
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=Rue+des+Gares+7-9,+1201+Genève"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="lg" className="text-lg px-8 py-6 h-auto shadow-lg hover:scale-105 transition-transform bg-transparent text-white border-2 border-white hover:bg-white hover:text-primary">
+                  {t("directions")}
+                </Button>
+              </a>
             </div>
           </FadeIn>
         </div>
