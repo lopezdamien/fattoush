@@ -1,15 +1,4 @@
 {
   "weekStarting": "2026-08-10",
-  "menu": {
-    "lundi": {
-      "dateLabel": "Lundi 10 Août",
-      "name": "BAMIA BIL LAHM",
-      "description": "Ragoût de gombos à la viande & sauce tomates, servi avec du riz"
-    },
-    "mardi": {
-      "dateLabel": "Mardi 11 Août",
-      "name": "MLOUKHIYÉ",
-      "description": "Feuilles de corètes\npoulet effiloché\n& riz aux vermicelles"
-    }
-  }
+  "menu": {}
 }
