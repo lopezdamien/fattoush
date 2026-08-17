@@ -35,7 +35,7 @@ export function WeeklySpecials({ menu, currentDay }: WeeklySpecialsProps) {
     const [selectedDay, setSelectedDay] = useState<keyof WeeklyMenu>(initialDay);
 
     const activePlat = menu[selectedDay];
-    const hasPlat = activePlat && activePlat.name && activePlat.description;
+    const hasPlat = activePlat && activePlat.name;
 
     return (
         <div className="relative z-10 w-full max-w-xl mx-auto bg-secondary rounded-2xl shadow-sm border border-primary/10 p-5 md:p-8 space-y-6">
@@ -92,9 +92,11 @@ export function WeeklySpecials({ menu, currentDay }: WeeklySpecialsProps) {
                         {/* Elegant middle divider */}
                         <div className="h-[1px] w-6 mx-auto bg-primary/25"></div>
                         
-                        <p className="text-sm md:text-base leading-relaxed text-muted-foreground max-w-md mx-auto whitespace-pre-line">
-                            {activePlat.description}
-                        </p>
+                        {activePlat.description && (
+                            <p className="text-sm md:text-base leading-relaxed text-muted-foreground max-w-md mx-auto whitespace-pre-line">
+                                {activePlat.description}
+                            </p>
+                        )}
                     </div>
                 ) : (
                     <p className="text-center text-xs md:text-sm text-muted-foreground py-4">
