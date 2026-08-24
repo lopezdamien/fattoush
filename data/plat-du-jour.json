@@ -1,30 +1,15 @@
 {
-  "weekStarting": "2026-08-17",
+  "weekStarting": "2026-08-24",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 17 Août",
-      "name": "DAOUD BACHA",
-      "description": "Boulettes de viande hachée avec sauce tomates et riz aux vermicelles"
+      "dateLabel": "Lundi 24 Août",
+      "name": "MAKLOUBEH",
+      "description": "Riz renversé aux aubergines et à la viande hachée"
     },
     "mardi": {
-      "dateLabel": "Mardi 18 Août",
+      "dateLabel": "Mardi 25 Août",
       "name": "MLOUKHIYÉ",
       "description": "Feuilles de corètes\npoulet effiloché\n& riz aux vermicelles"
-    },
-    "mercredi": {
-      "dateLabel": "Mercredi 19 Août",
-      "name": "FREEKEH",
-      "description": "Blé vert avec viande d'agneau"
-    },
-    "jeudi": {
-      "dateLabel": "Jeudi 20 Août",
-      "name": "CHEIKH EL MEHCHI",
-      "description": "Aubergines farcies à la libanaise, viande hachée de bœuf, sauce tomates et riz"
-    },
-    "vendredi": {
-      "dateLabel": "Vendredi 21 Août",
-      "name": "SAYADIEH",
-      "description": "Daurade avec riz libanais"
     }
   }
 }
