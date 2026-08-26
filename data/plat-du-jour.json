@@ -10,6 +10,21 @@
       "dateLabel": "Mardi 25 Août",
       "name": "MLOUKHIYÉ",
       "description": "Feuilles de corètes\npoulet effiloché\n& riz aux vermicelles"
+    },
+    "mercredi": {
+      "dateLabel": "Mercredi 26 Août",
+      "name": "SOURIS D'AGNEAU",
+      "description": "avec légumes sautés et blé vert"
+    },
+    "jeudi": {
+      "dateLabel": "Jeudi 27 Août",
+      "name": "MOUSSAKA À LA GRECQUE",
+      "description": ""
+    },
+    "vendredi": {
+      "dateLabel": "Vendredi 28 Août",
+      "name": "FILET DE SAUMON",
+      "description": "avec légumes sautés et pommes de terre"
     }
   }
 }
