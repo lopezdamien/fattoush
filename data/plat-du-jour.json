@@ -1,30 +1,30 @@
 {
-  "weekStarting": "2026-08-24",
+  "weekStarting": "2026-08-31",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 24 Août",
-      "name": "MAKLOUBEH",
-      "description": "Riz renversé aux aubergines et à la viande hachée"
+      "dateLabel": "Lundi 31 Août",
+      "name": "MOUSSAKA À LA GRECQUE / KLEFTIKO",
+      "description": "Moussaka à la grecque\n\nOu\n\nKleftiko – Souris d'agneau marinée avec légumes, pommes de terre & fêta"
     },
     "mardi": {
-      "dateLabel": "Mardi 25 Août",
+      "dateLabel": "Mardi 1er Septembre",
       "name": "MLOUKHIYÉ",
-      "description": "Feuilles de corètes\npoulet effiloché\n& riz aux vermicelles"
+      "description": "Feuilles de corètes, poulet effiloché & riz aux vermicelles"
     },
     "mercredi": {
-      "dateLabel": "Mercredi 26 Août",
-      "name": "SOURIS D'AGNEAU",
-      "description": "avec légumes sautés et blé vert"
+      "dateLabel": "Mercredi 2 Septembre",
+      "name": "BAMIA BIL LAHM",
+      "description": "Ragoût de gombos à la viande & sauce tomates, servi avec du riz"
     },
     "jeudi": {
-      "dateLabel": "Jeudi 27 Août",
-      "name": "KLEFTIKO",
-      "description": "Souris d'agneau marinée avec légumes, pommes de terre & fêta"
+      "dateLabel": "Jeudi 3 Septembre",
+      "name": "DAOUD BACHA",
+      "description": "Boulettes de viande hachée, sauce tomates & riz aux vermicelles"
     },
     "vendredi": {
-      "dateLabel": "Vendredi 28 Août",
+      "dateLabel": "Vendredi 4 Septembre",
       "name": "FILET DE SAUMON",
-      "description": "avec légumes sautés et pommes de terre"
+      "description": "Servi avec légumes sautés et pommes de terre"
     }
   }
 }
