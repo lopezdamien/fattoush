@@ -85,7 +85,7 @@ export function WeeklySpecials({ menu, currentDay }: WeeklySpecialsProps) {
                         {/* Elegant top line decoration */}
                         <div className="h-[1px] w-12 mx-auto bg-primary/20"></div>
                         
-                        <h3 className="text-xl md:text-2xl font-bold text-primary uppercase tracking-wide leading-tight px-1">
+                        <h3 className="text-xl md:text-2xl font-bold text-primary uppercase tracking-wide leading-tight px-1 whitespace-pre-line">
                             {activePlat.name}
                         </h3>
                         
