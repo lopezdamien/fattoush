@@ -5,6 +5,11 @@
       "dateLabel": "Lundi 7 Septembre",
       "name": "AGNEAU",
       "description": "Sauce tomate, petits pois & riz aux vermicelles"
+    },
+    "mardi": {
+      "dateLabel": "Mardi 8 Septembre",
+      "name": "MLOUKHIYÉ",
+      "description": "Feuilles de corètes\npoulet effiloché\n& riz aux vermicelles"
     }
   }
 }
