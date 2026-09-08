@@ -10,6 +10,16 @@
       "dateLabel": "Mardi 8 Septembre",
       "name": "MLOUKHIYÉ",
       "description": "Feuilles de corètes\npoulet effiloché\n& riz aux vermicelles"
+    },
+    "mercredi": {
+      "dateLabel": "Mercredi 9 Septembre",
+      "name": "MOUSSAKA À LA GRECQUE",
+      "description": ""
+    },
+    "vendredi": {
+      "dateLabel": "Vendredi 11 Septembre",
+      "name": "POISSON",
+      "description": "Selon arrivage"
     }
   }
 }
