@@ -1,25 +1,30 @@
 {
-  "weekStarting": "2026-09-07",
+  "weekStarting": "2026-09-14",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 7 Septembre",
-      "name": "AGNEAU",
-      "description": "Sauce tomate, petits pois & riz aux vermicelles"
+      "dateLabel": "Lundi 14 Septembre",
+      "name": "MAKLOUBEH",
+      "description": "Riz renversé aux aubergines & à la viande hachée"
     },
     "mardi": {
-      "dateLabel": "Mardi 8 Septembre",
+      "dateLabel": "Mardi 15 Septembre",
       "name": "MLOUKHIYÉ",
-      "description": "Feuilles de corètes\npoulet effiloché\n& riz aux vermicelles"
+      "description": "Feuilles de corètes, poulet effiloché & riz aux vermicelles"
     },
     "mercredi": {
-      "dateLabel": "Mercredi 9 Septembre",
+      "dateLabel": "Mercredi 16 Septembre",
+      "name": "SOURIS D'AGNEAU",
+      "description": ""
+    },
+    "jeudi": {
+      "dateLabel": "Jeudi 17 Septembre",
       "name": "MOUSSAKA À LA GRECQUE",
       "description": ""
     },
     "vendredi": {
-      "dateLabel": "Vendredi 11 Septembre",
-      "name": "SAYADIEH",
-      "description": "Daurade & riz libanais"
+      "dateLabel": "Vendredi 18 Septembre",
+      "name": "DAURADE GRILLÉE",
+      "description": "avec pommes de terre & légumes sautés"
     }
   }
 }
