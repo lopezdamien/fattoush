@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-type DayMenu = { name: string; description: string; dateLabel?: string };
+type DayMenu = { name: string; description: string; dateLabel?: string; price?: string };
 type WeeklyMenu = {
     lundi: DayMenu;
     mardi?: DayMenu;
@@ -87,6 +87,9 @@ export function WeeklySpecials({ menu, currentDay }: WeeklySpecialsProps) {
                         
                         <h3 className="text-xl md:text-2xl font-bold text-primary uppercase tracking-wide leading-tight px-1 whitespace-pre-line">
                             {activePlat.name}
+                            {activePlat.price && (
+                                <span className="text-primary/70"> — {activePlat.price}</span>
+                            )}
                         </h3>
                         
                         {/* Elegant middle divider */}

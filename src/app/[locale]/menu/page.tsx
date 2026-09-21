@@ -3,7 +3,7 @@ import { FadeIn } from "@/components/ui/FadeIn";
 import { getTranslations } from "next-intl/server";
 import platDuJourRaw from "../../../../data/plat-du-jour.json";
 
-type DayMenu = { name: string; description: string; dateLabel?: string };
+type DayMenu = { name: string; description: string; dateLabel?: string; price?: string };
 type WeeklyMenu = {
     lundi: DayMenu;
     mardi?: DayMenu;
