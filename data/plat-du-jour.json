@@ -1,34 +1,33 @@
 {
-  "weekStarting": "2026-09-21",
+  "weekStarting": "2026-09-28",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 21 Septembre",
+      "dateLabel": "Lundi 28 Septembre",
       "name": "KLEFTIKO",
       "price": "27.-",
       "description": "Souris d'agneau avec légumes, pommes de terre et feta"
     },
     "mardi": {
-      "dateLabel": "Mardi 22 Septembre",
+      "dateLabel": "Mardi 29 Septembre",
       "name": "MLOUKHIYÉ",
       "price": "23.-",
-      "description": "Feuilles de corètes, poulet effiloché & riz aux vermicelles"
+      "description": "Feuilles de corètes, poulet effiloché, riz aux vermicelles"
     },
     "mercredi": {
-      "dateLabel": "Mercredi 23 Septembre",
-      "name": "FREEKEH",
-      "price": "25.-",
-      "description": "Blé vert avec viande d'agneau"
+      "dateLabel": "Mercredi 30 Septembre",
+      "name": "CHEIKH EL MEHCHI",
+      "description": "Aubergines farcies à la libanaise avec viande hachée de bœuf, sauce tomates et riz"
     },
     "jeudi": {
-      "dateLabel": "Jeudi 24 Septembre",
-      "name": "DAOUD BACHA",
-      "price": "24.-",
-      "description": "Boulettes de viande hachée, sauce tomates & riz aux vermicelles"
+      "dateLabel": "Jeudi 1er Octobre",
+      "name": "MOUSSAKA À LA GRECQUE",
+      "price": "25.-",
+      "description": "Aubergines, viande hachée d'agneau, pommes de terre et sauce tomates"
     },
     "vendredi": {
-      "dateLabel": "Vendredi 25 Septembre",
-      "name": "DAURADE GRILLÉE",
-      "description": "avec légumes sautés et purée de pommes de terre"
+      "dateLabel": "Vendredi 2 Octobre",
+      "name": "SAYADIEH",
+      "description": "Poisson et riz"
     }
   }
 }
