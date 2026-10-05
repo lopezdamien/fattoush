@@ -1,33 +1,30 @@
 {
-  "weekStarting": "2026-09-28",
+  "weekStarting": "2026-10-05",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 28 Septembre",
-      "name": "KLEFTIKO",
-      "price": "27.-",
-      "description": "Souris d'agneau avec légumes, pommes de terre et feta"
+      "dateLabel": "Lundi 5 Octobre",
+      "name": "BAMIA BIL LAHM",
+      "description": "Ragoût de gombos à la viande d'agneau, servi avec du riz"
     },
     "mardi": {
-      "dateLabel": "Mardi 29 Septembre",
-      "name": "MLOUKHIYÉ",
-      "price": "23.-",
-      "description": "Feuilles de corètes, poulet effiloché, riz aux vermicelles"
+      "dateLabel": "Mardi 6 Octobre",
+      "name": "CHEIKH EL MEHCHI",
+      "description": "Aubergines farcies à la libanaise avec viande hachée de bœuf, sauce tomates & riz"
     },
     "mercredi": {
-      "dateLabel": "Mercredi 30 Septembre",
-      "name": "CHEIKH EL MEHCHI",
-      "description": "Aubergines farcies à la libanaise avec viande hachée de bœuf, sauce tomates et riz"
+      "dateLabel": "Mercredi 7 Octobre",
+      "name": "POULET CUIT AU FOUR",
+      "description": "avec pommes de terre & sauce citron"
     },
     "jeudi": {
-      "dateLabel": "Jeudi 1er Octobre",
-      "name": "MOUSSAKA À LA GRECQUE",
-      "price": "25.-",
-      "description": "Aubergines, viande hachée d'agneau, pommes de terre et sauce tomates"
+      "dateLabel": "Jeudi 8 Octobre",
+      "name": "CHOUX FARCIS",
+      "description": "avec viande hachée & riz"
     },
     "vendredi": {
-      "dateLabel": "Vendredi 2 Octobre",
-      "name": "SAYADIEH",
-      "description": "Poisson et riz"
+      "dateLabel": "Vendredi 9 Octobre",
+      "name": "POISSON DU MOMENT",
+      "description": ""
     }
   }
 }
