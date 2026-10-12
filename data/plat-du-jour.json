@@ -1,30 +1,15 @@
 {
-  "weekStarting": "2026-10-05",
+  "weekStarting": "2026-10-12",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 5 Octobre",
-      "name": "BAMIA BIL LAHM",
-      "description": "Ragoût de gombos à la viande d'agneau, servi avec du riz"
+      "dateLabel": "Lundi 12 Octobre",
+      "name": "SOURIS D'AGNEAU",
+      "description": ""
     },
     "mardi": {
-      "dateLabel": "Mardi 6 Octobre",
-      "name": "CHEIKH EL MEHCHI",
-      "description": "Aubergines farcies à la libanaise avec viande hachée de bœuf, sauce tomates & riz"
-    },
-    "mercredi": {
-      "dateLabel": "Mercredi 7 Octobre",
-      "name": "POULET CUIT AU FOUR",
-      "description": "avec pommes de terre & sauce citron"
-    },
-    "jeudi": {
-      "dateLabel": "Jeudi 8 Octobre",
-      "name": "CHOUX FARCIS",
-      "description": "avec viande hachée & riz"
-    },
-    "vendredi": {
-      "dateLabel": "Vendredi 9 Octobre",
-      "name": "DAURADE GRILLÉE",
-      "description": "Légumes sautés & purée de pommes de terre"
+      "dateLabel": "Mardi 13 Octobre",
+      "name": "MLOUKHIYÉ",
+      "description": "Feuilles de corètes\npoulet effiloché\n& riz aux vermicelles"
     }
   }
 }
