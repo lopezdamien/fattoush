@@ -1,30 +1,4 @@
 {
-  "weekStarting": "2026-10-12",
-  "menu": {
-    "lundi": {
-      "dateLabel": "Lundi 12 Octobre",
-      "name": "SOURIS D'AGNEAU",
-      "description": "Légumes sautés & purée de pommes de terre"
-    },
-    "mardi": {
-      "dateLabel": "Mardi 13 Octobre",
-      "name": "MLOUKHIYÉ",
-      "description": "Feuilles de corètes\npoulet effiloché\n& riz aux vermicelles"
-    },
-    "mercredi": {
-      "dateLabel": "Mercredi 14 Octobre",
-      "name": "MOUSSAKA À LA GRECQUE",
-      "description": ""
-    },
-    "jeudi": {
-      "dateLabel": "Jeudi 15 Octobre",
-      "name": "FREEKEH",
-      "description": "Blé vert avec viande d'agneau"
-    },
-    "vendredi": {
-      "dateLabel": "Vendredi 16 Octobre",
-      "name": "FILET DE SAUMON",
-      "description": ""
-    }
-  }
+  "weekStarting": "2026-10-19",
+  "menu": {}
 }
