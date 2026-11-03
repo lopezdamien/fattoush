@@ -20,7 +20,7 @@ import { WeeklySpecials } from "@/components/ui/WeeklySpecials";
 
 export const dynamic = "force-dynamic";
 
-type MenuCategory = "breakfast" | "cold_mezze" | "hot_mezze" | "mezze_menus" | "main_dishes" | "grill" | "sandwich_menus" | "kids_menus" | "desserts";
+type MenuCategory = "shisha" | "breakfast" | "cold_mezze" | "hot_mezze" | "mezze_menus" | "main_dishes" | "grill" | "sandwich_menus" | "kids_menus" | "desserts";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -107,7 +107,10 @@ export default function MenuPage() {
             "family_grilled_chicken",
             "half_grilled_chicken",
             "mixed_grill_skewers",
-            "mixed_grill_family"
+            "mixed_grill_family",
+            "skewer_supplement",
+            "family_extra",
+            "family_vip"
         ],
         sandwich_menus: [
             "falafel_sandwich_menu",
@@ -125,6 +128,9 @@ export default function MenuPage() {
             "gourmet_coffee",
             "dessert_du_moment"
         ],
+        shisha: [
+            "shisha"
+        ],
     };
 
     const categories: MenuCategory[] = [
@@ -136,7 +142,8 @@ export default function MenuPage() {
         "grill",
         "sandwich_menus",
         "kids_menus",
-        "desserts"
+        "desserts",
+        "shisha"
     ];
 
     return (
@@ -195,7 +202,9 @@ export default function MenuPage() {
                                                 <h3 className="text-lg font-semibold group-hover:text-primary transition-colors leading-tight">{t(`items.${item}.name`)}</h3>
                                                 <span className="font-bold text-primary whitespace-nowrap">{t(`items.${item}.price`)}</span>
                                             </div>
-                                            <p className="text-muted-foreground text-sm leading-snug">{t(`items.${item}.desc`)}</p>
+                                            {t.has(`items.${item}.desc`) && (
+                                                <p className="text-muted-foreground text-sm leading-snug">{t(`items.${item}.desc`)}</p>
+                                            )}
                                         </div>
                                     </div>
                                 ))}

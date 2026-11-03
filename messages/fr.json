@@ -53,7 +53,8 @@
       "sandwich_menus": "Menus Sandwich",
       "sandwich_menus_subtitle": "Servis avec houmous, sauce à l'ail, harissa, frites et salade",
       "kids_menus": "Menu Enfant",
-      "desserts": "Desserts"
+      "desserts": "Desserts",
+      "shisha": "Shisha"
     },
     "items": {
       "manouche_cheese": {
@@ -64,7 +65,7 @@
       "manouche_zaatar": {
         "name": "Man'ouché zaatar",
         "desc": "Galette traditionnelle au thym libanais, sésame et huile d'olive",
-        "price": "9.-"
+        "price": "10.-"
       },
       "lahm_bi_ajeen": {
         "name": "Lahm bi Ajeen",
@@ -74,7 +75,7 @@
       "foul": {
         "name": "Foul Moudammas",
         "desc": "Fèves mijotées, ail, citron et huile d'olive",
-        "price": "16.-"
+        "price": "17.-"
       },
       "labneh": {
         "name": "Labneh",
@@ -99,7 +100,7 @@
       "moutabal": {
         "name": "Moutabbal",
         "desc": "Aubergine grillée, tahini et citron",
-        "price": "13.-"
+        "price": "15.-"
       },
       "tabbouleh": {
         "name": "Taboulé",
@@ -124,7 +125,7 @@
       "fattoush": {
         "name": "Fattoush",
         "desc": "Salade croquante, légumes frais, pain grillé et sumac",
-        "price": "16.-"
+        "price": "17.-"
       },
       "beetroot_hummus": {
         "name": "Houmous à la betterave",
@@ -159,12 +160,12 @@
       "fatayer_piece": {
         "name": "Fatayer (1 pièce)",
         "desc": "Chaussons farcis épinards, viande ou fromage",
-        "price": "3.50"
+        "price": "4.-"
       },
       "rikakat_piece": {
         "name": "Rikakat (1 pièce)",
         "desc": "Cigare croustillant au fromage",
-        "price": "3.-"
+        "price": "3.50"
       },
       "halloumi": {
         "name": "Halloumi",
@@ -184,72 +185,72 @@
       "chicken_wings": {
         "name": "Ailes de poulet",
         "desc": "Ailes marinées et grillées",
-        "price": "15.-"
+        "price": "16.-"
       },
       "makanek": {
         "name": "Makanek",
         "desc": "Mini saucisses libanaises sautées au citron",
-        "price": "16.-"
+        "price": "17.-"
       },
       "spicy_sausages": {
         "name": "Saucisses épicées",
         "desc": "Saucisses orientales grillées (4 pièces)",
-        "price": "16.-"
+        "price": "17.-"
       },
       "meat_hummus": {
         "name": "Houmous à la viande",
         "desc": "Houmous chaud garni de viande hachée épicée",
-        "price": "16.-"
+        "price": "18.-"
       },
       "cold_mezze_small_2": {
         "name": "Mezzés froids (6 petits plats) – 2 personnes",
         "desc": "Houmous, moutabbal, taboulé, muhammara, labneh, feuille de vigne végétarienne",
-        "price": "40.-"
+        "price": "50.-"
       },
       "cold_mezze_large_4": {
         "name": "Mezzés froids (6 grands plats) – 4 personnes",
         "desc": "Houmous, moutabbal, taboulé, muhammara, labneh, feuille de vigne végétarienne",
-        "price": "70.-"
+        "price": "80.-"
       },
       "hot_mezze_large_4": {
         "name": "Mezzés chauds (6 grands plats) – 4 personnes",
         "desc": "Makanek, soujook, batata harra, ailes de poulet, kebbeh, falafel et rikakat",
-        "price": "75.-"
+        "price": "85.-"
       },
       "kabsa_chicken": {
         "name": "Kabsa poulet",
         "desc": "Riz épicé, poulet et salade mêlée",
-        "price": "25.-"
+        "price": "27.-"
       },
       "kabsa_meat": {
         "name": "Kabsa viande",
         "desc": "Riz épicé, viande et salade mêlée",
-        "price": "27.-"
+        "price": "29.-"
       },
       "kebbeh_bil_laban": {
         "name": "Kebbeh bil laban",
         "desc": "Kebbeh en sauce chaude au yaourt",
-        "price": "22.-"
+        "price": "25.-"
       },
       "vine_leaves_main": {
         "name": "Feuilles de vigne",
         "desc": "À la viande, servies chaudes avec citron",
-        "price": "29.-"
+        "price": "33.-"
       },
       "arayes": {
         "name": "Arayes",
         "desc": "Pain libanais farci à la viande grillée",
-        "price": "21.-"
+        "price": "24.-"
       },
       "ouzi_agneau": {
         "name": "Ouzi d'agneau",
         "desc": "Riz parfumé à l'agneau, en pâte feuilletée",
-        "price": "25.-"
+        "price": "27.-"
       },
       "arayes_family": {
         "name": "Assiette arayes familiale – Pour 4 personnes",
         "desc": "Pain libanais farci à la viande, frites, houmous et harissa",
-        "price": "80.-"
+        "price": "100.-"
       },
       "mixed_mezze_plate": {
         "name": "Assiette mixte mezzés",
@@ -264,32 +265,32 @@
       "lamb_plate": {
         "name": "Assiette agneau",
         "desc": "Brochettes d'agneau marinées aux épices",
-        "price": "30.-"
+        "price": "31.-"
       },
       "kafta_plate": {
         "name": "Assiette kafta",
         "desc": "Brochettes de bœuf aux herbes",
-        "price": "29.-"
+        "price": "30.-"
       },
       "chicken_plate": {
         "name": "Assiette poulet",
         "desc": "Brochettes de poulet marinées, sauce à l'ail",
-        "price": "25.-"
+        "price": "27.-"
       },
       "lamb_chicken_plate": {
         "name": "Assiette agneau/poulet",
         "desc": "Brochettes d'agneau et poulet marinées aux épices",
-        "price": "28.-"
+        "price": "29.-"
       },
       "family_grilled_chicken": {
         "name": "Poulet grillé familial",
         "desc": "Poulet mariné citron et ail",
-        "price": "50.-"
+        "price": "60.-"
       },
       "half_grilled_chicken": {
         "name": "Demi-poulet grillé",
         "desc": "Poulet mariné citron et ail",
-        "price": "26.-"
+        "price": "28.-"
       },
       "mixed_grill_skewers": {
         "name": "Brochettes mixtes grill",
@@ -299,22 +300,22 @@
       "mixed_grill_family": {
         "name": "Assiette mixte grill familiale",
         "desc": "6 brochettes, 2 côtelettes, 1 arayes — Pour 3 ou 4 personnes",
-        "price": "90.-"
+        "price": "120.-"
       },
       "falafel_sandwich_menu": {
         "name": "Menu sandwich falafel",
         "desc": "",
-        "price": "18.-"
+        "price": "19.-"
       },
       "meat_sandwich_menu": {
         "name": "Menu sandwich viande",
         "desc": "",
-        "price": "22.-"
+        "price": "24.-"
       },
       "chicken_sandwich_menu": {
         "name": "Menu sandwich poulet",
         "desc": "",
-        "price": "21.-"
+        "price": "23.-"
       },
       "kids_menu": {
         "name": "Menu enfant",
@@ -350,6 +351,24 @@
         "name": "Dessert du moment",
         "desc": "",
         "price": "7.-"
+      },
+      "skewer_supplement": {
+        "name": "Supplément brochettes",
+        "price": "12.-"
+      },
+      "family_extra": {
+        "name": "Assiette familiale extra – 4 personnes",
+        "desc": "2 man'ouchés, 3 mezzés chauds, 3 mezzés froids, 8 brochettes, 4 côtelettes, 2 arayes, frites, riz, taboulé & salade Fattoush",
+        "price": "190.-"
+      },
+      "family_vip": {
+        "name": "Assiette VIP – 6 personnes",
+        "desc": "2 man'ouchés, 8 mezzés chauds, 8 mezzés froids, 8 brochettes, 8 côtelettes, frites, riz, taboulé & salade Fattoush + 4 cafés gourmands",
+        "price": "320.-"
+      },
+      "shisha": {
+        "name": "Shisha",
+        "price": "35.-"
       }
     },
     "footer": {
