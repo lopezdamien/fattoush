@@ -5,6 +5,11 @@
       "dateLabel": "Lundi 9 Novembre",
       "name": "KAFTA AU FOUR",
       "description": "Viande kafta cuite au four avec légumes et sauce tomates"
+    },
+    "mardi": {
+      "dateLabel": "Mardi 10 Novembre",
+      "name": "MLOUKHIYÉ",
+      "description": "Feuilles de corètes, poulet effiloché mijoté avec sauce coriandre, ail, citron\n& riz aux vermicelles"
     }
   }
 }
