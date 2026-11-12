@@ -15,6 +15,11 @@
       "dateLabel": "Mercredi 11 Novembre",
       "name": "MOUSSAKA À LA GRECQUE",
       "description": ""
+    },
+    "jeudi": {
+      "dateLabel": "Jeudi 12 Novembre",
+      "name": "BAMIA BIL LAHM",
+      "description": "Ragoût avec gombos, viande d'agneau\nsauce tomates & riz"
     }
   }
 }
