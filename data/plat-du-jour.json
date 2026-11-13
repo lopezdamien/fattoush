@@ -20,6 +20,12 @@
       "dateLabel": "Jeudi 12 Novembre",
       "name": "BAMIA BIL LAHM",
       "description": "Ragoût avec gombos, viande d'agneau\nsauce tomates & riz"
+    },
+    "vendredi": {
+      "dateLabel": "Vendredi 13 Novembre",
+      "name": "FILET DE SAUMON",
+      "price": "25.-",
+      "description": "Légumes sautés et purée de pommes de terre\nAccompagnement salade ou soupe lentilles"
     }
   }
 }
