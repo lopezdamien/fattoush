@@ -1,31 +1,10 @@
 {
-  "weekStarting": "2026-11-09",
+  "weekStarting": "2026-11-16",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 9 Novembre",
-      "name": "KAFTA AU FOUR",
-      "description": "Viande kafta cuite au four avec légumes et sauce tomates"
-    },
-    "mardi": {
-      "dateLabel": "Mardi 10 Novembre",
-      "name": "MLOUKHIYÉ",
-      "description": "Feuilles de corètes, poulet effiloché mijoté avec sauce coriandre, ail, citron\n& riz aux vermicelles"
-    },
-    "mercredi": {
-      "dateLabel": "Mercredi 11 Novembre",
-      "name": "MOUSSAKA À LA GRECQUE",
-      "description": ""
-    },
-    "jeudi": {
-      "dateLabel": "Jeudi 12 Novembre",
-      "name": "BAMIA BIL LAHM",
-      "description": "Ragoût avec gombos, viande d'agneau\nsauce tomates & riz"
-    },
-    "vendredi": {
-      "dateLabel": "Vendredi 13 Novembre",
-      "name": "FILET DE SAUMON",
-      "price": "25.-",
-      "description": "Légumes sautés et purée de pommes de terre\nAccompagnement salade ou soupe de lentilles"
+      "dateLabel": "Lundi 16 Novembre",
+      "name": "SAYADIEH",
+      "description": "Riz libanais au poisson & cumin"
     }
   }
 }
