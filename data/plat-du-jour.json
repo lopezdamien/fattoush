@@ -10,6 +10,11 @@
       "dateLabel": "Mercredi 18 Novembre",
       "name": "MLOUKHIYÉ",
       "description": "Feuilles de corètes, poulet effiloché mijoté avec sauce coriandre, ail, citron\n& riz aux vermicelles"
+    },
+    "jeudi": {
+      "dateLabel": "Jeudi 19 Novembre",
+      "name": "SOURIS D'AGNEAU",
+      "description": "avec purée de pommes de terre"
     }
   }
 }
