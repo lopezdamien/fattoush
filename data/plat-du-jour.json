@@ -15,6 +15,12 @@
       "dateLabel": "Jeudi 19 Novembre",
       "name": "SOURIS D'AGNEAU",
       "description": "avec purée de pommes de terre"
+    },
+    "vendredi": {
+      "dateLabel": "Vendredi 20 Novembre",
+      "name": "FILET DE DORADE",
+      "price": "23.-",
+      "description": "avec frites, salade et petit Man'ouché libanais"
     }
   }
 }
