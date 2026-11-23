@@ -1,26 +1,10 @@
 {
-  "weekStarting": "2026-11-16",
+  "weekStarting": "2026-11-23",
   "menu": {
     "lundi": {
-      "dateLabel": "Lundi 16 Novembre",
-      "name": "SAYADIEH",
-      "description": "Riz libanais au poisson & cumin"
-    },
-    "mercredi": {
-      "dateLabel": "Mercredi 18 Novembre",
-      "name": "MLOUKHIYÉ",
-      "description": "Feuilles de corètes, poulet effiloché mijoté avec sauce coriandre, ail, citron\n& riz aux vermicelles"
-    },
-    "jeudi": {
-      "dateLabel": "Jeudi 19 Novembre",
-      "name": "SOURIS D'AGNEAU",
-      "description": "avec purée de pommes de terre"
-    },
-    "vendredi": {
-      "dateLabel": "Vendredi 20 Novembre",
-      "name": "FILET DE DORADE",
-      "price": "23.-",
-      "description": "avec frites, salade et petit Man'ouché libanais"
+      "dateLabel": "Lundi 23 Novembre",
+      "name": "AUBERGINES FARCIES",
+      "description": "avec soupe de lentilles & salade"
     }
   }
 }
