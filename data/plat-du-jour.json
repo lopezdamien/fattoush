@@ -5,6 +5,11 @@
       "dateLabel": "Lundi 23 Novembre",
       "name": "AUBERGINES FARCIES",
       "description": "avec soupe de lentilles & salade"
+    },
+    "mardi": {
+      "dateLabel": "Mardi 24 Novembre",
+      "name": "DORADE GRILLÉE",
+      "description": "avec soupe de lentilles & salade"
     }
   }
 }
