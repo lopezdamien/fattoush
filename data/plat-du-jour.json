@@ -10,6 +10,11 @@
       "dateLabel": "Mardi 24 Novembre",
       "name": "DORADE GRILLÉE",
       "description": "avec soupe de lentilles & salade"
+    },
+    "mercredi": {
+      "dateLabel": "Mercredi 25 Novembre",
+      "name": "BAMIA BIL LAHM",
+      "description": "Ragoût avec gombos, viande d'agneau\nsauce tomates & riz"
     }
   }
 }
