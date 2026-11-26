@@ -15,6 +15,11 @@
       "dateLabel": "Mercredi 25 Novembre",
       "name": "BAMIA BIL LAHM",
       "description": "Ragoût avec gombos, viande d'agneau\nsauce tomates & riz"
+    },
+    "jeudi": {
+      "dateLabel": "Jeudi 26 Novembre",
+      "name": "MLOUKHIYÉ",
+      "description": "Feuilles de corètes, poulet effiloché mijoté avec sauce coriandre, ail, citron\n& riz aux vermicelles"
     }
   }
 }
