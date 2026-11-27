@@ -20,6 +20,11 @@
       "dateLabel": "Jeudi 26 Novembre",
       "name": "MLOUKHIYÉ",
       "description": "Feuilles de corètes, poulet effiloché mijoté avec sauce coriandre, ail, citron\n& riz aux vermicelles"
+    },
+    "vendredi": {
+      "dateLabel": "Vendredi 27 Novembre",
+      "name": "BAR CUIT AU FOUR",
+      "description": "avec riz & salade"
     }
   }
 }
